@@ -13,12 +13,15 @@
 = yield_content :meta_head
 
 / stylesheets
+%link{:href => "#{cache_root}/stylesheets/jquery/jquery.prettyCheckboxes-1.1-min.css", :rel => "stylesheet", :type => "text/css"}/
 %link{:href => "/application.css", :rel => "stylesheet", :type => "text/css"}/
 = yield_content :stylesheet_head
 
 / javascripts
 -# %script{ :type => "text/javascript", :src => "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" }
 %script{ :type => "text/javascript", :src => "#{cache_root}/javascripts/jquery/jquery-1.4.2-min.js" }
+%script{ :type => "text/javascript", :src => "#{cache_root}/javascripts/jquery/jquery.prettyCheckboxes-1.1-min.js" }
+%script{ :type => "text/javascript", :src => "#{cache_root}/javascripts/jquery/jquery.form-2.4.3-min.js" }
 %script{ :type => "text/javascript", :src => "/application.js" }
 = yield_content :javascript_head
 

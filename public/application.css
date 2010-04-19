@@ -7,16 +7,12 @@ html, body {
 	position:relative;
 	font-family: Georgia;
 	font-size: 20px;
-	background-color: #aaaaaa;
-}
-
-#background {
-	position:relative;
-	width:100%;
-	height:100%;
-	background-image: url(images/app/checkers.gif);
-	opacity:0.7;
-	position:fixed;
+	background: #640a0c; /* fallback for older/unsupporting browsers */  
+	background: -moz-linear-gradient(top, #dedede, black 8%);  
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#640a0c), to(black));
+	opacity:0;
+	overflow:hidden;
+	color: #aaaaaa;
 }
 
 .rounded {
@@ -27,26 +23,56 @@ html, body {
 textarea {
 	padding:10px;
 	margin:15px;
-	background-color: #ededed;
+	background-color: #dddddd;
+	border: 3px solid #000000;
+}
+
+#background {
+	position:relative;
+	width:100%;
+	height:100%;
+	background-image: url(images/app/checkers.png);
+	opacity:0.5;
+	position:fixed;
+}
+
+#header {
+	position:relative;
+	width:100%;
+	text-align:center;
+}
+
+#header h1 {
+	font-size:30px;
+	position:relative;
+	padding:20px 10px 10px 10px;
 }
 
 #main {
 	position:relative;
 	width:100%;
 	height:100%;
+	opacity:0;
+}
+
+#content {
+	position:absolute;
+	left:5%;
+	right:5%;
+	height:100%;
 }
 
 #input {
 	position:relative;
-	margin-left:auto;
-	margin-right:auto;
-	top:40%;
-	border: 1px solid #a1a1a1;
-	background-color: #640a0c;
+	border: 3px solid #000000;
+	background-color: #101010;
 	padding:20px;
-	width:80%;
-	height:100px;	
+	height:100px;
+	left:0px;
+	right:0px;
+	top:25%;
 	margin-bottom:10px;
+	z-index:1;
 }
 
 #input textarea {
@@ -56,18 +82,57 @@ textarea {
 	top:0px;
 	bottom:0px;
 }
-#input input {
+#input #controls {
+	position:relative;
 	float:right;
+	width:80px;
+	padding-left:20px;
+	margin-left:10px;
+	height:100px;
+}
+
+#input input {
+	position:relative;
+}
+
+#input input[type=radio] {
+	clear:both;
+	display:block;
+}
+#input input[type=submit] {
+	float:left;
 }
 
 #output {
 	position:relative;
+	border: 3px solid #000000;
+	background-color: #101010;
+	padding:20px;
+	left:0px;
+	right:0px;
+	top:4%;
+	height:35%;
+	opacity:0;
+}
+
+#output textarea {
+	position:absolute;
+	left:0px;
+	right:0px;
+	top:0px;
+	bottom:0px;
+	z-index:0;
+}
+
+#loader {
+	position:relative;
+	padding-top:10px;
 	margin-left:auto;
 	margin-right:auto;
-	top:40%;
-	border: 1px solid #a1a1a1;
-	background-color: #640a0c;
-	padding:20px;
-	width:80%;
-	height:200px;
+	text-align:center;
+	display:none;
+}
+#loader img {
+	width:32px;
+	height:32px;
 }
