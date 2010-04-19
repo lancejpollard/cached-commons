@@ -8,7 +8,7 @@
 			%img{:src => "/images/app/loader.gif"}
 		#input.rounded
 			%form{:action => "/minify", :method => :post}
-				%label{:for => "input_text"} Copy/Paste Javascript or CSS
+				%label{:for => "input_text"} Copy/Paste your Javascript or CSS
 				%textarea#input_text.rounded{:name => "input_text"}
 				#controls
 					%input{:type => :radio, :name => :compressor, :value => :javascript} js
@@ -17,4 +17,4 @@
 		#output.rounded
 			%textarea#output_text.rounded{:name => "output_text"}	
 	.links
-		%p Viatropos @ 4D
+		%a{:href => c("links.website")} Viatropos @ 4D
