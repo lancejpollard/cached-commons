@@ -57,3 +57,7 @@ Status:304 Not Modified
 X-Content-Type-Options:nosniff
 X-Runtime:16ms
 </code></pre>
+
+h3. Beautify (TODO)
+
+"Javascript Beautifier":http://jsbeautifier.org/
