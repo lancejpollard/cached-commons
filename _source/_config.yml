@@ -5,13 +5,13 @@ server: false
 lsi: false
 exclude: shared
 permalink: pretty
-source: _source
 posts_include:
   - .textile
   - .markdown
 api: true
 url: 'http://localhost:4567'
 language: en-US
+source: posts
 
 keys:
   google_analytics: ""

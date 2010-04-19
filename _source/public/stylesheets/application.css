@@ -1,28 +1,39 @@
 /* reset */
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
-
 html, body {
 	width:100%;
 	height:100%;
+	margin:0px;
+	padding:0px;
 	position:relative;
 	font-family: Georgia;
-	font-size: 20px;
+	font-size: 16px;
 	background: #640a0c; /* fallback for older/unsupporting browsers */  
 	background: -moz-linear-gradient(top, #dedede, black 8%);  
 	background: -webkit-gradient(linear, 0 0, 0 100%, from(#640a0c), to(black));
 	opacity:0;
 	overflow:hidden;
-	color: #aaaaaa;
+	color: #bbbbbb;
+}
+
+h1 {
+	font-size: 30px;
+}
+
+h2 {
+	font-size: 20px;
 }
 
 a {
-	font-size: 12px;
-	color: #aaaaaa;
+	color: #dddddd;
 	text-decoration: none;
 }
 
 a:hover {
 	color: #ffffff;
+}
+
+.links a {
+	font-size:12px;
 }
 
 .rounded {
@@ -41,7 +52,7 @@ textarea {
 	position:relative;
 	width:100%;
 	height:100%;
-	background-image: url(images/app/checkers.png);
+	background-image: url(../images/checkers.png);
 	opacity:0.5;
 	position:fixed;
 }
@@ -63,6 +74,7 @@ textarea {
 	width:100%;
 	height:100%;
 	opacity:0;
+	overflow:auto;
 }
 
 #content {

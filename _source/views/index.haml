@@ -4,17 +4,7 @@
 		%h1= c("metadata.title")
 		%h2= c("metadata.tagline")
 	#content
-		#loader
-			%img{:src => "/images/app/loader.gif"}
-		#input.rounded
-			%form{:action => "/minify", :method => :post}
-				%label{:for => "input_text"} Copy/Paste your Javascript or CSS
-				%textarea#input_text.rounded{:name => "input_text"}
-				#controls
-					%input{:type => :radio, :name => :compressor, :value => :javascript} js
-					%input{:type => :radio, :name => :compressor, :value => :css} css
-					%input{:type => :submit}
-		#output.rounded
-			%textarea#output_text.rounded{:name => "output_text"}	
-	.links
-		%a{:href => c("links.website")} Viatropos @ 4D
+		:maruku
+			#{read page}
+.links
+	%a{:href => c("links.website")} Viatropos @ 4D
