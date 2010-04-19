@@ -136,3 +136,12 @@ textarea {
 	width:32px;
 	height:32px;
 }
+.links {
+	margin-left: auto;
+	margin-right: auto;
+	text-align:center;
+	position:absolute;
+	padding-bottom:10px;
+	width:100%;
+	bottom:0px;
+}

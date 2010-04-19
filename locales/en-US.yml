@@ -11,6 +11,7 @@ info:
 snippets:
   copyright: "Copyright 2010 \"4D Design Lab\":http://ilove4d.com."
   ie_warning: "Internet Explorer is far behind todays standards.\nTo Play, \"get a better browser\":http://www.google.com/chrome.\n\"(close)Click to Continue\":/got-my-browser"
+  how_to: "Copy and Paste your Javascript or CSS into the Text Area."
 
 labels:
   name: Name

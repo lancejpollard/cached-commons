@@ -12,6 +12,8 @@ $(document).ready(function() {
 	$('html, body').animate({opacity:1});
 	$("#main").delay(500).animate({opacity:1});
 	
+	$minify_form.magicLabels();
+	
 	$minify_form.ajaxForm({
 		beforeSubmit: function(arr, $form, options) {
 			$loader.slideDown();
