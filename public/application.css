@@ -91,6 +91,8 @@ textarea {
 	right:100px;
 	top:0px;
 	bottom:0px;
+	width:80%;
+	height:60%;
 }
 #input #controls {
 	position:relative;
@@ -132,6 +134,8 @@ textarea {
 	top:0px;
 	bottom:0px;
 	z-index:0;
+	width:94%;
+	height:80%;
 }
 
 #loader {
