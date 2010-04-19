@@ -27,13 +27,13 @@ info:
 metadata:
   domain: ilove4d.com
   title: Cached Commons
-  tagline: "Caching Universally Common Files"
-  description: "Caching Universally Common Files, and making it easy to add yours to the cache"
+  tagline: "Caching and Compressing Javascripts and Stylesheets"
+  description: "Caching Universally Common Files, and making it easy to add yours to the cache. Online YUI Compressor, Javascript Compression, and CSS Compression"
   author: "Lance Pollard"
   copyright: "4D | All Rights Reserved"
   country: "United States"
   classification: Techonology and Innovation
-  keywords: "Parsing, Ruby, Sinatra, HAML, Textile, Mardown, HTML, JQuery, iLove4D"
+  keywords: "Javascript Compression, CSS Compression, YUI Compressor, Online YUI Compressor, Compress, Optimize, gzip, gzip headers"
 authors:
   -
     name: Lance Pollard

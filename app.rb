@@ -8,7 +8,7 @@ require 'broadway'
 set :public, "public"
 set :views, "views"
 
-CACHED_COMMONS = "https://github.com/viatropos/cached-commons/raw/master/public" unless defined?(CACHED_COMMONS)
+CACHED_COMMONS = "http://github.com/viatropos/cached-commons/raw/master/public" unless defined?(CACHED_COMMONS)
 
 get "/" do
   options = {}

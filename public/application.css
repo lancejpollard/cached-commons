@@ -1,0 +1,73 @@
+/* reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html, body {
+	width:100%;
+	height:100%;
+	position:relative;
+	font-family: Georgia;
+	font-size: 20px;
+	background-color: #aaaaaa;
+}
+
+#background {
+	position:relative;
+	width:100%;
+	height:100%;
+	background-image: url(images/app/checkers.gif);
+	opacity:0.7;
+	position:fixed;
+}
+
+.rounded {
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+}
+
+textarea {
+	padding:10px;
+	margin:15px;
+	background-color: #ededed;
+}
+
+#main {
+	position:relative;
+	width:100%;
+	height:100%;
+}
+
+#input {
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	top:40%;
+	border: 1px solid #a1a1a1;
+	background-color: #640a0c;
+	padding:20px;
+	width:80%;
+	height:100px;	
+	margin-bottom:10px;
+}
+
+#input textarea {
+	position:absolute;
+	left:0px;
+	right:100px;
+	top:0px;
+	bottom:0px;
+}
+#input input {
+	float:right;
+}
+
+#output {
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	top:40%;
+	border: 1px solid #a1a1a1;
+	background-color: #640a0c;
+	padding:20px;
+	width:80%;
+	height:200px;
+}

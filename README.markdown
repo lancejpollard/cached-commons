@@ -3,6 +3,7 @@
 ## Common Code Cached using Github's Servers as a Content Delivery Network
 
 Builds an interface on top of "this interface to the YUI Compressor":http://refresh-sf.com/yui/
+Optimizes using "Google Closure":http://code.google.com/closure/compiler/docs/api-ref.html
 
 Github uses Nginx v0.7.61 and gzips their content automatically.  All content that hasn't been changed between commits returns a "304 Not Modified" response!
 
