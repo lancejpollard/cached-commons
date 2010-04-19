@@ -1,0 +1,11 @@
+!!! Strict
+%html{:xmlns => "http://www.w3.org/1999/xhtml"}
+	%head
+		/ http://developer.yahoo.com/performance/rules.html
+		%title= c("metadata.title")
+		= partial "partials/head", :locals => locals
+	%body
+		= yield
+		= partial "partials/vcard", :locals => locals
+		= partial "partials/analytics", :locals => locals
+		= partial "partials/footer", :locals => locals

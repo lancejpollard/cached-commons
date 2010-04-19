@@ -10,13 +10,12 @@ This is what the headers look like when retrieving a file called "/README.textil
 
 First hit, after I just made changes to it and uploaded it (no "304 Not Modified")
 
-<pre><code>
-Request URL:http://github.com/viatropos/seesaw/raw/master/README.textile
+<pre><code>Request URL:http://github.com/viatropos/seesaw/raw/master/README.textile
 Request Method:GET
 Status Code:200 OK
 Request Headers
 Accept:application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
-Referer:http://github.com/viatropos/seesaw/raw/master/README.textile
+Referer:http://github.com/viatropos/seesaw/blob/master/README.textile
 User-Agent:Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_8; en-US) AppleWebKit/533.2 (KHTML, like Gecko) Chrome/5.0.342.9 Safari/533.2
 Response Headers
 Cache-Control:private
@@ -36,8 +35,7 @@ X-Runtime:12ms
 
 Second hit, no changes made (with "304 Not Modified"):
 
-<pre><code>
-Request URL:http://github.com/viatropos/seesaw/raw/master/README.textile
+<pre><code>Request URL:http://github.com/viatropos/seesaw/raw/master/README.textile
 Request Method:GET
 Status Code:200 OK
 Request Headers

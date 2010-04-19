@@ -1,0 +1,29 @@
+/ meta
+%meta{:content => "text/html; charset=iso-8859-1", "http-equiv" => "Content-Type"}/
+%meta{'http-equiv' =>"X-UA-Compatible", :content => "IE=EmulateIE7"}
+%meta{:name => "author", :content => "#{c("metadata.author")}"}/
+%meta{:name => "copyright", :content => "#{c("metadata.copyright")}"}/
+%meta{:name => "classification", :content => "#{c("metadata.classification")}"}/
+%meta{:name => "country", :content => "#{c("metadata.country")}"}/
+%meta{:name => "keywords", :content => "#{c("metadata.keywords")}"}/
+%meta{:name => "description", :content => "#{c("metadata.description")}"}
+%meta{:name => "robots", :content => "index follow"}
+%meta{:name => "apple-mobile-web-app-capable", :content => "yes"}/
+%meta{:name => "apple-touch-fullscreen", :content => "yes"}/
+= yield_content :meta_head
+
+/ stylesheets
+%link{:href => "/stylesheets/application.css", :rel => "stylesheet", :type => "text/css"}/
+= yield_content :stylesheet_head
+
+/ javascripts
+/ %script{ :type => "text/javascript", :src => "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" }
+%script{ :type => "text/javascript", :src => "#{cache_root}/javascripts/jquery.js" }
+= yield_content :javascript_head
+
+/ local business card: http://microformats.org/code/hcard/creator
+%link{:rel => :profile, :href => "http://microformats.org/profile/hcard"}
+/ icons
+%link{:rel => "shortcut icon", :href => "#{c("icons.favicon")}", :type => "image/x-icon"}
+%link{:rel => "apple-touch-icon", :href => "#{c("icons.touch_icon")}", :title => "#{c("metadata.title")}"}/
+= yield_content :extra_head

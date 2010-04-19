@@ -1,0 +1,24 @@
+info:
+  company: 4D Design Lab
+  website: "http://www.ilove4d.com"
+  copyright:
+    year: 2010
+    license: ""
+  author: Lance
+  city: Berkeley
+  state: CA
+  zip: 94704
+snippets:
+  copyright: "Copyright 2010 \"4D Design Lab\":http://ilove4d.com."
+  ie_warning: "Internet Explorer is far behind todays standards.\nTo Play, \"get a better browser\":http://www.google.com/chrome.\n\"(close)Click to Continue\":/got-my-browser"
+
+labels:
+  name: Name
+  action: Action
+  load: Update
+  forms:
+    list: Forms
+    show: Form
+    key: Form Key
+  documents:
+    list: Documents
