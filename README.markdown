@@ -61,3 +61,5 @@ X-Runtime:16ms
 h3. Beautify (TODO)
 
 "Javascript Beautifier":http://jsbeautifier.org/
+
+Look into: How to gzip content on Github Pages
