@@ -1,0 +1,174 @@
+/* reset */
+html, body {
+	width:100%;
+	height:100%;
+	margin:0px;
+	padding:0px;
+	position:relative;
+	font-family: Georgia;
+	font-size: 16px;
+	background: #640a0c; /* fallback for older/unsupporting browsers */  
+	background: -moz-linear-gradient(top, #dedede, black 8%);  
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#640a0c), to(black));
+	opacity:0;
+	overflow:hidden;
+	color: #bbbbbb;
+}
+
+h1 {
+	font-size: 30px;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+a {
+	color: #dddddd;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #ffffff;
+}
+
+.links a {
+	font-size:12px;
+}
+
+.rounded {
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+}
+
+textarea {
+	padding:10px;
+	margin:15px;
+	background-color: #dddddd;
+	border: 3px solid #000000;
+}
+
+#background {
+	position:relative;
+	width:100%;
+	height:100%;
+	background-image: url(../images/checkers.png);
+	opacity:0.5;
+	position:fixed;
+}
+
+#header {
+	position:relative;
+	width:100%;
+	text-align:center;
+}
+
+#header h1 {
+	font-size:30px;
+	position:relative;
+	padding:20px 10px 10px 10px;
+}
+
+#main {
+	position:relative;
+	width:100%;
+	height:100%;
+	opacity:0;
+	overflow:auto;
+}
+
+#content {
+	position:absolute;
+	left:5%;
+	right:5%;
+	height:100%;
+}
+
+#input {
+	position:relative;
+	border: 3px solid #000000;
+	background-color: #101010;
+	padding:20px;
+	height:100px;
+	left:0px;
+	right:0px;
+	top:25%;
+	margin-bottom:10px;
+	z-index:1;
+}
+
+#input textarea {
+	position:absolute;
+	left:0px;
+	right:100px;
+	top:0px;
+	bottom:0px;
+	width:80%;
+	height:60%;
+}
+#input #controls {
+	position:relative;
+	float:right;
+	width:80px;
+	padding-left:20px;
+	margin-left:10px;
+	height:100px;
+}
+
+#input input {
+	position:relative;
+}
+
+#input input[type=radio] {
+	clear:both;
+	display:block;
+}
+#input input[type=submit] {
+	float:left;
+}
+
+#output {
+	position:relative;
+	border: 3px solid #000000;
+	background-color: #101010;
+	padding:20px;
+	left:0px;
+	right:0px;
+	top:4%;
+	height:35%;
+	opacity:0;
+}
+
+#output textarea {
+	position:absolute;
+	left:0px;
+	right:0px;
+	top:0px;
+	bottom:0px;
+	z-index:0;
+	width:94%;
+	height:80%;
+}
+
+#loader {
+	position:relative;
+	padding-top:10px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	display:none;
+}
+#loader img {
+	width:32px;
+	height:32px;
+}
+.links {
+	margin-left: auto;
+	margin-right: auto;
+	text-align:center;
+	position:absolute;
+	padding-bottom:10px;
+	width:100%;
+	bottom:0px;
+}
+input.labelText, textarea.labelText {color:#AAA;}
