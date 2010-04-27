@@ -1,14 +1,11 @@
 /*
- * jQuery System plugin 0.1
+ * jQuery System plugin 0.1.1
  *
  * Copyright (c) 2010 Lance Pollard
  *
- * Dual licensed under the MIT and GPL licenses:
+ * Licensed under the MIT:
  *   http://www.opensource.org/licenses/mit-license.php
- *   http://www.gnu.org/licenses/gpl.html
- *
  */
-
 /* http://www.quirksmode.org/js/detect.html */
 /* http://en.wikipedia.org/wiki/List_of_user_agents_for_mobile_phones */
 /* http://upload.wikimedia.org/wikipedia/commons/7/74/Timeline_of_web_browsers.svg */
@@ -57,11 +54,11 @@
 				return;
 			return parseFloat(dataString.substring(index+this.versionSearchString.length+1));
 		},
-		searchPlatform: function (dataString, data) {
+		searchPlatform: function (dataString, data, by) {
 			for (var i = 0; i < data.length; i++)	{
 				var string = data[i].string;
-				var name = data[i].name;
-				if (dataString.indexOf(string) != -1)
+				var name = data[i][by];
+				if (dataString.match(new RegExp(string)))
 					return name;
 			}
 		},
@@ -351,59 +348,86 @@
 				identity: "Linux"
 			}
 		],
-		
+
 		dataPlatform : [
 			{
 				string: "Windows NT 6.0",
-				name: "Windows Vista"
+				name: "Windows Vista",
+				key: "vista"
 			},
 			{
 				string: "Windows NT 5.2",
-				name: "Windows Server 2003; Windows XP x64 Edition"
+				name: "Windows Server 2003; Windows XP x64 Edition",
+				key: "2003"
 			},
 			{
 				string: "Windows NT 5.1",
-				name: "Windows XP"
+				name: "Windows XP",
+				key: "xp"
 			},
 			{
 				string: "Windows NT 5.01",
-				name: "Windows 2000, Service Pack 1 (SP1)"
+				name: "Windows 2000, Service Pack 1 (SP1)",
+				key: "sp1"
 			},
 			{
 				string: "Windows NT 5.0",
-				name: "Windows 2000"
+				name: "Windows 2000",
+				key: "2000"
 			},
 			{
 				string: "Windows NT 4.0",
-				name: "Microsoft Windows NT 4.0"
+				name: "Microsoft Windows NT 4.0",
+				key: "nt"
 			},
 			{
 				string: "Windows 98; Win 9x 4.90",
-				name: "Windows Me"
+				name: "Windows Me",
+				key: "me"
 			},
 			{
 				string: "Windows 98",
-				name: "Windows 98"
+				name: "Windows 98",
+				key: "98"
 			},
 			{
 				string: "Windows 95",
-				name: "Windows 95"
+				name: "Windows 95",
+				key: "95"
 			},
 			{
 				string: "Windows CE",
-				name: "Windows CE"
+				name: "Windows CE",
+				key: "ce"
 			},
 			{
 				string: "Mac_PowerPC",
-				name: "Mac OSX PPC"
+				name: "Mac OSX PPC",
+				key: "ppc"
 			},
 			{
-				string: "Intel Mac",
-				name: "Mac OSX Intel"
+				string: "Intel Mac OS X 10[_|\.]3",
+				name: "Mac OSX Intel Panther",
+				key: "panther"
+			},
+			{
+				string: "Intel Mac OS X 10[_|\.]4",
+				name: "Mac OSX Intel Tiger",
+				key: "tiger"
+			},
+			{
+				string: "Intel Mac OS X 10[_|\.]5",
+				name: "Mac OSX Intel Leopard",
+				key: "leopard"
+			},
+			{
+				string: "Intel Mac OS X 10[_|\.]6",
+				name: "Mac OSX Intel Snow Leopard",
+				key: "snow_leopard"
 			}
 		]
 	};
-	
+
 	/* setting */
 	$.system.browser.name = $.system.searchString($.system.dataBrowser) || "An unknown browser";
 	$.system.browser.version = $.system.searchVersion(navigator.userAgent)
@@ -416,7 +440,8 @@
 	if (name in $.system.browser)
 		$.system.browser[name] = true;
 	$.system.os.name = $.system.searchString($.system.dataOS) || "an unknown OS";
-	$.system.os.platform = $.system.searchPlatform(navigator.userAgent, $.system.dataPlatform);
+	$.system.os.platform = $.system.searchPlatform(navigator.userAgent, $.system.dataPlatform, "name");
+	$.system.os.key = $.system.searchPlatform(navigator.userAgent, $.system.dataPlatform, "key");
 	name = $.system.os.name.toLowerCase();
 	if (name in $.system.os)
 		$.system.os[name] = true;
