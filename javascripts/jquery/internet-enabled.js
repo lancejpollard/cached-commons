@@ -23,7 +23,7 @@ InternetEnabled.init = function() {
 			if (loaded == scripts.length) {
 				var message = 'Internet Explorer is missing updates required to view this site. Click here to update... ';
 				$('<div></div>').html(message).activebar({
-					'icons_path': 'http://cachedcommons.org//images/ie6update/',
+					'icons_path': 'http://cachedcommons.org/images/ie6update/',
 					'url': 'http://internetenabled.org'
 				});
 			}
