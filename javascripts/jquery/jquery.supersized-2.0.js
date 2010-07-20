@@ -18,7 +18,7 @@ Thanks to Aen for preloading, fade effect, & vertical centering
 			$('#loading').hide();
 			$('#supersize').fadeIn('fast');
 			$('#content').show();
-			if ($('#slideshow .activeslide').length == 0) $('#supersize a:first').addClass('activeslide');
+			if ($('#slideshow .activeslide').length == 0) $('#supersize *:first').addClass('activeslide');
 			if (options.slide_captions == 1) $('#slidecaption').html($('#supersize .activeslide').find('img').attr('title'));
 			if (options.navigation == 0) $('#navigation').hide();
 			//Slideshow
@@ -191,10 +191,10 @@ Thanks to Aen for preloading, fade effect, & vertical centering
 	    var currentslide = $('#supersize .activeslide');
 	    currentslide.removeClass('activeslide');
 		
-	    if ( currentslide.length == 0 ) currentslide = $('#supersize a:last');
+	    if ( currentslide.length == 0 ) currentslide = $('#supersize *:last');
 			
-	    var nextslide =  currentslide.next().length ? currentslide.next() : $('#supersize a:first');
-	    var prevslide =  nextslide.prev().length ? nextslide.prev() : $('#supersize a:last');
+	    var nextslide =  currentslide.next().length ? currentslide.next() : $('#supersize *:first');
+	    var prevslide =  nextslide.prev().length ? nextslide.prev() : $('#supersize *:last');
 		
 		
 		//Display slide counter
@@ -242,10 +242,10 @@ Thanks to Aen for preloading, fade effect, & vertical centering
 	    var currentslide = $('#supersize .activeslide');
 	    currentslide.removeClass('activeslide');
 		
-	    if ( currentslide.length == 0 ) currentslide = $('#supersize a:first');
+	    if ( currentslide.length == 0 ) currentslide = $('#supersize *:first');
 			
-	    var nextslide =  currentslide.prev().length ? currentslide.prev() : $('#supersize a:last');
-	    var prevslide =  nextslide.next().length ? nextslide.next() : $('#supersize a:first');
+	    var nextslide =  currentslide.prev().length ? currentslide.prev() : $('#supersize *:last');
+	    var prevslide =  nextslide.next().length ? nextslide.next() : $('#supersize *:first');
 		
 		//Display slide counter
 		if (options.slide_counter == 1){

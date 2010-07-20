@@ -86,6 +86,46 @@ Cached Commons is a collection of uncompressed and compressed source files for c
 - [JQuery Validate](/javascripts/jquery/jquery.validate-1.7.js) ([min](/javascripts/jquery/jquery.validate-1.7-min.js))
 	- [Homepage](http://bassistance.de/jquery-plugins/jquery-plugin-validation/)
 	- [Demos](http://jquery.bassistance.de/validate/demo/)
+- [jQuery HTML5 Dataset](http://www.orangesoda.net/jquery.dataset.html)
+  - [Homepage](http://www.orangesoda.net/jquery.dataset.html)
+- [jQuery toJSON](http://www.json.org/json2.js)
+- [jQuery Class (Object Oriented jQuery)]()
+  - [Homepage]
+- [jQuery Classy](http://ejohn.org/files/classy.js)
+  - [Homepage](http://ejohn.org/blog/simple-javascript-inheritance/)
+- [jCrop]()
+  - [Homepage](http://deepliquid.com/content/Jcrop_Manual.html)
+  - [Demos](http://deepliquid.com/content/Jcrop_Examples.html)
+- [jQuery Scale 9 Grid]()
+  - [Homepage](http://www.hempton.com/2008/11/9-grid-scaling-support-in-javascriptcss/)
+  - [Repository](http://code.google.com/p/scale9grid/)
+  - [Demos](http://hempton.com/examples/scale9grid/)
+- [jQuery Anytime]()
+  - [Homepage](http://www.ama3.com/anytime/)
+- [jQuery Google Feed API]()
+  - [Homepage](http://www.m2volt.com/blog/2009/12/jquery-feed-reader-–-jgfeed/)
+- [jQuery jParallax]()
+  - [Homepage](http://webdev.stephband.info/parallax.html)
+- [jQuery Scrolling Parallax]()
+  - [Homepage](http://jonraasch.com/blog/scrolling-parallax-jquery-plugin)
+  - [Demo](http://dev.jonraasch.com/scrolling-parallax/examples/scrolling-parallax)
+- [jQuery String methods]()
+  - [Homepage](http://stilldesigning.com/dotstring/)
+- [Uniform]()
+  - [Homepage](http://pixelmatrixdesign.com/uniform/)
+- [Nivo Slider]()
+  - [Homepage](http://nivo.dev7studios.com/)
+  - [Demos](http://nivo.dev7studios.com/demos/)
+  - [Repository](http://github.com/gilbitron/Nivo-Slider)
+  
+### MVC Javascript
+
+- [JSModel]()
+  - [Homepage](http://benpickles.github.com/js-model/)
+  - [Repository](http://github.com/benpickles/js-model)
+- [Sammy]()
+  - [Homepage](http://code.quirkey.com/sammy)
+  - [Repository](http://github.com/quirkey/sammy)
 
 ### JQTouch
 
@@ -108,11 +148,17 @@ Cached Commons is a collection of uncompressed and compressed source files for c
     
 ### Text, Text Editors, and Markup
 
+- [Cufon]()
+  - [Homepage](http://cufon.shoqolate.com/generate/)
+  - [Repository](http://github.com/sorccu/cufon)
 - [Showdown](/javascripts/text/showdown.js) ([min](/javascripts/text/showdown-min.js))
     - [Homepage](http://attacklab.net/showdown/)
 - [WMD Editor](/javascripts/text/wmd/wmd.js) ([min](/javascripts/text/wmd/wmd-min.js))
     - [Homepage](http://wmd-editor.com/)
     - [Demo](http://wmd-editor.com/demo)
+- [Underscore]()
+  - [Homepage](http://documentcloud.github.com/underscore/)
+  - [Repository](http://github.com/documentcloud/underscore/)
 
 ### Swfs, Flash, Flex
 
@@ -126,6 +172,18 @@ Cached Commons is a collection of uncompressed and compressed source files for c
 - [SWFAddress Optimizer](/javascripts/swf/swfaddress-optimizer-2.4.js) ([min](/javascripts/swf/swfaddress-optimizer-2.4-min.js))
     - [Homepage](http://attacklab.net/showdown/)
     - [Help](http://www.asual.com/blog/swfaddress/swfaddress-2-pt3-ajax-and-seo.html)
+- [SWFUpload](http://code.google.com/p/swfupload/source/browse/swfupload/#swfupload/trunk/core%3Fstate%3Dclosed)
+  - [Homepage](http://swfupload.org/)
+  - [Demos](http://demo.swfupload.org/v220/index.htm)
+  - [S3 SWFUpload Rails Plugin](http://github.com/elcgit/s3-swf-upload-plugin)
+  - [Repository](http://code.google.com/p/swfupload/)
+  
+### Charts
+
+- [Highcharts]()
+  - [Homepage](http://www.highcharts.com/)
+  - [Demos](http://www.highcharts.com/demo/)
+  - [Documentation](http://www.highcharts.com/documentation/how-to-use)
 
 ## Optimization Tips
 
@@ -133,3 +191,7 @@ Cached Commons is a collection of uncompressed and compressed source files for c
 - [Designing OpenSocial Apps for Speed and Scale](http://www.slideshare.net/chanezon/gdd-japan-2009-designing-opensocial-apps-for-speed-and-scale)
 - [How to Optimize Your Site with GZip Compression](http://betterexplained.com/articles/how-to-optimize-your-site-with-gzip-compression/)
 - [Yahoo's Best Practices for Speeding Up Your Web Site](http://developer.yahoo.com/performance/rules.html)
+
+### Links
+
+- [Github Javascript Projects](http://github.com/languages/JavaScript)

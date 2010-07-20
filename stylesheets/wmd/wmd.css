@@ -91,7 +91,7 @@ body
 
 
 /* sprite button slicing style information */
-#wmd-button-bar #wmd-bold-button    {left: 0px;   background-position: 0px 0;}
+#wmd-button-bar #wmd-bold-button    {left: 0px;   background-position: 0px 0 ;}
 #wmd-button-bar #wmd-italic-button  {left: 25px;  background-position: -20px 0;}
 #wmd-button-bar #wmd-spacer1        {left: 50px;}
 #wmd-button-bar #wmd-link-button    {left: 75px;  background-position: -40px 0;}
