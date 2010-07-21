@@ -10,14 +10,6 @@ set :views, "views"
 
 CACHE_ROOT = "http://cachedcommons.org"
 
-=begin
-before do
-  if request.env['HTTP_HOST'] != CACHE_ROOT
-    redirect_to CACHE_ROOT
-  end
-end
-=end
-
 get "/" do
   haml :index, :locals => {:cache_root => CACHE_ROOT}
 end
