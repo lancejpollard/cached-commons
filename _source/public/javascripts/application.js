@@ -11,7 +11,10 @@ $(document).ready(function() {
     
     $("> li", list).each(function(j_index, j_element) {
       var item = $(j_element);
-      var title = $("> a", item).text();
+      var link = $("> a", item);
+      link.after("<a href='" + link.attr("href").replace(/\.js$/, "-min.js") + "'>(min)</a>)");
+      
+      var title = link.text();
       var id = title.toLowerCase().replace(/[\s|\-|\_]+/g, "-");
       item.attr("id", id);
       item.prepend("<div class='selector' id='" + id + "_selector'>selected</div>");
@@ -47,4 +50,5 @@ $(document).ready(function() {
 //  $('#source').quicksand( $('#destination li'), {
 //  	name: ""
 //  });
+
 });

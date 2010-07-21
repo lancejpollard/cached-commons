@@ -20,3 +20,12 @@ There is a [tests page](http://cachedcommons.org/tests) which tests each javascr
 - http://github.com/newbamboo/panda_player
 - http://github.com/mrdoob/three.js
 - http://wiki.github.com/tobeytailor/gordon/
+
+## Other Places
+
+- http://plugins.jquery.com/most_popular
+
+## Todo
+
+- http://jscode.org/timefield/
+- http://plugins.jquery.com/project/escape

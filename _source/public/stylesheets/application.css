@@ -66,15 +66,17 @@ html, body, .document {
     padding: 20px 0px;
     margin: 20px 0px 0px 0px;
     visibility: hidden; }
-    .top .downloadable .download {
+    .top .downloadable .download, .top .downloadable .submit_request {
       background: #272727;
       padding: 10px;
       display: inline-block; }
-      .top .downloadable .download a {
+      .top .downloadable .download a, .top .downloadable .submit_request a {
         font-size: 48px; }
-      .top .downloadable .download .instructions {
-        clear: both;
-        font-size: 10px; }
+    .top .downloadable .submit_request a {
+      font-size: 32px; }
+    .top .downloadable .instructions {
+      clear: both;
+      font-size: 10px; }
 
 .main .post {
   border-bottom: 10px solid #cfcfcf; }

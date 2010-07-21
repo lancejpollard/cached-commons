@@ -4,14 +4,12 @@ title: JQuery and Plugins
 
 * "JQuery":/javascripts/jquery/jquery-1.4.2.js
 ** "Home":http://jquery.com/
-** "Demos":/
 ** "Docs":http://api.jquery.com/
-** "Repository":/
+** "Repository":http://github.com/jquery/jquery
 * "JQuery Easing":/javascripts/jquery/jquery.easing-1.3.js
-** "Home":/
-** "Demos":/
-** "Docs":/
-** "Repository":/
+** "Home":http://plugins.jquery.com/project/Easing
+** "Demos":http://jqueryui.com/demos/effect/easing.html
+** "Docs":http://gsgd.co.uk/sandbox/jquery/easing/
 * "JQuery Autocomplete":/javascripts/jquery/jquery.autocomplete-1.1.js
 ** "Home":http://bassistance.de/jquery-plugins/jquery-plugin-autocomplete/
 ** "Demos":http://jquery.bassistance.de/autocomplete/demo/
@@ -85,31 +83,33 @@ title: JQuery and Plugins
 * "jQuery HTML5 Dataset":http://www.orangesoda.net/jquery.dataset.html
 **  "Home":http://www.orangesoda.net/jquery.dataset.html
 * "jQuery toJSON":http://www.json.org/json2.js
-* "jQuery Class (Object Oriented jQuery)":/
-** "Home":/
-* "jQuery Classy":http://ejohn.org/files/classy.js
-**  "Home":http://ejohn.org/blog/simple-javascript-inheritance/
-* "jCrop":/
+* "jQuery Class (Object Oriented jQuery)":/javascripts/jquery/jquery.class.js
+** "Home":http://ejohn.org/blog/simple-javascript-inheritance/
+* "jQuery Classy":/javascripts/jquery/jquery.classy.js
+**  "Home":http://ejohn.org/blog/classy-query/
+* "jCrop":/javascripts/jquery/jquery.jcrop-0.9.8.js
 **  "Home":http://deepliquid.com/content/Jcrop_Manual.html
 **  "Demos":http://deepliquid.com/content/Jcrop_Examples.html
-* "jQuery Scale 9 Grid":/
+* "jQuery Cookie":/javascripts/jquery/jquery.cookie.js
+** "Home":http://plugins.jquery.com/project/Cookie
+* "jQuery Scale 9 Grid":/javascripts/jquery/jquery.scale9grid-0.9.3.js
 **  "Home":http://www.hempton.com/2008/11/9-grid-scaling-support-in-javascriptcss/
-**  "Repository":http://code.google.com/p/scale9grid/
 **  "Demos":http://hempton.com/examples/scale9grid/
-* "jQuery Anytime":/
+**  "Repository":http://code.google.com/p/scale9grid/
+* "jQuery Anytime":/javascripts/jquery/jquery.anytime-4.1.1.js
 **  "Home":http://www.ama3.com/anytime/
-* "jQuery Google Feed API":/
+* "jQuery Google Feed API":/javascripts/jquery/jquery.jgFeed-1.0.js
 **  "Home":http://www.m2volt.com/blog/2009/12/jquery-feed-reader-–-jgfeed/
-* "jQuery jParallax":/
+* "jQuery jParallax":/javascripts/jquery/jquery.jParallax-1.0.js
 **  "Home":http://webdev.stephband.info/parallax.html
-* "jQuery Scrolling Parallax":/
+* "jQuery Scrolling Parallax":/javascripts/jquery/jquery.scrolling-parallax-0.1.js
 **  "Home":http://jonraasch.com/blog/scrolling-parallax-jquery-plugin
 **  "Demos":http://dev.jonraasch.com/scrolling-parallax/examples/scrolling-parallax
-* "jQuery String methods":/
+* "jQuery String methods":/javascripts/jquery/jquery.string.js
 **  "Home":http://stilldesigning.com/dotstring/
 * "Uniform":/
 **  "Home":http://pixelmatrixdesign.com/uniform/
-* "Nivo Slider":/
+* "Nivo Slider":/javascripts/jquery/jquery.nivo-slider-2.0.js
 **  "Home":http://nivo.dev7studios.com/
 **  "Demos":http://nivo.dev7studios.com/demos/
 **  "Repository":http://github.com/gilbitron/Nivo-Slider
@@ -121,3 +121,5 @@ title: JQuery and Plugins
 ** "Home":http://razorjack.net/quicksand/
 ** "Docs":http://razorjack.net/quicksand/docs-and-demos.html
 ** "Repository":http://github.com/razorjack/quicksand/
+* "Google Analytics":/javascripts/jquery/jquery.google-analytics-1.1.3.js
+** "Home":/
