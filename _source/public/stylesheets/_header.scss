@@ -1,0 +1,24 @@
+.header {
+  background: $main-color;
+  padding: 5px 0px;
+  .navigation {
+  }
+  h1 {
+    font-size: 20px;
+  }
+  .logo {
+    float: left;
+  }
+  .navigation {
+    text-align: right;
+    float: right;
+    padding-top: 2px;
+    ul {
+      li {
+        display: inline;
+        padding: 0px 0px 0px 20px;
+      }
+    }
+  }
+  @include clearfix;
+}

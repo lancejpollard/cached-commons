@@ -1,0 +1,25 @@
+@mixin clearfix {
+  &:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+html, body, .document {
+  background: $background-color;
+}
+
+.frame {
+  width: 960px;
+  margin: 0 auto;
+}

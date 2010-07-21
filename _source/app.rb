@@ -1,8 +1,9 @@
 require 'rubygems'
-require 'haml'
 require 'sinatra'
 require 'broadway'
-require 'rest_client'
+require 'haml'
+
+SITE = Broadway.build(:source => "posts", :settings => "_config.yml")
 
 set :public, "public"
 set :views, "views"
@@ -18,7 +19,21 @@ end
 =end
 
 get "/" do
-  locals = default_locals(:page => site.pages.first, :cache_root => CACHE_ROOT)
-  options = {}
-  haml :index, options, locals
+  haml :index, :locals => {:cache_root => CACHE_ROOT}
+end
+
+get "/tips" do
+  haml :tips, :locals => {:cache_root => CACHE_ROOT}
+end
+
+get "/resources" do
+  haml :resources, :locals => {:cache_root => CACHE_ROOT}
+end
+
+get "/download" do
+  haml :index, :locals => {:cache_root => CACHE_ROOT}
+end
+
+get "/*" do
+  ""
 end

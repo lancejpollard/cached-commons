@@ -1,7 +1,6 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml'>
   <head>
-    <!-- http://developer.yahoo.com/performance/rules.html -->
     <title>Cached Commons</title>
     <!-- meta -->
     <meta content='text/html; charset=iso-8859-1' http-equiv='Content-Type' />
@@ -15,341 +14,434 @@
     <meta content='index follow' name='robots' />
     <meta content='yes' name='apple-mobile-web-app-capable' />
     <meta content='yes' name='apple-touch-fullscreen' />
-    
     <!-- stylesheets -->
-    <link href='http://cachedcommons.org/stylesheets/jquery/jquery.prettyCheckboxes-1.1-min.css' rel='stylesheet' type='text/css' />
-    <link href='/public/stylesheets/application.css' rel='stylesheet' type='text/css' />
-    
+    <link href='/stylesheets/reset.css' rel='stylesheet' type='text/css' />
+    <link href='/stylesheets/application.css' rel='stylesheet' type='text/css' />
     <!-- javascripts -->
     <script src='http://cachedcommons.org/javascripts/jquery/jquery-1.4.2-min.js' type='text/javascript'></script>
-    <script src='http://cachedcommons.org/javascripts/jquery/jquery.prettyCheckboxes-1.1-min.js' type='text/javascript'></script>
     <script src='http://cachedcommons.org/javascripts/jquery/jquery.form-2.4.3-min.js' type='text/javascript'></script>
     <script src='http://cachedcommons.org/javascripts/jquery/jquery.magicLabels-0.6.2-min.js' type='text/javascript'></script>
-    <script src='/public/javascripts/application.js' type='text/javascript'></script>
-    
-    <!-- local business card: http://microformats.org/code/hcard/creator -->
-    <link href='http://microformats.org/profile/hcard' rel='profile' />
-    <!-- icons -->
-    <!-- %link{:rel => "shortcut icon", :href => "#{c("icons.favicon")}", :type => "image/x-icon"} -->
-    <!-- %link{:rel => "apple-touch-icon", :href => "#{c("icons.touch_icon")}", :title => "#{c("metadata.title")}"}/ -->
+    <script src='/javascripts/application.js' type='text/javascript'></script>
   </head>
   <body>
-    <div id='background'></div>
-    <div id='main'>
-      <div id='header'>
-        <h1>Cached Commons</h1>
-        <h2>Caching and Compressing Javascripts and Stylesheets</h2>
-      </div>
-      <div id='content'>
-        <h2 id='overview'>Overview</h2><p>Cached Commons is a collection of uncompressed and compressed source files for common libraries we all use. Here&#8217;s a list of the projects currently hosted, and some helpful links and demos to the projects I&#8217;ve found along the way. If you need to minify or prettify javascript or css, you can do that on <a href='http://seesaw.heroku.com'>SeeSaw</a>.</p><h2 id='projects'>Projects</h2><h3 id='jquery'>JQuery</h3><ul>
-        <li>
-        <p><a href='/javascripts/jquery/jquery-1.4.2.js'>JQuery</a> (<a href='/javascripts/jquery/jquery-1.4.2-min.js'>min</a>)</p>
-        
-        <ul>
-        <li><a href='http://jquery.com/'>Homepage</a></li>
-        
-        <li><a href='http://api.jquery.com/'>Documentation</a></li>
-        </ul>
-        </li>
-        
-        <li>
-        <p><a href='/javascripts/jquery/jquery.easing-1.3.js'>JQuery Easing</a> (<a href='/javascripts/jquery/jquery.easing-1.3-min.js'>min</a>)</p>
-        </li>
-        
-        <li>
-        <p><a href='/javascripts/jquery/jquery.autocomplete-1.1.js'>JQuery Autocomplete</a> (<a href='/javascripts/jquery/jquery.autocomplete-1.1-min.js'>min</a>)</p>
-        
-        <ul>
-        <li><a href='http://bassistance.de/jquery-plugins/jquery-plugin-autocomplete/'>Homepage</a></li>
-        
-        <li><a href='http://docs.jquery.com/Plugins/Autocomplete'>Documentation</a></li>
-        
-        <li><a href='http://jquery.bassistance.de/autocomplete/demo/'>Basic Demo</a></li>
-        </ul>
-        </li>
-        
-        <li>
-        <p><a href='/javascripts/jquery/jquery.autoScroll.js'>JQuery Autoscroll</a> (<a href='/javascripts/jquery/jquery.autoScroll-min.js'>min</a>)</p>
-        
-        <ul>
-        <li><a href='http://jdsharp.us/jQuery/plugins/AutoScroll/'>Homepage</a></li>
-        
-        <li><a href='http://jdsharp.us/jQuery/plugins/AutoScroll/demo.php'>Demo</a></li>
-        </ul>
-        </li>
-        
-        <li>
-        <p><a href='/javascripts/jquery/jquery.blockUI-2.33.js'>JQuery BlockUI</a> (<a href='/javascripts/jquery/jquery.blockUI-2.33-min.js'>min</a>)</p>
-        
-        <ul>
-        <li><a href='http://jquery.malsup.com/block/'>Homepage</a></li>
-        
-        <li><a href='http://jquery.malsup.com/block/#demos'>Demos</a></li>
-        </ul>
-        </li>
-        
-        <li>
-        <p><a href='/javascripts/jquery/jquery.color.js'>JQuery Color</a> (<a href='/javascripts/jquery/jquery.color-min.js'>min</a>)</p>
-        
-        <ul>
-        <li><a href='http://plugins.jquery.com/project/color'>Homepage</a></li>
-        
-        <li><a href='http://desizntech.info/demo/jQuery_color_animation/'>Demo</a></li>
-        </ul>
-        </li>
-        
-        <li>
-        <p><a href='/javascripts/jquery/jquery.corner-2.0.9.js'>JQuery Corner</a> (<a href='/javascripts/jquery/jquery.corner-2.0.9-min.js'>min</a>)</p>
-        
-        <ul>
-        <li><a href='http://jquery.malsup.com/corner/'>Homepage</a></li>
-        
-        <li><a href='http://github.com/malsup/corner'>Repository</a></li>
-        </ul>
-        </li>
-        
-        <li>
-        <p><a href='/javascripts/jquery/jquery.cycle.all-2.8.6.js'>JQuery Cycle</a> (<a href='/javascripts/jquery/jquery.cycle.all-2.8.6-min.js'>min</a>)</p>
-        
-        <ul>
-        <li><a href='http://jquery.malsup.com/cycle/'>Homepage</a></li>
-        
-        <li><a href='http://jquery.malsup.com/cycle/more.html?v2.23'>Demos</a></li>
-        
-        <li><a href='http://github.com/malsup/cycle'>Repository</a></li>
-        </ul>
-        </li>
-        
-        <li>
-        <p><a href='/javascripts/jquery/jquery.easyToolTip-1.0.js'>JQuery EasyToolTip</a> (<a href='/javascripts/jquery/jquery.easyToolTip-1.0-min.js'>min</a>)</p>
-        
-        <ul>
-        <li><a href='http://cssglobe.com/post/4380/easy-tooltip--jquery-plugin'>Homepage</a></li>
-        
-        <li><a href='http://cssglobe.com/lab/easytooltip/01.html'>Demo</a></li>
-        </ul>
-        </li>
-        
-        <li>
-        <p><a href='/javascripts/jquery/jquery.fileTree-1.0.1.js'>JQuery FileTree</a> (<a href='/javascripts/jquery/jquery.fileTree-1.0.1-min.js'>min</a>)</p>
-        
-        <ul>
-        <li><a href='http://abeautifulsite.net/2008/03/jquery-file-tree/'>Homepage</a></li>
-        
-        <li><a href='http://labs.abeautifulsite.net/projects/js/jquery/fileTree/demo/'>Demo</a></li>
-        </ul>
-        </li>
-        
-        <li>
-        <p><a href='/javascripts/jquery/jquery.form-2.4.3.js'>JQuery Form</a> (<a href='/javascripts/jquery/jquery.form-2.4.3-min.js'>min</a>)</p>
-        
-        <ul>
-        <li><a href='http://jquery.malsup.com/form/'>Homepage</a></li>
-        
-        <li><a href='http://jquery.malsup.com/form/#ajaxForm'>Demos</a></li>
-        
-        <li><a href='http://github.com/malsup/form'>Repository</a></li>
-        </ul>
-        </li>
-        
-        <li>
-        <p><a href='/javascripts/jquery/jquery.hotkeys.js'>JQuery HotKeys</a> (<a href='/javascripts/jquery/jquery.hotkeys.js'>min</a>)</p>
-        
-        <ul>
-        <li><a href='http://code.google.com/p/js-hotkeys/'>Homepage</a></li>
-        
-        <li><a href='http://sites.google.com/site/jshotkeys/test-static-01.html'>Demo</a></li>
-        
-        <li><a href='http://github.com/tzuryby/jquery.hotkeys'>Repository</a></li>
-        
-        <li><a href='http://code.google.com/p/js-hotkeys/wiki/about'>Documentation</a></li>
-        </ul>
-        </li>
-        
-        <li>
-        <p><a href='/javascripts/jquery/jquery.hoverIntent.js'>JQuery HoverIntent</a> (<a href='/javascripts/jquery/jquery.hoverIntent-min.js'>min</a>) - <a href='http://cherne.net/brian/resources/jquery.hoverIntent.html'>Homepage</a></p>
-        </li>
-        
-        <li>
-        <p><a href='/javascripts/jquery/jquery.jeditable-1.7.2.js'>JQuery JEditable</a> (<a href='/javascripts/jquery/jquery.jeditable-1.7.2-min.js'>min</a>)</p>
-        
-        <ul>
-        <li><a href='http://www.appelsiini.net/projects/jeditable'>Homepage</a></li>
-        
-        <li><a href='http://www.appelsiini.net/projects/jeditable/default.html'>Basic Demo</a></li>
-        
-        <li><a href='http://www.appelsiini.net/projects/jeditable/custom.html'>Advanced Demo</a></li>
-        
-        <li><a href='http://github.com/tuupola/jquery_jeditable'>Repository</a></li>
-        </ul>
-        </li>
-        
-        <li>
-        <p><a href='/javascripts/jquery/jquery.lavalamp-1.3.4.js'>JQuery Lavalamp</a> (<a href='/javascripts/jquery/jquery.lavalamp-1.3.4-min.js'>min</a>)</p>
-        
-        <ul>
-        <li><a href='http://nixboxdesigns.com/projects/jquery-lavalamp/'>Homepage</a></li>
-        
-        <li><a href='http://github.com/jtnix/jQuery-LavaLamp'>Repository</a></li>
-        </ul>
-        </li>
-        
-        <li>
-        <p><a href='/javascripts/jquery/jquery.magicLabels-0.6.2.js'>JQuery Magic Labels</a> (<a href='/javascripts/jquery/jquery.magicLabels-0.6.2-min.js'>min</a>)</p>
-        
-        <ul>
-        <li><a href='http://projects.joreteg.com/jquery-magic-labels/'>Homepage</a></li>
-        
-        <li><a href='http://projects.joreteg.com/jquery-magic-labels/demo.html'>Demo</a></li>
-        
-        <li><a href='http://github.com/HenrikJoreteg/jquery-magic-labels'>Repository</a></li>
-        </ul>
-        </li>
-        
-        <li>
-        <p><a href='/javascripts/jquery/jquery.prettyCheckboxes-1.1.js'>JQuery Pretty Checkboxes</a> (<a href='/javascripts/jquery/jquery.prettyCheckboxes-1.1-min.js'>min</a>)</p>
-        
-        <ul>
-        <li><a href='http://www.no-margin-for-errors.com/projects/prettycheckboxes/'>Homepage</a></li>
-        
-        <li><a href='http://www.no-margin-for-errors.com/projects/prettycheckboxes/documentation/'>Documentation</a></li>
-        </ul>
-        </li>
-        
-        <li>
-        <p><a href='/javascripts/jquery/jquery.prettyPhoto.js'>JQuery Pretty Photo</a> (<a href='/javascripts/jquery/jquery.prettyPhoto-min.js'>min</a>)</p>
-        
-        <ul>
-        <li><a href='http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/'>Homepage</a></li>
-        
-        <li><a href='http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/documentation/'>Documentation</a></li>
-        </ul>
-        </li>
-        
-        <li>
-        <p><a href='/javascripts/jquery/jquery.scrollTo-1.4.2.js'>JQuery ScrollTo</a> (<a href='/javascripts/jquery/jquery.scrollTo-1.4.2-min.js'>min</a>)</p>
-        
-        <ul>
-        <li><a href='http://flesler.blogspot.com/2007/10/jqueryscrollto.html'>Homepage</a></li>
-        
-        <li><a href='http://demos.flesler.com/jquery/scrollTo/'>Demos</a></li>
-        </ul>
-        </li>
-        
-        <li>
-        <p><a href='/javascripts/jquery/jquery.supersized-2.0.js'>JQuery Supersized</a> (<a href='/javascripts/jquery/jquery.supersized-2.0-min.js'>min</a>)</p>
-        
-        <ul>
-        <li><a href='http://buildinternet.com/2009/02/supersized-full-screen-backgroundslideshow-jquery-plugin/'>Homepage</a></li>
-        
-        <li><a href='http://buildinternet.com/live/supersized/'>Demo</a></li>
-        </ul>
-        </li>
-        
-        <li>
-        <p><a href='/javascripts/jquery/jquery.transform.js'>JQuery Transform</a> (<a href='/javascripts/jquery/jquery.transform-min.js'>min</a>)</p>
-        
-        <ul>
-        <li><a href='http://www.zachstronaut.com/posts/2009/08/07/jquery-animate-css-rotate-scale.html'>Homepage</a></li>
-        
-        <li><a href='http://github.com/zachstronaut/jquery-css-transform'>Transform Repository</a></li>
-        
-        <li><a href='http://github.com/zachstronaut/jquery-animate-css-rotate-scale'>Animate Transform Repository</a></li>
-        </ul>
-        </li>
-        
-        <li>
-        <p><a href='/javascripts/jquery/jquery.uploadProgress.js'>JQuery Upload Progress</a> (<a href='/javascripts/jquery/jquery.uploadProgress-min.js'>min</a>)</p>
-        
-        <ul>
-        <li><a href='http://drogomir.com/blog/2008/6/30/upload-progress-script-with-safari-support'>Homepage</a></li>
-        
-        <li><a href='http://drogomir.com/files/blog/jquery-upload-progress/example/'>Demo</a></li>
-        
-        <li><a href='http://github.com/drogus/jquery-upload-progress'>Repository</a></li>
-        </ul>
-        </li>
-        
-        <li>
-        <p><a href='/javascripts/jquery/jquery.validate-1.7.js'>JQuery Validate</a> (<a href='/javascripts/jquery/jquery.validate-1.7-min.js'>min</a>)</p>
-        
-        <ul>
-        <li><a href='http://bassistance.de/jquery-plugins/jquery-plugin-validation/'>Homepage</a></li>
-        
-        <li><a href='http://jquery.bassistance.de/validate/demo/'>Demos</a></li>
-        </ul>
-        </li>
-        </ul><h3 id='jqtouch'>JQTouch</h3><ul>
-        <li>
-        <p><a href='/javascripts/jqtouch/jqtouch.js'>JQTouch</a> (<a href='/javascripts/jqtouch/jqtouch-min.js'>min</a>)</p>
-        
-        <ul>
-        <li><a href='http://http://jqtouch.com/'>Homepage</a></li>
-        
-        <li><a href='http://jqtouch.com/preview/demos/main/'>Demo</a></li>
-        
-        <li><a href='http://peepcode.com/products/jqtouch'>Screencast</a></li>
-        </ul>
-        </li>
-        </ul><h3 id='physics_3d_and_motion'>Physics, 3D, and Motion</h3><ul>
-        <li>
-        <p><a href='/javascripts/motion/box2d-0.1-min.js'>Box2D JS</a> (<a href='/javascripts/motion/box2d-0.1-min.js'>min</a>) - <a href='http://box2d-js.sourceforge.net/'>Homepage</a> - <a href='http://www.chromeexperiments.com/detail/ball-pool/'>Demo</a> - <a href='http://houseofcards.me/house-of-cards?url=http://www.yahoo.com'>House of Cards</a> - <a href='http://kjam.org/post/107/'>Box2D JQuery</a></p>
-        </li>
-        
-        <li>
-        <p><a href='/javascripts/motion/processing-0.8.js'>Processing JS</a> (<a href='/javascripts/motion/processing-0.8-min.js'>min</a>) - <a href='http://processingjs.org/'>Homepage</a> - <a href='http://processingjs.org/exhibition'>Demos</a> - <a href='http://9elements.com/io/projects/html5/canvas/'>Twitter Demo</a></p>
-        
-        <h3 id='text_text_editors_and_markup'>Text, Text Editors, and Markup</h3>
-        </li>
-        
-        <li>
-        <p><a href='/javascripts/text/showdown.js'>Showdown</a> (<a href='/javascripts/text/showdown-min.js'>min</a>) - <a href='http://attacklab.net/showdown/'>Homepage</a></p>
-        </li>
-        
-        <li>
-        <p><a href='/javascripts/text/wmd/wmd.js'>WMD Editor</a> (<a href='/javascripts/text/wmd/wmd-min.js'>min</a>) - <a href='http://wmd-editor.com/'>Homepage</a> - <a href='http://wmd-editor.com/demo'>Demo</a></p>
-        </li>
-        </ul><h3 id='swfs_flash_flex'>Swfs, Flash, Flex</h3><ul>
-        <li><a href='/javascripts/swf/swfobject-2.2.js'>SWFObject</a> (<a href='/javascripts/swf/swfobject-2.2-min.js'>min</a>) - <a href='http://code.google.com/p/swfobject/'>Homepage</a> - <a href='http://code.google.com/p/swfobject/wiki/documentation'>Documentation</a> - <a href='http://groups.google.com/group/swfobject'>Group</a></li>
-        
-        <li><a href='/javascripts/swf/swfaddress-2.4.js'>SWFAddress</a> (<a href='/javascripts/swf/swfaddress-2.4-min.js'>min</a>) - <a href='http://www.asual.com/swfaddress/'>Homepage</a> - <a href='http://www.asual.com/swfaddress/samples/'>Demos</a></li>
-        
-        <li><a href='/javascripts/swf/swfaddress-optimizer-2.4.js'>SWFAddress Optimizer</a> (<a href='/javascripts/swf/swfaddress-optimizer-2.4-min.js'>min</a>) - <a href='http://attacklab.net/showdown/'>Homepage</a> - <a href='http://www.asual.com/blog/swfaddress/swfaddress-2-pt3-ajax-and-seo.html'>Help</a></li>
-        </ul><h2 id='optimization_tips'>Optimization Tips</h2><ul>
-        <li><a href='http://www.websiteoptimization.com/speed/tweak/parallel/'>Parallel Downloading</a></li>
-        
-        <li><a href='http://www.slideshare.net/chanezon/gdd-japan-2009-designing-opensocial-apps-for-speed-and-scale'>Designing OpenSocial Apps for Speed and Scale</a></li>
-        
-        <li><a href='http://betterexplained.com/articles/how-to-optimize-your-site-with-gzip-compression/'>How to Optimize Your Site with GZip Compression</a></li>
-        
-        <li><a href='http://developer.yahoo.com/performance/rules.html'>Yahoo&#8217;s Best Practices for Speeding Up Your Web Site</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class='links'>
-      <a href='http://www.ilove4d.com'>Viatropos @ 4D</a>
-    </div>
-    <!-- vcard -->
-    <ul style='display:none' title='Contact Information'>
-      <li>
-        <div class='vcard' id='hcard-Lance-Pollard'>
-          <a class='url fn n' href='http://github.com/viatropos'>
-            <span class='given-name'>Lance</span>
-            <span class='family-name'>Pollard</span>
-          </a>
-          <div class='org'>4D Design Lab</div>
-          <div class='adr'>
-            <span class='locality'>Berkeley</span>
-            <span class='region'>CA</span>
-            <span class='postal-code'>94704</span>
-            <span class='country-name'>United States</span>
+    <div class='document'>
+      <section role='definition'>
+        <div class='header'>
+          <div class='frame'>
+            <header class='logo'>
+              <h1>
+                <a href='/'>Cached Commons</a>
+              </h1>
+            </header>
+            <nav class='navigation' role='menu'>
+              <ul>
+                <li>
+                  <a href='/'>Cache</a>
+                </li>
+                <li>
+                  <a href='/tips'>Tips</a>
+                </li>
+                <li>
+                  <a href='http://github.com/viatropos/cached-commons'>Source</a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
-      </li>
-    </ul>
-    <!-- footer -->
-    <a href='http://www.github.com/viatropos/cached-commons' target='_blank'>
-      <img alt='Fork me on GitHub' id='fork_me' src='http://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png' style='position: absolute; top: 0; right: 0; border: 0;' />
-    </a>
+        <div class='top'>
+          <div class='frame'>
+            <header>
+              <hgroup>
+                <h1>Cached Commons</h1>
+                <h2>Caching and Compressing Javascripts and Stylesheets since 2009</h2>
+              </hgroup>
+            </header>
+            <details class='downloadable'>
+              <summary class='download'>
+                <a href='http://github.com/viatropos/cached-commons/zipball/master'>Download</a>
+                <div class='instructions'>Download Everything.</div>
+              </summary>
+            </details>
+          </div>
+        </div>
+      </section>
+      <section class='main' id='main' role='main'>
+        <div class='body'>
+          <div class='frame'>
+            <article class='post' id='charts'>
+              <header class='kind'>
+                <h3>Charts</h3>
+                <form action='/search' class='search' method='post'>
+                  <input class='tags' data-for='charts' size='30' type='text' />
+                </form>
+              </header>
+              <div class='content'>
+                <ul>
+                	<li><a href="/">Highcharts</a>
+                	<ul>
+                		<li><a href="http://www.highcharts.com/">Home</a></li>
+                		<li><a href="http://www.highcharts.com/demo/">Demos</a></li>
+                		<li><a href="http://www.highcharts.com/documentation/how-to-use">Docs</a></li>
+                	</ul></li>
+                </ul>
+              </div>
+            </article>
+            <article class='post' id='jquery'>
+              <header class='kind'>
+                <h3>JQuery and Plugins</h3>
+                <form action='/search' class='search' method='post'>
+                  <input class='tags' data-for='jquery' size='30' type='text' />
+                </form>
+              </header>
+              <div class='content'>
+                <ul>
+                	<li><a href="/javascripts/jquery/jquery-1.4.2.js">JQuery</a>
+                	<ul>
+                		<li><a href="http://jquery.com/">Home</a></li>
+                		<li><a href="/">Demos</a></li>
+                		<li><a href="http://api.jquery.com/">Docs</a></li>
+                		<li><a href="/">Repository</a></li>
+                	</ul></li>
+                	<li><a href="/javascripts/jquery/jquery.easing-1.3.js">JQuery Easing</a>
+                	<ul>
+                		<li><a href="/">Home</a></li>
+                		<li><a href="/">Demos</a></li>
+                		<li><a href="/">Docs</a></li>
+                		<li><a href="/">Repository</a></li>
+                	</ul></li>
+                	<li><a href="/javascripts/jquery/jquery.autocomplete-1.1.js">JQuery Autocomplete</a>
+                	<ul>
+                		<li><a href="http://bassistance.de/jquery-plugins/jquery-plugin-autocomplete/">Home</a></li>
+                		<li><a href="http://jquery.bassistance.de/autocomplete/demo/">Demos</a></li>
+                		<li><a href="http://docs.jquery.com/Plugins/Autocomplete">Docs</a></li>
+                	</ul></li>
+                	<li><a href="/javascripts/jquery/jquery.autoScroll.js">JQuery Autoscroll</a>
+                	<ul>
+                		<li><a href="http://jdsharp.us/jQuery/plugins/AutoScroll/">Home</a></li>
+                		<li><a href="http://jdsharp.us/jQuery/plugins/AutoScroll/demo.php">Demos</a></li>
+                	</ul></li>
+                	<li><a href="/javascripts/jquery/jquery.blockUI-2.33.js">JQuery BlockUI</a>
+                	<ul>
+                		<li><a href="http://jquery.malsup.com/block/">Home</a></li>
+                		<li><a href="http://jquery.malsup.com/block/#demos">Demos</a></li>
+                	</ul></li>
+                	<li><a href="/javascripts/jquery/jquery.color.js">JQuery Color</a>
+                	<ul>
+                		<li><a href="http://plugins.jquery.com/project/color">Home</a></li>
+                		<li><a href="http://desizntech.info/demo/jQuery_color_animation/">Demos</a></li>
+                	</ul></li>
+                	<li><a href="/javascripts/jquery/jquery.corner-2.0.9.js">JQuery Corner</a>
+                	<ul>
+                		<li><a href="http://jquery.malsup.com/corner/">Home</a></li>
+                		<li><a href="http://github.com/malsup/corner">Repository</a></li>
+                	</ul></li>
+                	<li><a href="/javascripts/jquery/jquery.cycle.all-2.8.6.js">JQuery Cycle</a>
+                	<ul>
+                		<li><a href="http://jquery.malsup.com/cycle/">Home</a></li>
+                		<li><a href="http://jquery.malsup.com/cycle/more.html?v2.23">Demos</a></li>
+                		<li><a href="http://github.com/malsup/cycle">Repository</a></li>
+                	</ul></li>
+                	<li><a href="/javascripts/jquery/jquery.easyToolTip-1.0.js">JQuery EasyToolTip</a>
+                	<ul>
+                		<li><a href="http://cssglobe.com/post/4380/easy-tooltip--jquery-plugin">Home</a></li>
+                		<li><a href="http://cssglobe.com/lab/easytooltip/01.html">Demos</a></li>
+                	</ul></li>
+                	<li><a href="/javascripts/jquery/jquery.fileTree-1.0.1.js">JQuery FileTree</a>
+                	<ul>
+                		<li><a href="http://abeautifulsite.net/2008/03/jquery-file-tree/">Home</a></li>
+                		<li><a href="http://labs.abeautifulsite.net/projects/js/jquery/fileTree/demo/">Demos</a></li>
+                	</ul></li>
+                	<li><a href="/javascripts/jquery/jquery.form-2.4.3.js">JQuery Form</a>
+                	<ul>
+                		<li><a href="http://jquery.malsup.com/form/">Home</a></li>
+                		<li><a href="http://jquery.malsup.com/form/#ajaxForm">Demos</a></li>
+                		<li><a href="http://github.com/malsup/form">Repository</a></li>
+                	</ul></li>
+                	<li><a href="/javascripts/jquery/jquery.hotkeys.js">JQuery HotKeys</a>
+                	<ul>
+                		<li><a href="http://code.google.com/p/js-hotkeys/">Home</a></li>
+                		<li><a href="http://sites.google.com/site/jshotkeys/test-static-01.html">Demos</a></li>
+                		<li><a href="http://github.com/tzuryby/jquery.hotkeys">Repository</a></li>
+                		<li><a href="http://code.google.com/p/js-hotkeys/wiki/about">Docs</a></li>
+                	</ul></li>
+                	<li><a href="/javascripts/jquery/jquery.hoverIntent.js">JQuery HoverIntent</a>
+                	<ul>
+                		<li><a href="http://cherne.net/brian/resources/jquery.hoverIntent.html">Home</a></li>
+                	</ul></li>
+                	<li><a href="/javascripts/jquery/jquery.jeditable-1.7.2.js">JQuery JEditable</a>
+                	<ul>
+                		<li><a href="http://www.appelsiini.net/projects/jeditable">Home</a></li>
+                		<li><a href="http://www.appelsiini.net/projects/jeditable/default.html">Demos</a></li>
+                		<li><a href="http://github.com/tuupola/jquery_jeditable">Repository</a></li>
+                	</ul></li>
+                	<li><a href="/javascripts/jquery/jquery.lavalamp-1.3.4.js">JQuery Lavalamp</a>
+                	<ul>
+                		<li><a href="http://nixboxdesigns.com/projects/jquery-lavalamp/">Home</a></li>
+                		<li><a href="http://github.com/jtnix/jQuery-LavaLamp">Repository</a></li>
+                	</ul></li>
+                	<li><a href="/javascripts/jquery/jquery.magicLabels-0.6.2.js">JQuery Magic Labels</a>
+                	<ul>
+                		<li><a href="http://projects.joreteg.com/jquery-magic-labels/">Home</a></li>
+                		<li><a href="http://projects.joreteg.com/jquery-magic-labels/demo.html">Demos</a></li>
+                		<li><a href="http://github.com/HenrikJoreteg/jquery-magic-labels">Repository</a></li>
+                	</ul></li>
+                	<li><a href="/javascripts/jquery/jquery.prettyCheckboxes-1.1.js">JQuery Pretty Checkboxes</a>
+                	<ul>
+                		<li><a href="http://www.no-margin-for-errors.com/projects/prettycheckboxes/">Home</a></li>
+                		<li><a href="http://www.no-margin-for-errors.com/projects/prettycheckboxes/documentation/">Docs</a></li>
+                	</ul></li>
+                	<li><a href="/javascripts/jquery/jquery.prettyPhoto.js">JQuery Pretty Photo</a>
+                	<ul>
+                		<li><a href="http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/">Home</a></li>
+                		<li><a href="http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/documentation/">Docs</a></li>
+                	</ul></li>
+                	<li><a href="/javascripts/jquery/jquery.scrollTo-1.4.2.js">JQuery ScrollTo</a>
+                	<ul>
+                		<li><a href="http://flesler.blogspot.com/2007/10/jqueryscrollto.html">Home</a></li>
+                		<li><a href="http://demos.flesler.com/jquery/scrollTo/">Demos</a></li>
+                	</ul></li>
+                	<li><a href="/javascripts/jquery/jquery.supersized-2.0.js">JQuery Supersized</a>
+                	<ul>
+                		<li><a href="http://buildinternet.com/2009/02/supersized-full-screen-backgroundslideshow-jquery-plugin/">Home</a></li>
+                		<li><a href="http://buildinternet.com/live/supersized/">Demos</a></li>
+                	</ul></li>
+                	<li><a href="/javascripts/jquery/jquery.transform.js">JQuery Transform</a>
+                	<ul>
+                		<li><a href="http://www.zachstronaut.com/posts/2009/08/07/jquery-animate-css-rotate-scale.html">Home</a></li>
+                		<li><a href="http://github.com/zachstronaut/jquery-animate-css-rotate-scale">Repository</a></li>
+                	</ul></li>
+                	<li><a href="/javascripts/jquery/jquery.uploadProgress.js">JQuery Upload Progress</a>
+                	<ul>
+                		<li><a href="http://drogomir.com/blog/2008/6/30/upload-progress-script-with-safari-support">Home</a></li>
+                		<li><a href="http://drogomir.com/files/blog/jquery-upload-progress/example/">Demos</a></li>
+                		<li><a href="http://github.com/drogus/jquery-upload-progress">Repository</a></li>
+                	</ul></li>
+                	<li><a href="/javascripts/jquery/jquery.validate-1.7.js">JQuery Validate</a>
+                	<ul>
+                		<li><a href="http://bassistance.de/jquery-plugins/jquery-plugin-validation/">Home</a></li>
+                		<li><a href="http://jquery.bassistance.de/validate/demo/">Demos</a></li>
+                	</ul></li>
+                	<li><a href="http://www.orangesoda.net/jquery.dataset.html">jQuery HTML5 Dataset</a>
+                	<ul>
+                		<li><a href="http://www.orangesoda.net/jquery.dataset.html">Home</a></li>
+                	</ul></li>
+                	<li><a href="http://www.json.org/json2.js">jQuery toJSON</a></li>
+                	<li><a href="/" title="Object Oriented jQuery">jQuery Class</a>
+                	<ul>
+                		<li><a href="/">Home</a></li>
+                	</ul></li>
+                	<li><a href="http://ejohn.org/files/classy.js">jQuery Classy</a>
+                	<ul>
+                		<li><a href="http://ejohn.org/blog/simple-javascript-inheritance/">Home</a></li>
+                	</ul></li>
+                	<li><a href="/">jCrop</a>
+                	<ul>
+                		<li><a href="http://deepliquid.com/content/Jcrop_Manual.html">Home</a></li>
+                		<li><a href="http://deepliquid.com/content/Jcrop_Examples.html">Demos</a></li>
+                	</ul></li>
+                	<li><a href="/">jQuery Scale 9 Grid</a>
+                	<ul>
+                		<li><a href="http://www.hempton.com/2008/11/9-grid-scaling-support-in-javascriptcss/">Home</a></li>
+                		<li><a href="http://code.google.com/p/scale9grid/">Repository</a></li>
+                		<li><a href="http://hempton.com/examples/scale9grid/">Demos</a></li>
+                	</ul></li>
+                	<li><a href="/">jQuery Anytime</a>
+                	<ul>
+                		<li><a href="http://www.ama3.com/anytime/">Home</a></li>
+                	</ul></li>
+                	<li><a href="/">jQuery Google Feed <span class="caps">API</span></a>
+                	<ul>
+                		<li><a href="http://www.m2volt.com/blog/2009/12/jquery-feed-reader-â€“-jgfeed/">Home</a></li>
+                	</ul></li>
+                	<li><a href="/">jQuery jParallax</a>
+                	<ul>
+                		<li><a href="http://webdev.stephband.info/parallax.html">Home</a></li>
+                	</ul></li>
+                	<li><a href="/">jQuery Scrolling Parallax</a>
+                	<ul>
+                		<li><a href="http://jonraasch.com/blog/scrolling-parallax-jquery-plugin">Home</a></li>
+                		<li><a href="http://dev.jonraasch.com/scrolling-parallax/examples/scrolling-parallax">Demos</a></li>
+                	</ul></li>
+                	<li><a href="/">jQuery String methods</a>
+                	<ul>
+                		<li><a href="http://stilldesigning.com/dotstring/">Home</a></li>
+                	</ul></li>
+                	<li><a href="/">Uniform</a>
+                	<ul>
+                		<li><a href="http://pixelmatrixdesign.com/uniform/">Home</a></li>
+                	</ul></li>
+                	<li><a href="/">Nivo Slider</a>
+                	<ul>
+                		<li><a href="http://nivo.dev7studios.com/">Home</a></li>
+                		<li><a href="http://nivo.dev7studios.com/demos/">Demos</a></li>
+                		<li><a href="http://github.com/gilbitron/Nivo-Slider">Repository</a></li>
+                	</ul></li>
+                	<li><a href="/javascripts/jqtouch/jqtouch.js">JQTouch</a>
+                	<ul>
+                		<li><a href="http://http://jqtouch.com/">Home</a></li>
+                		<li><a href="http://jqtouch.com/preview/demos/main/">Demos</a></li>
+                		<li><a href="http://peepcode.com/products/jqtouch">Screencast</a></li>
+                	</ul></li>
+                	<li><a href="http://razorjack.net/quicksand/">Quicksand</a>
+                	<ul>
+                		<li><a href="http://razorjack.net/quicksand/">Home</a></li>
+                		<li><a href="http://razorjack.net/quicksand/docs-and-demos.html">Docs</a></li>
+                		<li><a href="http://github.com/razorjack/quicksand/">Repository</a></li>
+                	</ul></li>
+                </ul>
+              </div>
+            </article>
+            <article class='post' id='motion'>
+              <header class='kind'>
+                <h3>Physics, 3D, and Motion</h3>
+                <form action='/search' class='search' method='post'>
+                  <input class='tags' data-for='motion' size='30' type='text' />
+                </form>
+              </header>
+              <div class='content'>
+                <ul>
+                	<li><a href="/javascripts/motion/box2d-0.1-min.js">Box2D JS</a>
+                	<ul>
+                		<li><a href="http://box2d-js.sourceforge.net/">Homepage</a></li>
+                		<li><a href="http://www.chromeexperiments.com/detail/ball-pool/">Demo</a></li>
+                		<li><a href="http://houseofcards.me/house-of-cards?url=http://www.yahoo.com">House of Cards</a></li>
+                		<li><a href="http://kjam.org/post/107/">Box2D JQuery</a></li>
+                	</ul></li>
+                	<li><a href="/javascripts/motion/processing-0.8.js">Processing JS</a>
+                	<ul>
+                		<li><a href="http://processingjs.org/">Homepage</a></li>
+                		<li><a href="http://processingjs.org/exhibition">Demos</a></li>
+                		<li><a href="http://9elements.com/io/projects/html5/canvas/">Twitter Demo</a></li>
+                	</ul></li>
+                </ul>
+              </div>
+            </article>
+            <article class='post' id='mvc'>
+              <header class='kind'>
+                <h3>MVC Javascript</h3>
+                <form action='/search' class='search' method='post'>
+                  <input class='tags' data-for='mvc' size='30' type='text' />
+                </form>
+              </header>
+              <div class='content'>
+                <ul>
+                	<li><a href="/">JSModel</a>
+                	<ul>
+                		<li><a href="http://benpickles.github.com/js-model/">Homepage</a></li>
+                		<li><a href="http://github.com/benpickles/js-model">Repository</a></li>
+                	</ul></li>
+                	<li><a href="/">Sammy</a>
+                	<ul>
+                		<li><a href="http://code.quirkey.com/sammy">Homepage</a></li>
+                		<li><a href="http://github.com/quirkey/sammy">Repository</a></li>
+                	</ul></li>
+                </ul>
+              </div>
+            </article>
+            <article class='post' id='swf'>
+              <header class='kind'>
+                <h3>Swfs, Flash, Flex</h3>
+                <form action='/search' class='search' method='post'>
+                  <input class='tags' data-for='swf' size='30' type='text' />
+                </form>
+              </header>
+              <div class='content'>
+                <ul>
+                	<li><a href="/javascripts/swf/swfobject-2.2.js">SWFObject</a>
+                	<ul>
+                		<li><a href="http://code.google.com/p/swfobject/">Homepage</a></li>
+                		<li><a href="http://code.google.com/p/swfobject/wiki/documentation">Documentation</a></li>
+                		<li><a href="http://groups.google.com/group/swfobject">Group</a></li>
+                	</ul></li>
+                	<li><a href="/javascripts/swf/swfaddress-2.4.js">SWFAddress</a>
+                	<ul>
+                		<li><a href="http://www.asual.com/swfaddress/">Homepage</a></li>
+                		<li><a href="http://www.asual.com/swfaddress/samples/">Demos</a></li>
+                	</ul></li>
+                	<li><a href="/javascripts/swf/swfaddress-optimizer-2.4.js">SWFAddress Optimizer</a>
+                	<ul>
+                		<li><a href="http://attacklab.net/showdown/">Homepage</a></li>
+                		<li><a href="http://www.asual.com/blog/swfaddress/swfaddress-2-pt3-ajax-and-seo.html">Help</a></li>
+                	</ul></li>
+                	<li><a href="http://code.google.com/p/swfupload/source/browse/swfupload/#swfupload/trunk/core%3Fstate%3Dclosed">SWFUpload</a>
+                	<ul>
+                		<li><a href="http://swfupload.org/">Homepage</a></li>
+                		<li><a href="http://demo.swfupload.org/v220/index.htm">Demos</a></li>
+                		<li><a href="http://github.com/elcgit/s3-swf-upload-plugin">S3 SWFUpload Rails Plugin</a></li>
+                		<li><a href="http://code.google.com/p/swfupload/">Repository</a></li>
+                	</ul></li>
+                </ul>
+              </div>
+            </article>
+            <article class='post' id='test'>
+              <header class='kind'>
+                <h3>Testing Libraries</h3>
+                <form action='/search' class='search' method='post'>
+                  <input class='tags' data-for='test' size='30' type='text' />
+                </form>
+              </header>
+              <div class='content'>
+                
+              </div>
+            </article>
+            <article class='post' id='text'>
+              <header class='kind'>
+                <h3>Text, Text Editors, and Markup</h3>
+                <form action='/search' class='search' method='post'>
+                  <input class='tags' data-for='text' size='30' type='text' />
+                </form>
+              </header>
+              <div class='content'>
+                <ul>
+                	<li><a href="/">Cufon</a>
+                	<ul>
+                		<li><a href="http://cufon.shoqolate.com/generate/">Homepage</a></li>
+                		<li><a href="http://github.com/sorccu/cufon">Repository</a></li>
+                	</ul></li>
+                	<li><a href="/javascripts/text/showdown.js">Showdown</a>
+                	<ul>
+                		<li><a href="http://attacklab.net/showdown/">Homepage</a></li>
+                	</ul></li>
+                	<li><a href="/javascripts/text/wmd/wmd.js"><span class="caps">WMD</span> Editor</a>
+                	<ul>
+                		<li><a href="http://wmd-editor.com/">Homepage</a></li>
+                		<li><a href="http://wmd-editor.com/demo">Demo</a></li>
+                	</ul></li>
+                	<li><a href="/">Underscore</a>
+                	<ul>
+                		<li><a href="http://documentcloud.github.com/underscore/">Homepage</a></li>
+                		<li><a href="http://github.com/documentcloud/underscore/">Repository</a></li>
+                	</ul></li>
+                </ul>
+              </div>
+            </article>
+            <article class='post' id='index'>
+              <header class='kind'>
+                <h3>Index</h3>
+                <form action='/search' class='search' method='post'>
+                  <input class='tags' data-for='index' size='30' type='text' />
+                </form>
+              </header>
+              <div class='content'>
+                
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class='links'>
+          <a href='http://www.ilove4d.com'>Viatropos</a>
+        </div>
+      </section>
+      <section role='contentinfo'>
+        <div class='footer'>
+          <div class='frame'>
+            <footer></footer>
+            <nav role='menu'>
+              <a href='http://www.github.com/viatropos/cached-commons' target='_blank'>http://www.github.com/viatropos/cached-commons</a>
+            </nav>
+          </div>
+        </div>
+      </section>
+    </div>
   </body>
 </html>

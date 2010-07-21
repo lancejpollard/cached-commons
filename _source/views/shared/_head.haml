@@ -10,25 +10,20 @@
 %meta{:name => "robots", :content => "index follow"}
 %meta{:name => "apple-mobile-web-app-capable", :content => "yes"}/
 %meta{:name => "apple-touch-fullscreen", :content => "yes"}/
-= yield_content :meta_head
 
 / stylesheets
-%link{:href => "#{cache_root}/stylesheets/jquery/jquery.prettyCheckboxes-1.1-min.css", :rel => "stylesheet", :type => "text/css"}/
+%link{:href => "/stylesheets/reset.css", :rel => "stylesheet", :type => "text/css"}/
 %link{:href => "/stylesheets/application.css", :rel => "stylesheet", :type => "text/css"}/
-= yield_content :stylesheet_head
 
 / javascripts
 -# %script{ :type => "text/javascript", :src => "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" }
 %script{ :type => "text/javascript", :src => "#{cache_root}/javascripts/jquery/jquery-1.4.2-min.js" }
-%script{ :type => "text/javascript", :src => "#{cache_root}/javascripts/jquery/jquery.prettyCheckboxes-1.1-min.js" }
 %script{ :type => "text/javascript", :src => "#{cache_root}/javascripts/jquery/jquery.form-2.4.3-min.js" }
 %script{ :type => "text/javascript", :src => "#{cache_root}/javascripts/jquery/jquery.magicLabels-0.6.2-min.js" }
 %script{ :type => "text/javascript", :src => "/javascripts/application.js" }
-= yield_content :javascript_head
 
 / local business card: http://microformats.org/code/hcard/creator
 %link{:rel => :profile, :href => "http://microformats.org/profile/hcard"}
 / icons
 / %link{:rel => "shortcut icon", :href => "#{c("icons.favicon")}", :type => "image/x-icon"}
 / %link{:rel => "apple-touch-icon", :href => "#{c("icons.touch_icon")}", :title => "#{c("metadata.title")}"}/
-= yield_content :extra_head
