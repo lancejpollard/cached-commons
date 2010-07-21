@@ -1,7 +1,0 @@
-%section#main.main{:role => :main}
-  .body
-    .frame
-      - post = site.find_post_by_path("/tips")
-      %article.post
-        :textile
-          #{post.read}
