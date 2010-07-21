@@ -13,3 +13,12 @@ title: Text, Text Editors, and Markup
 * "Underscore":/
 ** "Homepage":http://documentcloud.github.com/underscore/
 ** "Repository":http://github.com/documentcloud/underscore/
+* "Prettify":/javascripts/text/prettify.js
+** "Repository":http://code.google.com/p/google-code-prettify/
+* "SyntaxHighlighter":/
+** "Home":http://alexgorbatchev.com/SyntaxHighlighter/
+** "Demos":http://alexgorbatchev.com/SyntaxHighlighter/manual/demo
+** "Repository":http://code.google.com/p/syntaxhighlighter/
+* "GeSHi":/
+** "Home":http://qbnz.com/highlighter/index.php
+** "Demos":http://qbnz.com/highlighter/demo.php

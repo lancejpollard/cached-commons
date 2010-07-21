@@ -14,17 +14,20 @@
     padding: 20px 0px;
     margin: 20px 0px 0px 0px;
     visibility: hidden;
-    .download {
+    .download, .submit_request {
       background: $main-color;
       padding: 10px;
       display: inline-block;
       a {
         font-size: 48px;
       }
-      .instructions {
-        clear: both;
-        font-size: 10px;
-      }
+    }
+    .submit_request a {
+      font-size: 32px;
+    }
+    .instructions {
+      clear: both;
+      font-size: 10px;
     }
   }
 }

@@ -1,6 +1,8 @@
 require 'rubygems'
 require 'rake'
-require 'app'
+require 'nokogiri'
+require 'open-uri'
+require 'fileutils'
 
 # rake db:create_migration NAME=create_models
 
@@ -96,4 +98,31 @@ def to_metadata(file)
     result << "\t\t\t\turl: \"#{link[:href]}\"\n"
   end
   result
+end
+
+task :scrape_jquery do
+  url = "http://plugins.jquery.com/most_popular/feed"
+  feed = Nokogiri::XML(open(url).read)
+  downloads = []
+  feed.xpath("//item").each do |item|
+    title = item.xpath("title").text
+    puts "title: #{title.inspect}"
+    url = item.xpath("link").text
+    begin
+      html = Nokogiri::HTML(open(url).read)
+      html.xpath("//a[@class='project_release_download']").each do |node|
+        downloads << {:title => title, :href => node["href"]}
+      end
+    rescue Exception => e
+      
+    end
+    
+  end
+  downloads.each do |download|
+    name = File.basename(download[:href])
+    puts "writing '#{name}'"
+    File.open("scraped/#{name}", "w+") do |file|
+      file.puts open(download[:href]).read
+    end
+  end
 end

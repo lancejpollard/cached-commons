@@ -11,3 +11,7 @@ title: Physics, 3D, and Motion
 ** "Homepage":http://processingjs.org/
 ** "Demos":http://processingjs.org/exhibition
 ** "Twitter Demo":http://9elements.com/io/projects/html5/canvas/
+* "Three.js":/javascripts/motion/three.js
+** "Home":http://mrdoob.com/blog/post/693
+** "Demos":http://mrdoob.com/projects/chromeexperiments/google_sphere/
+** "Repository":http://github.com/mrdoob/three.js
