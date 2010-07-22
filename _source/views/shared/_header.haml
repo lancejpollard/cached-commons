@@ -1,4 +1,4 @@
-%section{:role => :definition}
+%section#header{:role => :definition}
   .header
     .frame
       %header.logo
@@ -28,3 +28,13 @@
         %summary.download
           %a{:href => "http://github.com/viatropos/cached-commons/zipball/master"} Download
           .instructions Download Everything as a Zip
+        .details
+          :textile
+            #{site.find_post_by_path("/cached-commons").read}
+      .code
+        %pre
+          %code
+      %textarea.code#code{:wrap => :off, :readonly => true}    
+      .options
+        %a.all{:href => "/all"} All
+        %a.clear{:href => "/clear"} Clear

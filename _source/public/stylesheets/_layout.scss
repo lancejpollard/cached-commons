@@ -7,6 +7,15 @@
     visibility: hidden;
   }
 }
+
+@mixin rotate($angle) {
+  behavior:url(-ms-transform.htc);
+  -moz-transform:rotate($angle);
+  -webkit-transform:rotate($angle);
+  -o-transform:rotate($angle);
+  -ms-transform:rotate($angle);
+}
+
 .clearfix:after {
   content: ".";
   display: block;
@@ -17,9 +26,13 @@
 
 html, body, .document {
   background: $background-color;
+  min-width: 960px;
+  position: relative;
+  z-index: 0;
 }
 
 .frame {
   width: 960px;
   margin: 0 auto;
+  position: relative;
 }

@@ -1,7 +1,9 @@
 !!! 5
 %html{:xmlns => "http://www.w3.org/1999/xhtml"}
   %head
-    %title= c("metadata.title")
+    - title = request.path_info.titleize.gsub("/", "")
+    - title = title.blank? ? c("metadata.title") : "#{title} - #{c("metadata.title")}"
+    %title= title
     = partial "shared/head", :locals => locals
   %body
     .document

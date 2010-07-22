@@ -19,6 +19,9 @@
       }
       @include clearfix;
     }
+    &:first-child .kind {
+      padding-top: 10px;
+    }
     .content {
     }
   }
@@ -82,4 +85,17 @@
   font-size: 20px;
   z-index: -10;
   visibility: hidden;
+}
+
+.view-code {
+  position: absolute;
+  right: -42px;
+  width: 100px;
+  background: $main-color;
+  z-index: 100;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5px;
+  @include rotate(90deg);
 }

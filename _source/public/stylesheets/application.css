@@ -17,6 +17,12 @@ span {
 input {
   color: #272727; }
 
+blockquote {
+  color: #272727; }
+
+textarea {
+  color: #272727; }
+
 .clearfix:after {
   content: ".";
   display: block;
@@ -25,11 +31,15 @@ input {
   visibility: hidden; }
 
 html, body, .document {
-  background: #e8e8e8; }
+  background: #e8e8e8;
+  min-width: 960px;
+  position: relative;
+  z-index: 0; }
 
 .frame {
   width: 960px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative; }
 
 .header {
   background: #272727;
@@ -65,8 +75,16 @@ html, body, .document {
   .top .downloadable {
     padding: 20px 0px;
     margin: 20px 0px 0px 0px;
-    visibility: hidden; }
+    visibility: hidden;
+    display: block; }
+    .top .downloadable:after {
+      content: ".";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden; }
     .top .downloadable .download, .top .downloadable .submit_request {
+      float: right;
       background: #272727;
       padding: 10px;
       display: inline-block; }
@@ -77,6 +95,55 @@ html, body, .document {
     .top .downloadable .instructions {
       clear: both;
       font-size: 10px; }
+  .top .details {
+    float: right;
+    width: 690px;
+    padding: 10px 20px 10px 10px; }
+    .top .details * {
+      color: #9a9a9a; }
+  .top .code {
+    width: 945px;
+    margin: 10px 10px 40px 10px;
+    padding: 5px;
+    text-align: right;
+    background: white;
+    position: relative;
+    right: 5px;
+    border: 1px solid #cfcfcf;
+    font-size: 22px;
+    display: none;
+    color: #aaaaaa; }
+    .top .code code {
+      color: #aaaaaa;
+      display: block;
+      position: relative; }
+    .top .code pre {
+      overflow: hidden; }
+  .top textarea.code {
+    font-size: 20px;
+    text-align: left;
+    height: 0; }
+  .top .options {
+    display: none; }
+    .top .options a {
+      background: #272727;
+      padding: 5px; }
+  .top:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+
+.label-highlight {
+  text-align: right;
+  font-size: 28px;
+  color: #eeeeee; }
+
+.label-highlight.with-code {
+  color: #aaaaaa;
+  text-align: left;
+  font-size: 24px; }
 
 .main .post {
   border-bottom: 10px solid #cfcfcf; }
@@ -99,6 +166,8 @@ html, body, .document {
       height: 0;
       clear: both;
       visibility: hidden; }
+  .main .post:first-child .kind {
+    padding-top: 10px; }
 .main ul {
   list-style: none;
   position: relative;
@@ -162,3 +231,19 @@ html, body, .document {
   font-size: 20px;
   z-index: -10;
   visibility: hidden; }
+
+.view-code {
+  position: absolute;
+  right: -42px;
+  width: 100px;
+  background: #272727;
+  z-index: 100;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5px;
+  behavior: url(-ms-transform.htc);
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg); }

@@ -123,3 +123,21 @@ title: JQuery and Plugins
 ** "Repository":http://github.com/razorjack/quicksand/
 * "Google Analytics":/javascripts/jquery/jquery.google-analytics-1.1.3.js
 ** "Home":/
+* "jQuery Labelify":/javascripts/jquery/jquery.labelify.js
+** "Home":http://www.kryogenix.org/code/browser/labelify/
+* "jQuery Fieldtag":/javascripts/jquery/jquery.fieldtag.js
+** "Home":http://ajaxcssblog.com/jquery/fieldtag-watermark-inputfields/
+** "Demos":http://sandbox.ajaxcssblog.com/jquery/jquery.fieldtag/fieldtag-demo.htm
+* "Starfield Tag Cloud (3D)":/javascripts/jquery/jquery.starfield-tag-cloud.js
+** "Home":http://bugsoftware.co.uk/jQuery/StarfieldTagCloud/
+* "Better jQuery Label":/
+** "Home":http://www.viget.com/inspire/a-better-jquery-in-field-label-plugin/
+* "jQuery In-Field Label":/javascripts/jquery/jquery.in-field-label-0.1.2.js
+** "Home":http://fuelyourcoding.com/scripts/infield/
+** "Repository":http://github.com/dcneiner/In-Field-Labels-jQuery-Plugin/
+* "jLabel":/javascripts/jquery/jquery.jlabel.js
+** "Home":http://www.wduffy.co.uk/jlabel/
+* "Elastic TextArea":/javascripts/jquery/jquery.elastic.js
+** "Home":http://www.unwrongest.com/projects/elastic/
+** "Demos":http://www.unwrongest.com/projects/elastic/#demo
+** "Repository":http://code.google.com/p/jquery-elastic

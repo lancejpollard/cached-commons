@@ -14,7 +14,10 @@
     padding: 20px 0px;
     margin: 20px 0px 0px 0px;
     visibility: hidden;
+    display: block;
+    @include clearfix;
     .download, .submit_request {
+      float: right;
       background: $main-color;
       padding: 10px;
       display: inline-block;
@@ -30,4 +33,58 @@
       font-size: 10px;
     }
   }
+  .details {
+    float: right;
+    width: 690px;
+    padding: 10px 20px 10px 10px;
+    * {
+      color: #9a9a9a;
+    }
+    
+  }
+  .code {
+    width: 945px;
+    margin: 10px 10px 40px 10px;
+    padding: 5px;
+    text-align: right;
+    background: white;
+    position: relative;
+    right: 5px;
+    border: 1px solid $border-color;
+    font-size: 22px;
+    display: none;
+    color: #aaaaaa;
+    code {
+      color: #aaaaaa;
+      display: block;
+      position: relative;
+    }
+    pre {
+      overflow: hidden;
+    }
+  }
+  textarea.code {
+    font-size: 20px;
+    text-align: left;
+    height: 0;
+  }
+  .options {
+    display: none;
+    a {
+      background: $main-color;
+      padding: 5px;
+    }
+  }
+  @include clearfix;
+}
+
+.label-highlight {
+  text-align: right;
+  font-size: 28px;
+  color: #eeeeee;
+}
+.label-highlight.with-code {
+  color: #aaaaaa;
+  text-align: left;
+  font-size: 24px;
 }
