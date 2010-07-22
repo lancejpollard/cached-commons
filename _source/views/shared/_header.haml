@@ -3,6 +3,7 @@
     .frame
       %header.logo
         %h1
+          %img{:src => c("icons.favicon"), :alt => c("metadata.title")}
           %a{:href => "/"}= c("metadata.title")
       %nav.navigation{:role => :menu}
         %ul
@@ -22,6 +23,8 @@
     .frame
       %header
         %hgroup
+          %a{:href => "http://github.com/viatropos/cached-commons"}
+            %img.fork-me{:src => "http://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png"}
           %h1= c("metadata.title")
           %h2= c("metadata.tagline")
       %details.downloadable
@@ -31,6 +34,16 @@
         .details
           :textile
             #{site.find_post_by_path("/cached-commons").read}
+      .how-to
+        %figure.step
+          %p
+            %span Click titles for direct link to code (and minified version)
+        %figure.step
+          %p
+            %span Click rows to generate copy/pastable script tags
+        %figure.step
+          %p
+            %span Click links for Home, Docs, Source, and Demos
       .code
         %pre
           %code

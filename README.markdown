@@ -22,6 +22,13 @@ When I was first starting out with javascript, finding the good libraries was ha
 
 This is an attempt to centralize javascript library access.  You can easily download the libraries to your local project if you'd like, or feel free to directly link to the ones here.  It's using Github as a CDN and they're good at that.
 
+- When you're bored, easily study code on the iPhone!
+- If you need to minify or prettify javascript or css, you can do that on [SeeSaw](http://meetseesaw.com).
+
+## Goals
+
+The main goal is to aggregate the best-of javascript and css libraries for rapid prototyping.  It won't have every javascript library because there's 1000's of jQuery Tooltip plugins out there, but only say 3 of them are really good.
+
 ## Add More Libraries
 
 If you find a library that you think is great, create a [Github Issue](http://github.com/viatropos/cached-commons/issues) for it and give us a link to the library, a good demo, some docs, and the repository (or whatever exists).  You will help other developers save time and money, which will in the long run speed up development and increase the number of services available to make your life better.
@@ -36,3 +43,16 @@ The source of the [Cached Commons](http://cachedcommons.org) is [here](http://gi
 - [SimpleModal](http://www.ericmmartin.com/projects/simplemodal/)
 - http://bradleysepos.com/projects/jquery/clipboard/
 - http://yuiblog.com/blog/2007/06/12/module-pattern/
+- [Spritely](http://www.spritely.net/)
+- [Range Input](http://flowplayer.org/tools/demos/rangeinput/)
+
+## Tests
+
+    gem install rubyzip
+    gem install jasmine
+    rake jasmine
+
+## Todo
+
+- Add image and description to each one
+- http://www.distilled.co.uk/blog/conversion-rate-optimisation/using-jquery-and-google-analytics-events-to-track-form-abandonment/

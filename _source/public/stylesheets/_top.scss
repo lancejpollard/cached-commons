@@ -1,6 +1,10 @@
 .top {
   text-align: right;
+  .fork-me {
+    float: left;
+  }
   h1 {
+    padding-top: 10px;
     font-size: 100px;
     letter-spacing: -8px;
     color: $accent-color;
@@ -9,7 +13,7 @@
   h2 {
     color: $extra-color;
   }
-  padding: 10px 0px 0px 0px;
+  padding: 0px;
   .downloadable {
     padding: 20px 0px;
     margin: 20px 0px 0px 0px;

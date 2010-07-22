@@ -17,3 +17,6 @@ title: Visualization
 ** "Demos":http://raphaeljs.com/
 * "gRaphael":/javascripts/visualization/highcharts-2.0.1.js
 ** "Home":http://g.raphaeljs.com/
+* "Google Charts":/
+** "Home":http://plugins.jquery.com/project/gchart
+** "Demos":http://keith-wood.name/gChart.html

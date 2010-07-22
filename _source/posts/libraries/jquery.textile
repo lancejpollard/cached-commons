@@ -6,138 +6,214 @@ title: JQuery and Plugins
 ** "Home":http://jquery.com/
 ** "Docs":http://api.jquery.com/
 ** "Repository":http://github.com/jquery/jquery
-* "JQuery Easing":/javascripts/jquery/jquery.easing-1.3.js
+* "JQuery Easing (animation, easing)":/javascripts/jquery/jquery.easing-1.3.js
 ** "Home":http://plugins.jquery.com/project/Easing
 ** "Demos":http://jqueryui.com/demos/effect/easing.html
 ** "Docs":http://gsgd.co.uk/sandbox/jquery/easing/
-* "JQuery Autocomplete":/javascripts/jquery/jquery.autocomplete-1.1.js
+* "JQuery Autocomplete (autocomplete)":/javascripts/jquery/jquery.autocomplete-1.1.js
 ** "Home":http://bassistance.de/jquery-plugins/jquery-plugin-autocomplete/
 ** "Demos":http://jquery.bassistance.de/autocomplete/demo/
 ** "Docs":http://docs.jquery.com/Plugins/Autocomplete
-* "JQuery Autoscroll":/javascripts/jquery/jquery.autoScroll.js
+* "JQuery Autoscroll (scrolling, animation, mouse wheel)":/javascripts/jquery/jquery.autoScroll.js
 ** "Home":http://jdsharp.us/jQuery/plugins/AutoScroll/
 ** "Demos":http://jdsharp.us/jQuery/plugins/AutoScroll/demo.php
-* "JQuery BlockUI":/javascripts/jquery/jquery.blockUI-2.33.js
+* "JQuery BlockUI (modal, popup, ui, alert)":/javascripts/jquery/jquery.blockUI-2.33.js
 ** "Home":http://jquery.malsup.com/block/
 ** "Demos":http://jquery.malsup.com/block/#demos
-* "JQuery Color":/javascripts/jquery/jquery.color.js
+* "JQuery Color (color, gradient, animation)":/javascripts/jquery/jquery.color.js
 ** "Home":http://plugins.jquery.com/project/color
 ** "Demos":http://desizntech.info/demo/jQuery_color_animation/
-* "JQuery Corner":/javascripts/jquery/jquery.corner-2.0.9.js
+* "JQuery Corner (rounded corners, corners)":/javascripts/jquery/jquery.corner-2.0.9.js
 ** "Home":http://jquery.malsup.com/corner/
 ** "Repository":http://github.com/malsup/corner
-* "JQuery Cycle":/javascripts/jquery/jquery.cycle.all-2.8.6.js
+* "JQuery Cycle (animation, slideshow)":/javascripts/jquery/jquery.cycle.all-2.8.6.js
 ** "Home":http://jquery.malsup.com/cycle/
 ** "Demos":http://jquery.malsup.com/cycle/more.html?v2.23
 ** "Repository":http://github.com/malsup/cycle
-* "JQuery EasyToolTip":/javascripts/jquery/jquery.easyToolTip-1.0.js
+* "JQuery EasyToolTip (tooltip, popup)":/javascripts/jquery/jquery.easyToolTip-1.0.js
 ** "Home":http://cssglobe.com/post/4380/easy-tooltip--jquery-plugin
 ** "Demos":http://cssglobe.com/lab/easytooltip/01.html
-* "JQuery FileTree":/javascripts/jquery/jquery.fileTree-1.0.1.js
+* "JQuery FileTree (file, tree, animation, ajax)":/javascripts/jquery/jquery.fileTree-1.0.1.js
 ** "Home":http://abeautifulsite.net/2008/03/jquery-file-tree/
 ** "Demos":http://labs.abeautifulsite.net/projects/js/jquery/fileTree/demo/
-* "JQuery Form":/javascripts/jquery/jquery.form-2.4.3.js
+* "JQuery Form (ajax, form)":/javascripts/jquery/jquery.form-2.4.3.js
 ** "Home":http://jquery.malsup.com/form/
 ** "Demos":http://jquery.malsup.com/form/#ajaxForm
 ** "Repository":http://github.com/malsup/form
-* "JQuery HotKeys":/javascripts/jquery/jquery.hotkeys.js
+* "JQuery HotKeys (keyboard, mouse)":/javascripts/jquery/jquery.hotkeys.js
 ** "Home":http://code.google.com/p/js-hotkeys/
 ** "Demos":http://sites.google.com/site/jshotkeys/test-static-01.html
 ** "Repository":http://github.com/tzuryby/jquery.hotkeys
 ** "Docs":http://code.google.com/p/js-hotkeys/wiki/about
-* "JQuery HoverIntent":/javascripts/jquery/jquery.hoverIntent.js
+* "JQuery HoverIntent (physics, mouse)":/javascripts/jquery/jquery.hoverIntent.js
 ** "Home":http://cherne.net/brian/resources/jquery.hoverIntent.html
-* "JQuery JEditable":/javascripts/jquery/jquery.jeditable-1.7.2.js
+* "JQuery JEditable (in-place editing, edit, ajax)":/javascripts/jquery/jquery.jeditable-1.7.2.js
 ** "Home":http://www.appelsiini.net/projects/jeditable
 ** "Demos":http://www.appelsiini.net/projects/jeditable/default.html
 ** "Repository":http://github.com/tuupola/jquery_jeditable
-* "JQuery Lavalamp":/javascripts/jquery/jquery.lavalamp-1.3.4.js
+* "JQuery Lavalamp (animation, menu)":/javascripts/jquery/jquery.lavalamp-1.3.4.js
 ** "Home":http://nixboxdesigns.com/projects/jquery-lavalamp/
 ** "Repository":http://github.com/jtnix/jQuery-LavaLamp
-* "JQuery Magic Labels":/javascripts/jquery/jquery.magicLabels-0.6.2.js
+* "JQuery Magic Labels (form, labels, fields)":/javascripts/jquery/jquery.magicLabels-0.6.2.js
 ** "Home":http://projects.joreteg.com/jquery-magic-labels/
 ** "Demos":http://projects.joreteg.com/jquery-magic-labels/demo.html
 ** "Repository":http://github.com/HenrikJoreteg/jquery-magic-labels
-* "JQuery Pretty Checkboxes":/javascripts/jquery/jquery.prettyCheckboxes-1.1.js
+* "JQuery Pretty Checkboxes (checkbox, input, design)":/javascripts/jquery/jquery.prettyCheckboxes-1.1.js
 ** "Home":http://www.no-margin-for-errors.com/projects/prettycheckboxes/
 ** "Docs":http://www.no-margin-for-errors.com/projects/prettycheckboxes/documentation/
-* "JQuery Pretty Photo":/javascripts/jquery/jquery.prettyPhoto.js
+* "JQuery Pretty Photo (images, design)":/javascripts/jquery/jquery.prettyPhoto.js
 ** "Home":http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/
 ** "Docs":http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/documentation/
-* "JQuery ScrollTo":/javascripts/jquery/jquery.scrollTo-1.4.2.js
+* "JQuery ScrollTo (animation, scroll)":/javascripts/jquery/jquery.scrollTo-1.4.2.js
 ** "Home":http://flesler.blogspot.com/2007/10/jqueryscrollto.html
 ** "Demos":http://demos.flesler.com/jquery/scrollTo/
-* "JQuery Supersized":/javascripts/jquery/jquery.supersized-2.0.js
+* "JQuery Supersized (image, full screen, autosize)":/javascripts/jquery/jquery.supersized-2.0.js
 ** "Home":http://buildinternet.com/2009/02/supersized-full-screen-backgroundslideshow-jquery-plugin/
 ** "Demos":http://buildinternet.com/live/supersized/
-* "JQuery Transform":/javascripts/jquery/jquery.transform.js
+* "JQuery Transform (3d, animation)":/javascripts/jquery/jquery.transform.js
 ** "Home":http://www.zachstronaut.com/posts/2009/08/07/jquery-animate-css-rotate-scale.html
 ** "Repository":http://github.com/zachstronaut/jquery-animate-css-rotate-scale
-* "JQuery Upload Progress":/javascripts/jquery/jquery.uploadProgress.js
+* "JQuery Upload Progress (file upload)":/javascripts/jquery/jquery.uploadProgress.js
 ** "Home":http://drogomir.com/blog/2008/6/30/upload-progress-script-with-safari-support
 ** "Demos":http://drogomir.com/files/blog/jquery-upload-progress/example/
 ** "Repository":http://github.com/drogus/jquery-upload-progress
-* "JQuery Validate":/javascripts/jquery/jquery.validate-1.7.js
+* "JQuery Validate (validation, form)":/javascripts/jquery/jquery.validate-1.7.js
 ** "Home":http://bassistance.de/jquery-plugins/jquery-plugin-validation/
 ** "Demos":http://jquery.bassistance.de/validate/demo/
-* "jQuery HTML5 Dataset":http://www.orangesoda.net/jquery.dataset.html
+* "jQuery HTML5 Dataset (data)":http://www.orangesoda.net/jquery.dataset.html
 **  "Home":http://www.orangesoda.net/jquery.dataset.html
-* "jQuery toJSON":http://www.json.org/json2.js
-* "jQuery Class (Object Oriented jQuery)":/javascripts/jquery/jquery.class.js
+* "jQuery Class (OOP, classes)":/javascripts/jquery/jquery.class.js
 ** "Home":http://ejohn.org/blog/simple-javascript-inheritance/
-* "jQuery Classy":/javascripts/jquery/jquery.classy.js
+* "jQuery Classy (OOP, classes)":/javascripts/jquery/jquery.classy.js
 **  "Home":http://ejohn.org/blog/classy-query/
-* "jCrop":/javascripts/jquery/jquery.jcrop-0.9.8.js
+* "jCrop (images, crop)":/javascripts/jquery/jquery.jcrop-0.9.8.js
 **  "Home":http://deepliquid.com/content/Jcrop_Manual.html
 **  "Demos":http://deepliquid.com/content/Jcrop_Examples.html
-* "jQuery Cookie":/javascripts/jquery/jquery.cookie.js
+* "jQuery Cookie (browser, session, cookies)":/javascripts/jquery/jquery.cookie.js
 ** "Home":http://plugins.jquery.com/project/Cookie
-* "jQuery Scale 9 Grid":/javascripts/jquery/jquery.scale9grid-0.9.3.js
+* "jQuery Scale 9 Grid (grid, layout)":/javascripts/jquery/jquery.scale9grid-0.9.3.js
 **  "Home":http://www.hempton.com/2008/11/9-grid-scaling-support-in-javascriptcss/
 **  "Demos":http://hempton.com/examples/scale9grid/
 **  "Repository":http://code.google.com/p/scale9grid/
-* "jQuery Anytime":/javascripts/jquery/jquery.anytime-4.1.1.js
+* "jQuery Anytime (time, date)":/javascripts/jquery/jquery.anytime-4.1.1.js
 **  "Home":http://www.ama3.com/anytime/
-* "jQuery Google Feed API":/javascripts/jquery/jquery.jgFeed-1.0.js
+* "jQuery Google Feed API (feed, cross domain)":/javascripts/jquery/jquery.jgFeed-1.0.js
 **  "Home":http://www.m2volt.com/blog/2009/12/jquery-feed-reader-–-jgfeed/
-* "jQuery jParallax":/javascripts/jquery/jquery.jParallax-1.0.js
+* "jQuery jParallax (parallax, 2.5d)":/javascripts/jquery/jquery.jParallax-1.0.js
 **  "Home":http://webdev.stephband.info/parallax.html
-* "jQuery Scrolling Parallax":/javascripts/jquery/jquery.scrolling-parallax-0.1.js
+* "jQuery Scrolling Parallax (parallax, 2.5d, scroll)":/javascripts/jquery/jquery.scrolling-parallax-0.1.js
 **  "Home":http://jonraasch.com/blog/scrolling-parallax-jquery-plugin
 **  "Demos":http://dev.jonraasch.com/scrolling-parallax/examples/scrolling-parallax
-* "jQuery String methods":/javascripts/jquery/jquery.string.js
+* "jQuery String methods (string, utils)":/javascripts/jquery/jquery.string.js
 **  "Home":http://stilldesigning.com/dotstring/
-* "Uniform":/
+* "Uniform (form, design)":/
 **  "Home":http://pixelmatrixdesign.com/uniform/
-* "Nivo Slider":/javascripts/jquery/jquery.nivo-slider-2.0.js
+* "Nivo Slider (slider, slideshow, design, animation)":/javascripts/jquery/jquery.nivo-slider-2.0.js
 **  "Home":http://nivo.dev7studios.com/
 **  "Demos":http://nivo.dev7studios.com/demos/
 **  "Repository":http://github.com/gilbitron/Nivo-Slider
-* "JQTouch":/javascripts/jqtouch/jqtouch.js
+* "JQTouch (iphone, framework)":/javascripts/jqtouch/jqtouch.js
 ** "Home":http://http://jqtouch.com/
 ** "Demos":http://jqtouch.com/preview/demos/main/
 ** "Screencast":http://peepcode.com/products/jqtouch
-* "Quicksand":http://razorjack.net/quicksand/
+* "Quicksand (layout, animation, sorting)":http://razorjack.net/quicksand/
 ** "Home":http://razorjack.net/quicksand/
 ** "Docs":http://razorjack.net/quicksand/docs-and-demos.html
 ** "Repository":http://github.com/razorjack/quicksand/
-* "Google Analytics":/javascripts/jquery/jquery.google-analytics-1.1.3.js
+* "Google Analytics (google analytics)":/javascripts/jquery/jquery.google-analytics-1.1.3.js
 ** "Home":/
-* "jQuery Labelify":/javascripts/jquery/jquery.labelify.js
+* "jQuery Labelify (form, label)":/javascripts/jquery/jquery.labelify.js
 ** "Home":http://www.kryogenix.org/code/browser/labelify/
-* "jQuery Fieldtag":/javascripts/jquery/jquery.fieldtag.js
+* "jQuery Fieldtag (form, label)":/javascripts/jquery/jquery.fieldtag.js
 ** "Home":http://ajaxcssblog.com/jquery/fieldtag-watermark-inputfields/
 ** "Demos":http://sandbox.ajaxcssblog.com/jquery/jquery.fieldtag/fieldtag-demo.htm
-* "Starfield Tag Cloud (3D)":/javascripts/jquery/jquery.starfield-tag-cloud.js
+* "Starfield Tag Cloud (3d, tag cloud)":/javascripts/jquery/jquery.starfield-tag-cloud.js
 ** "Home":http://bugsoftware.co.uk/jQuery/StarfieldTagCloud/
-* "Better jQuery Label":/
-** "Home":http://www.viget.com/inspire/a-better-jquery-in-field-label-plugin/
-* "jQuery In-Field Label":/javascripts/jquery/jquery.in-field-label-0.1.2.js
+* "jQuery In-Field Label (form, label)":/javascripts/jquery/jquery.in-field-label-0.1.2.js
 ** "Home":http://fuelyourcoding.com/scripts/infield/
 ** "Repository":http://github.com/dcneiner/In-Field-Labels-jQuery-Plugin/
-* "jLabel":/javascripts/jquery/jquery.jlabel.js
+* "jLabel (form, label)":/javascripts/jquery/jquery.jlabel.js
 ** "Home":http://www.wduffy.co.uk/jlabel/
-* "Elastic TextArea":/javascripts/jquery/jquery.elastic.js
+* "Elastic TextArea (textarea, autosize)":/javascripts/jquery/jquery.elastic.js
 ** "Home":http://www.unwrongest.com/projects/elastic/
 ** "Demos":http://www.unwrongest.com/projects/elastic/#demo
 ** "Repository":http://code.google.com/p/jquery-elastic
+* "Facebox (lightbox, popup)":/
+** "Home":http://defunkt.github.com/facebox/
+** "Repository":http://github.com/defunkt/facebox
+* "Primer (flash, graphics)":/
+** "Repository":http://github.com/mojombo/primer
+* "jQuery Timeago (timer, counter)":/
+** "Home":http://timeago.yarp.com/
+** "Repository":http://github.com/rmm5t/jquery-timeago
+* "jQuery Page Slide (slider, slideshow)":/
+** "Demos":http://derekperez.com/jquery-pageslide/demo/
+** "Repository":http://github.com/srobbin/jquery-pageslide
+* "jQuery Glow (animation, effects)":/
+** "Demos":http://nakajima.github.com/jquery-glow/
+** "Repository":http://github.com/nakajima/jquery-glow
+* "jQuery MouseWheel (mouse, scroll)":/
+** "Home":http://plugins.jquery.com/project/mousewheel
+** "Demos":http://brandonaaron.net/code/mousewheel/demos
+** "Repository":http://github.com/brandonaaron/jquery-mousewheel
+* "TinyTips (tooltips)":/
+** "Home":http://www.mikemerritt.me/blog/jquery-plugin-tinytips-1-1/
+** "Demos":http://www.mikemerritt.me/demos/tt-1-1/index.html
+* "TipTip (tooltip)":/
+** "Home":http://code.drewwilson.com/entry/tiptip-jquery-plugin
+* "jQuery LiveFilter (sorting, animation)":/
+** "Home":http://www.mikemerritt.me/blog/jquery-plugin-livefilter-1-2/
+** "Demos":http://www.mikemerritt.me/demos/lf-1-2/list.html
+* "jQuery LiveUpdate (sorting)":/
+** "Home":http://orderedlist.com/our-writing/blog/articles/live-search-with-quicksilver-style-for-jquery/
+** "Demos":http://orderedlist.com/demos/quicksilverjs/jquery.html
+* "jQuery Autosuggest (autosuggest)":/
+** "Home":http://code.drewwilson.com/entry/autosuggest-jquery-plugin
+* "jQuery Table Sorter (sorting)":/
+** "Home":http://www.compulsivoco.com/2008/08/tablesorter-filter-results-based-on-search-string/
+** "Docs":http://tablesorter.com/docs/
+** "Repository":http://github.com/jbritten/jquery-tablesorter-filter
+* "jQuery Spellcheck (spellcheck)":/
+** "Home":http://plugins.jquery.com/project/spellcheck
+** "Demos":http://brandonaaron.net/code/spellcheck/demos
+* "JSTree (file, tree)":/
+** "Home":http://www.jstree.com/
+** "Docs":http://www.jstree.com/documentation
+** "Demos":http://www.jstree.com/demo
+** "Repository":http://github.com/brandonaaron/jquery-spellcheck
+* "URLInternal (url, parsing)":/
+** "Home":http://benalman.com/projects/jquery-urlinternal-plugin/
+** "Docs":http://benalman.com/code/projects/jquery-urlinternal/docs/files/jquery-ba-urlinternal-js.html
+** "Repository":http://github.com/cowboy/jquery-urlinternal/
+* "jQuery BBQ (url, browser history)":/
+** "Home":http://benalman.com/projects/jquery-bbq-plugin/
+* "HighlightRegex (regular expressions, text highlighting)":/
+** "Home":http://plugins.jquery.com/project/highlightRegex
+** "Demos":http://jacobrothstein.com/highlightRegex/demonstration.html
+** "Repository":http://github.com/jbr/jQuery.highlightRegex
+* "jQuery Simply Countable (counter)":/
+** "Repository":http://github.com/aaronrussell/jquery-simply-countable/
+* "Overscroll (iphone, throwing, drag and drop, animation, physics)":/
+** "Home":http://www.azoffdesign.com/plugins/js/overscroll
+** "Repository":http://github.com/azoff/Overscroll
+* "jQuery SimpleTooltip (tooltip)":/javascripts/jquery/jquery.simple-tooltip.js
+** "Home":http://dev.mariusilie.net/content/simple-tooltip-jquery-plugin
+* "jQuery PostMessage (ajax, cross domain, security)":/
+** "Home":http://benalman.com/projects/jquery-postmessage-plugin/
+** "Repository":http://github.com/cowboy/jquery-postmessage
+* "TagIt (autocomplete)":/
+** "Demos":http://levycarneiro.com/projects/tag-it/example.html
+** "Repository":http://github.com/levycarneiro/tag-it
+* "jQuery Approach (physics, mouse, animation)":/
+** "Home":http://srobbin.com/jquery-plugins/jquery-approach/
+** "Demo":http://srobbin.com/jquery-plugins/jquery-approach/#demo
+** "Repository":http://github.com/srobbin/jquery-approach/
+* "jQuery Image Preview (image, popup)":/
+** "Home":http://james.padolsey.com/demos/imgPreview/full/
+* "jQuery Inheritance (OOP)":/
+** "Repository":http://code.google.com/p/jquery-inheritance/
+* "DatePicker (date picker)":/
+** "Home":http://eyecon.ro/datepicker/
+* "FullScreenr (image, autosize, full screen)":/
+** "Home":http://nanotux.com/blog/fullscreen/
+** "Demos":http://nanotux.com/plugins/fullscreenr/index.html

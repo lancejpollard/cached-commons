@@ -2,4 +2,4 @@
 title: Cached Commons
 ---
 
-Cached Commons is a collection of uncompressed and compressed source files for common libraries we all use.  Here's a list of the projects currently hosted, and some helpful links and demos to the projects I've found along the way.  If you need to minify or prettify javascript or css, you can do that on "SeeSaw":http://meetseesaw.com.
+Cached Commons is a collection of user-contributed javascript libraries cached, optimized, and hosted on Github's fast CDN.  If a library is missing from this collection, "post a request on Github":http://github.com/viatropos/cached-commons/issues and we'll add it immediately.  The "readme":/readme has all the details.

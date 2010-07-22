@@ -20,11 +20,12 @@
 %script{ :type => "text/javascript", :src => "#{cache_root}/javascripts/jquery/jquery-1.4.2-min.js" }
 %script{ :type => "text/javascript", :src => "#{cache_root}/javascripts/jquery/jquery.form-2.4.3-min.js" }
 %script{ :type => "text/javascript", :src => "http://www.kryogenix.org/code/browser/labelify/jquery.labelify.js" }
+%script{ :type => "text/javascript", :src => "/javascripts/jquery.quicksand.js" }
 %script{ :type => "text/javascript", :src => "/javascripts/elastic.js" }
 %script{ :type => "text/javascript", :src => "/javascripts/application.js" }
 
 / local business card: http://microformats.org/code/hcard/creator
 %link{:rel => :profile, :href => "http://microformats.org/profile/hcard"}
 / icons
-/ %link{:rel => "shortcut icon", :href => "#{c("icons.favicon")}", :type => "image/x-icon"}
-/ %link{:rel => "apple-touch-icon", :href => "#{c("icons.touch_icon")}", :title => "#{c("metadata.title")}"}/
+%link{:rel => "shortcut icon", :href => "#{c("icons.favicon")}", :type => "image/x-icon"}
+%link{:rel => "apple-touch-icon", :href => "#{c("icons.touch_icon")}", :title => "#{c("metadata.title")}"}/

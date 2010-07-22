@@ -55,5 +55,5 @@ links:
   website: "http://www.ilove4d.com"
   google_apps: "http://www.google.com/a/ilove4d.com"
 icons:
-  favicon: /images/favicon.ico
-  touch_icon: /images/touch-icon.jpg
+  favicon: /images/cached-commons-favicon.png
+  touch_icon: /images/cached-commons-icon.png

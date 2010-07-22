@@ -24,8 +24,11 @@
         $("> li", list).each(function(j_index, j_element) {
           var item = $(j_element);
           var link = $("> a", item);
-          link.after("<a href='" + link.attr("href").replace(/\.js$/, "-min.js") + "'>(min)</a>)");
-
+          var tags = link.attr("title");
+          if (tags && tags != "") {
+            link.after("<small class='tags'>" + tags + "</small>");
+          }
+          link.after("<a href='" + link.attr("href").replace(/\.js$/, "-min.js") + "'>(min)</a>");
           var title = link.text();
           var id = title.toLowerCase().replace(/[\s|\-|\_]+/g, "-");
           item.attr("id", id);
@@ -150,6 +153,8 @@
         var options = $.cachedCommons.settings.controls;
         options.css("display", "block");
         
+        $(".how-to").hide();
+        
         var code    = $.cachedCommons.settings.code;
         
         $.cachedCommons.box.clear();
@@ -245,12 +250,11 @@ $(document).ready(function() {
 	
 	$("form").ajaxForm();
 	
-	if (window.location.pathname == "/")
+	// only for the home page
+	if (window.location.pathname == "/") {
 	  $(".downloadable").css("visibility", "visible").css("opacity", 0).animate({opacity:1}, 400);
-
-  $("textarea").labelify({
-    labelledClass: "label-highlight"
-  });
+	  $(".how-to").css("display", "block");
+	}
   
   var $window = $(window);
   
@@ -264,5 +268,11 @@ $(document).ready(function() {
   }
   
   positionFixed();
+  
+  $(".post").each(function(index, element) {
+    $('input.tags', element).liveUpdate($('.posts', element), function() {
+      return $("> a", this).text().toLowerCase() + $("> small", this).text().toLowerCase();
+    })
+  });
   
 });
