@@ -103,7 +103,7 @@ html, body, .document {
       color: #9a9a9a; }
   .top .code {
     width: 945px;
-    margin: 10px 10px 40px 10px;
+    margin: 10px 10px 10px 10px;
     padding: 5px;
     text-align: right;
     background: white;
@@ -112,6 +112,7 @@ html, body, .document {
     border: 1px solid #cfcfcf;
     font-size: 22px;
     display: none;
+    overflow: hidden;
     color: #aaaaaa; }
     .top .code code {
       color: #aaaaaa;

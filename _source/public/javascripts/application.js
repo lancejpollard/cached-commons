@@ -1,53 +1,231 @@
 // http://stackoverflow.com/questions/1134976/jquery-sort-list-items-alphabetically
-$(document).ready(function() {
-  var script_input = $(".code code");
+(function($) {
+  $.cachedCommons = {
+    settings: {},
+    setup: function(options) {
+      $.cachedCommons.settings = options;
+      
+      var button = $.cachedCommons.settings.code_button = $("<figure class='view-code'>Copy Tags</figure>");
+      button.css("opacity", 0)
+      button.css("display", "none");
+      $(".document").append(button);
+      
+      $.cachedCommons.classify();
+    },
+    classify: function() {
+      $(".content > ul").each(function(index, element) {
+        var list = $(element);
+        list.addClass("posts");
 
-  $view_code = $("<figure class='view-code'>Copy Tags</figure>");
-  $view_code.css("opacity", 0)
-  $view_code.css("display", "none");
-  $(".document").append($view_code);
-  $view_code.click(function() {
-    //$(".options").css("display", "block");
-    $("textarea.code").css("display", "block").val(script_input.text());
-    var new_height = $("div.code").height() * 1.2;
-    $("textarea.code").animate({height:new_height, opacity:1}, 200);
-    $('html, body').animate({scrollTop:0}, 300, function() {
-      $("textarea.code").select();
-    })
-    
+        // var cloned_list = list.clone();
+        // cloned_list.css("display", "none");
+        // list.append(cloned_list);
+
+        $("> li", list).each(function(j_index, j_element) {
+          var item = $(j_element);
+          var link = $("> a", item);
+          link.after("<a href='" + link.attr("href").replace(/\.js$/, "-min.js") + "'>(min)</a>)");
+
+          var title = link.text();
+          var id = title.toLowerCase().replace(/[\s|\-|\_]+/g, "-");
+          item.attr("id", id);
+          item.prepend("<div class='selector' id='" + id + "_selector'>selected</div>");
+          item.addClass("post_item");
+        });
+
+        $("a", list).each(function(j_index, j_element) {
+          $(j_element).attr("target", "_blank");
+        });
+
+      });
+    },
+    scripts: [],
+    select_count: 0,
+    code_button: {
+      show: function() {
+        var button = $.cachedCommons.settings.code_button;
+	      if (button.css("display") == "none") {
+	        button.css("display", "block");
+	      }
+	      button.stop().animate({opacity:1}, 300);
+      },
+      hide: function() {
+        var button = $.cachedCommons.settings.code_button;
+	      button.stop().animate({opacity:0}, 300);
+      }
+    },
+    list: {
+      attributes: function(target) {
+  	    var id = target.attr("id");
+  	    var selector_id = "#" + id + "_selector";
+        var url = "http://cachedcommons.org" + $("> a", target).attr("href");
+        var script_tag = '<script src="' + url + '" type="text/javascript"></script>';
+        return {id:id, selector_id:selector_id, url:url, script_tag:script_tag};
+      },
+      script_for: function(target) {
+  	    var id = target.attr("id");
+        var url = "http://cachedcommons.org" + $("> a", target).attr("href");
+        var script_tag = '<script src="' + url + '" type="text/javascript"></script>';
+        return script_tag;
+      },
+      items: function() {
+        
+      },
+      // 1. changes bar background
+      // 2. adds to scripts array
+      // 3. adds class to list item
+      select: function(target) {
+        if (target.hasClass("selected"))
+          return;
+          
+        // 0. calculate attributes
+        var attributes = $.cachedCommons.list.attributes(target);
+        
+        // 1. set class
+        target.addClass("selected");
+        
+        // 2. show selector
+	      $(attributes.selector_id).css("visibility", "visible");
+	      
+	      $.cachedCommons.select_count++;
+
+	      // 3. show code button
+	      if ($.cachedCommons.select_count == 1)
+	        $.cachedCommons.code_button.show();
+      },
+      deselect: function(target) {
+        var attributes = $.cachedCommons.list.attributes(target);
+        
+  	    // 1. set class
+  	    target.removeClass("selected");
+  	    
+  	    // 2. hide selector
+  	    $(attributes.selector_id).css("visibility", "hidden");
+  	    
+  	    $.cachedCommons.select_count--;
+  	    
+  	    // 3. hide code button
+  	    if ($.cachedCommons.select_count == 0) {
+  	      $.cachedCommons.code_button.hide();
+  	    }
+      },
+      selected: function() {
+        return $(".post_item.selected");
+      },
+      deselected: function() {
+        return $(".post_item").not(".selected");
+      },
+      selectAll: function() {
+        
+      },
+      deselectAll: function() {
+        $(".post_item").each(function(index, element) {
+          $.cachedCommons.list.deselect($(element));
+        });
+        $.cachedCommons.select_count = 0;
+      }
+    },
+    box: {
+      set: function() {
+        $.cachedCommons.list.selected().each(function(index, element) {
+          var script_tag = $.cachedCommons.list.script_for($(element));
+  	      if ($.cachedCommons.scripts.indexOf(script_tag) == -1) {
+            $.cachedCommons.scripts.push(script_tag);
+          }
+        });
+        
+	      var code = $("code", $.cachedCommons.settings.code);
+  	    code.addClass("with-code");
+	      code.text($.cachedCommons.scripts.join("\n"));
+      },
+      clear: function() {
+        $.cachedCommons.scripts = [];
+	      var code = $("code", $.cachedCommons.settings.code);
+  	    code.text("");
+      },
+      select: function() {
+        
+      },
+      show: function() {
+        var options = $.cachedCommons.settings.controls;
+        options.css("display", "block");
+        
+        var code    = $.cachedCommons.settings.code;
+        
+        $.cachedCommons.box.clear();
+        $.cachedCommons.box.set();
+        
+        var box     = $.cachedCommons.settings.box;
+        box.css("display", "block").val($("code", code).text());
+        
+        var new_height = (code.height() * 1.05) + 20;
+        box.stop().animate({height:new_height, opacity:1}, 200);
+        
+        $('html, body').stop().animate({scrollTop:0}, 300, function() {
+          box.select();
+        });
+      },
+      hide: function() {
+        var box = $.cachedCommons.settings.box;
+        box.stop().animate({height:0}, 300, function() {
+          $.cachedCommons.box.clear();
+          box.css("display", "none");
+          var options = $.cachedCommons.settings.controls;
+          options.css("display", "none");
+          $.cachedCommons.list.deselectAll();
+        });
+      }
+    },
+    controls: {
+      state: "html",
+      all: function() {
+        $.cachedCommons.list.deselected().each(function(index, element) {
+          $.cachedCommons.list.select($(element));
+        });
+        
+        $.cachedCommons.box.show();
+      },
+      clear: function() {
+        $.cachedCommons.box.hide();
+      },
+      html: function() {
+        if ($.cachedCommons.controls.state == "html")
+          return;
+          
+        var box = $.cachedCommons.settings.box;
+        var code = $("code", code).text();
+        alert(code)
+      },
+      haml: function() {
+        if ($.cachedCommons.controls.state == "haml")
+          return;
+        
+      },
+      rails: function() {
+        if ($.cachedCommons.controls.state == "rails")
+          return;
+        
+      }
+    }
+  };
+})(jQuery);
+
+$(document).ready(function() {
+  $.cachedCommons.setup({
+    box: $("textarea.code"),
+    code: $("div.code"),
+    window: $(window),
+    controls: $(".options"),
+    content: $(".content")
   });
+  var script_input = $(".code code");
+  
+  $.cachedCommons.settings.code_button.click(function() { $.cachedCommons.box.show(); });
   
   $(".options a").click(function() {
     var link = $(this).attr("href").replace("/", "");
-    if (link == "all") {
-    }
+    $.cachedCommons.controls[link]();
     return false;
-  });
-  
-  $(".content > ul").each(function(index, element) {
-    var list = $(element);
-    list.addClass("posts");
-    
-    // var cloned_list = list.clone();
-    // cloned_list.css("display", "none");
-    // list.append(cloned_list);
-    
-    $("> li", list).each(function(j_index, j_element) {
-      var item = $(j_element);
-      var link = $("> a", item);
-      link.after("<a href='" + link.attr("href").replace(/\.js$/, "-min.js") + "'>(min)</a>)");
-      
-      var title = link.text();
-      var id = title.toLowerCase().replace(/[\s|\-|\_]+/g, "-");
-      item.attr("id", id);
-      item.prepend("<div class='selector' id='" + id + "_selector'>selected</div>");
-      item.addClass("post_item");
-    });
-    
-    $("a", list).each(function(j_index, j_element) {
-      $(j_element).attr("target", "_blank");
-    });
-    
   });
   
   var pushed_scripts_index = {};
@@ -56,28 +234,10 @@ $(document).ready(function() {
 	$(".post_item").click(function() {
 	  var target = $(event.target);
 	  if (target.is("li")) {
-	    var id = target.attr("id");
-	    var selector_id = "#" + id + "_selector";
-      var url = "http://cachedcommons.org" + $("> a", target).attr("href");
-      var script_tag = '<script src="' + url + '" type="text/javascript"></script>';
 	    if (target.hasClass("selected")) {
-	      target.removeClass("selected");
-	      $(selector_id).css("visibility", "hidden");
-	      pushed_scripts.splice(pushed_scripts.indexOf(script_tag), 1);
-	      delete pushed_scripts_index[id];
-	      script_input.text(pushed_scripts.join("\n"));
+	      $.cachedCommons.list.deselect(target);
 	    } else {
-	      target.addClass("selected");
-	      $(selector_id).css("visibility", "visible");
-	      if ($view_code.css("display") == "none") {
-	        $view_code.css("display", "block").animate({opacity:1}, 300);
-	      }
-	      if (!pushed_scripts_index[id]) {
-  	      pushed_scripts.push(script_tag);
-  	      pushed_scripts_index[id] = pushed_scripts.length - 1;
-    	    script_input.addClass("with-code");
-  	      script_input.text(pushed_scripts.join("\n"));
-	      }
+	      $.cachedCommons.list.select(target);
 	    }
 	    return false;
 	  }
@@ -99,8 +259,8 @@ $(document).ready(function() {
   });
   
   function positionFixed() {
-    var top = $window.scrollTop() + ($window.height() / 2) - ($view_code.height() / 2);
-    $view_code.css("top", top + "px");
+    var top = $window.scrollTop() + ($window.height() / 2) - ($.cachedCommons.settings.code_button.height() / 2);
+    $.cachedCommons.settings.code_button.css("top", top + "px");
   }
   
   positionFixed();

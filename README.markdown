@@ -35,3 +35,4 @@ The source of the [Cached Commons](http://cachedcommons.org) is [here](http://gi
 - [Boxy](http://onehackoranother.com/projects/jquery/boxy/)
 - [SimpleModal](http://www.ericmmartin.com/projects/simplemodal/)
 - http://bradleysepos.com/projects/jquery/clipboard/
+- http://yuiblog.com/blog/2007/06/12/module-pattern/
