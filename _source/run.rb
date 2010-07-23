@@ -2,7 +2,7 @@ require 'rubygems'
 require 'open-uri'
 require 'broadway'
 
-site = Broadway.build(:source => "posts", :settings => "_config.yml", :destination => "../_posts")
+site = Broadway.build(:source => "posts", :settings => "_config.yml", :destination => "..")
 
 def error?(response, path, whiny = true)
   if !response.is_a?(Net::HTTPSuccess)
@@ -13,7 +13,7 @@ def error?(response, path, whiny = true)
   false
 end
 
-paths = ["/", "/tips", "/resources"]
+paths = ["/", "/tips", "/readme"]
 
 url = URI.parse("http://localhost:4567")
 begin
@@ -24,7 +24,7 @@ begin
       # if the file doesn't exist or is not rendered correctly
       next if error?(response, path, false)
       FileUtils.mkdir_p(write_to)
-      name = File.join(write_to, "index.html")
+      name = "#{write_to}.html"# File.join(write_to, "index.html")
       File.open(name, "w") { |f| f.write(response.body) }
     end
   end
