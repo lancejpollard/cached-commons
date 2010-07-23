@@ -1,4 +1,4 @@
-# Cached Commons
+# Cached Commons <img src="http://cachedcommons.org/images/cached-commons-favicon.png" alt="favicon"/>
 
 > Caching and Compressing Javascripts and Stylesheets since 2009
 
