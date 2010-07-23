@@ -3,3 +3,10 @@ config/**/*
 _source/.sass-cache
 _source/.sass-cache/*
 _source/.sass-cache/**/*
+_source
+_source/*
+_source/**/*
+_posts
+_posts/*
+_posts/**/*
+*.html
