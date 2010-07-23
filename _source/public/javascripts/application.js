@@ -29,13 +29,12 @@ $(document).ready(function() {
     }
   }
   
-  var selectables = [];
-  $(".post_item").each(function(index, element) {
-    selectables.push($(element).attr("id"));
-  });
+  var selectables = $(".post_item").map(function(index, element) { return element.id }).get();
   
-  $(window).resize(adjustFooter);
-  adjustFooter();
+  if (start_at < $(window).height()) {
+    $(window).resize(adjustFooter);
+    adjustFooter();
+  }
   
   $("code").addClass("prettyprint");
   prettyPrint();
@@ -79,15 +78,15 @@ $(document).ready(function() {
     var code_id = focused.attr("id") + "-code";
     $.ajax({
       url: url,
-      datatype: "html",
+      dataType: "text",
       success: function(data) {
         var already_processed = $(".prettyprint");
         already_processed.removeClass("prettyprint");
         var code_view = $("<pre id='" + code_id + "' class='code-view'><code class='prettyprint'></code></pre>");
-        $("code", code_view).html(data);
+        $("code", code_view).text(data);
         focused.after(code_view);
         prettyPrint();
-        already_processed.addClass(".prettyPrint");
+        already_processed.addClass("prettyPrint");
         var top = ($(window).height()/2) - focused.height() - code_view.height()/2;
         var offset = focused.offset().top - top;
         $(window).scrollTop(offset);

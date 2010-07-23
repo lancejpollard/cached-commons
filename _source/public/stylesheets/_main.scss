@@ -35,6 +35,10 @@
     @include clearfix;
     position: relative;
     z-index: 1;
+    > * {
+      padding: 0;
+      margin: 0;
+    }
     li {
       padding: 10px 0px;
       border-top: 1px solid $border-color;
@@ -63,10 +67,10 @@
           }
         }
       }
-      @include clearfix;
       ul {
         text-align: right;
         float: right;
+        display: inline;
         li {
           display: inline-block;
           border: none;

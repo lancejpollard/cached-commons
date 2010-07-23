@@ -31,6 +31,13 @@ get "/readme" do
     :content => IO.read("../README.markdown")}
 end
 
+get "/load-me" do
+  "alert('javascript loaded')"
+end
+get "/test" do
+  IO.read("test.html")
+end
+
 get "/*" do
   if File.extname(params["splat"].join("/")).to_s.downcase =~ /\.js/
     file = "../#{params["splat"].join("/")}".squeeze("/")

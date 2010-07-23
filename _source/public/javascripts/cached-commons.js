@@ -32,7 +32,7 @@
       });
     },
     selectable: function() {
-    	$(".post_item").click(function() {
+    	$(".post_item").click(function(event) {
     	  var target = $(event.target);
     	  if (target.is("li")) {
     	    if (target.hasClass("selected")) {

@@ -1,6 +1,10 @@
 * {
   font-family: "Helvetica", "sans-serif";
-  color: white; }
+  color: white;
+  font-size: .75em; }
+
+body {
+  font-size: 1em; }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal; }
@@ -54,6 +58,7 @@ pre {
   font-size: 12px;
   background: #161616; }
   pre * {
+    line-height: 1.3 !important;
     font-family: Monaco, sans-serif; }
 
 .str {
@@ -165,7 +170,7 @@ html, body, .document {
     float: left; }
   .top h1 {
     padding-top: 10px;
-    font-size: 100px;
+    font-size: 6em;
     letter-spacing: -8px;
     color: #841f25;
     font-weight: bold; }
@@ -196,7 +201,7 @@ html, body, .document {
       font-size: 10px; }
   .top .details {
     float: right;
-    width: 690px;
+    width: 660px;
     padding: 10px 20px 10px 10px; }
     .top .details * {
       color: #9a9a9a; }
@@ -282,6 +287,9 @@ html, body, .document {
     height: 0;
     clear: both;
     visibility: hidden; }
+  .main.index ul > * {
+    padding: 0;
+    margin: 0; }
   .main.index ul li {
     padding: 10px 0px;
     border-top: 1px solid #cfcfcf;
@@ -303,15 +311,10 @@ html, body, .document {
         background: inherit; }
         .main.index ul li.focused li a:hover, .main.index ul li.focused li a:visited {
           color: #272727; }
-    .main.index ul li:after {
-      content: ".";
-      display: block;
-      height: 0;
-      clear: both;
-      visibility: hidden; }
     .main.index ul li ul {
       text-align: right;
-      float: right; }
+      float: right;
+      display: inline; }
       .main.index ul li ul li {
         display: inline-block;
         border: none;
