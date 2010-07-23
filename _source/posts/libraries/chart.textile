@@ -1,0 +1,22 @@
+---
+title: Visualization
+---
+
+* "Highcharts":/javascripts/visualization/highcharts-2.0.1.js
+** "Home":http://www.highcharts.com/
+** "Demos":http://www.highcharts.com/demo/
+** "Docs":http://www.highcharts.com/documentation/how-to-use
+* "jqPlot":/javascripts/visualization/jqplot-0.9.7.js
+** "Home":http://www.jqplot.com/
+** "Demos":http://www.jqplot.com/tests/
+** "Docs":http://www.jqplot.com/docs/files/usage-txt.html
+* "Raphael":/javascripts/visualization/raphael-0.8.7.js
+** "Home":http://raphaeljs.com/
+** "Docs":http://raphaeljs.com/reference.html
+** "Repository":http://github.com/DmitryBaranovskiy/raphael
+** "Demos":http://raphaeljs.com/
+* "gRaphael":/javascripts/visualization/highcharts-2.0.1.js
+** "Home":http://g.raphaeljs.com/
+* "Google Charts":/
+** "Home":http://plugins.jquery.com/project/gchart
+** "Demos":http://keith-wood.name/gChart.html

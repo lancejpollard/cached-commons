@@ -1,0 +1,22 @@
+<!DOCTYPE html> 
+<html xmlns='http://www.w3.org/1999/xhtml'> 
+  <head> 
+    <title>Test</title> 
+    <script src='/javascripts/jquery/jquery-1.4.2.js' type='text/javascript'></script> 
+    <script type="text/javascript">
+      $(document).ready(function() {
+      alert("done")
+        $.ajax({
+          url: "/javascripts/jquery/jquery.anytime-4.1.1.js",
+          dataType: "text",
+          success: function(data) {
+            alert("success");
+          }
+        })
+      });
+    </script>
+  </head> 
+  <body id='body'>
+    
+  </body> 
+</html>

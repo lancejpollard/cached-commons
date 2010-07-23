@@ -1,0 +1,57 @@
+.header {
+  background: $main-color;
+  padding: 5px 0px;
+  .navigation {
+  }
+  h1 {
+    font-size: 20px;
+  }
+  .logo {
+    float: left;
+  }
+  .navigation {
+    text-align: right;
+    float: right;
+    padding-top: 2px;
+    ul {
+      li {
+        display: inline;
+        padding: 0px 0px 0px 20px;
+      }
+    }
+  }
+  @include clearfix;
+}
+
+.footer {
+  margin-top: 40px;
+  background: $main-color;
+  padding: 5px 0px;
+  text-align: right;
+}
+
+.how-to {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px;
+  display: none;
+  .step {
+    vertical-align: middle;
+    background: $extra-color;
+    margin: 5px;
+    width: 300px;
+    height: 100px;
+    display: inline-block;
+    p {
+      height: 100px;
+      width: 300px;
+      display: table;
+      font-size: 20px;
+      padding: 10px;
+      span {
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
+  }
+}
