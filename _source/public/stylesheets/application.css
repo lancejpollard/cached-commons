@@ -179,6 +179,30 @@ html, body, .document {
   text-align: left;
   font-size: 24px; }
 
+.main * {
+  color: #7a7a7a; }
+.main.readme ul, .main.readme ol {
+  margin: 5px 0px 5px 20px;
+  padding: 0px; }
+.main.readme p {
+  margin: 10px; }
+.main.readme h1, .main.readme h2, .main.readme h3, .main.readme h4 {
+  margin: 20px 0px; }
+.main.readme h1 {
+  font-size: 48px;
+  border-bottom: 1px solid #cfcfcf; }
+.main.readme h2 {
+  font-size: 30px; }
+.main.readme a {
+  text-decoration: underline; }
+.main.readme blockquote * {
+  font-style: italic; }
+.main.readme pre {
+  padding: 5px;
+  background: #f7f7f7; }
+  .main.readme pre code {
+    color: #841f25; }
+
 .main.index .post {
   border-bottom: 10px solid #cfcfcf; }
   .main.index .post .kind {
@@ -285,27 +309,3 @@ html, body, .document {
   -webkit-transform: rotate(90deg);
   -o-transform: rotate(90deg);
   -ms-transform: rotate(90deg); }
-
-.main * {
-  color: #7a7a7a; }
-.main.readme ul, .main.readme ol {
-  margin: 5px 0px 5px 20px;
-  padding: 0px; }
-.main.readme p {
-  margin: 10px; }
-.main.readme h1, .main.readme h2, .main.readme h3, .main.readme h4 {
-  margin: 20px 0px; }
-.main.readme h1 {
-  font-size: 48px;
-  border-bottom: 1px solid #cfcfcf; }
-.main.readme h2 {
-  font-size: 30px; }
-.main.readme a {
-  text-decoration: underline; }
-.main.readme blockquote * {
-  font-style: italic; }
-.main.readme pre {
-  padding: 5px;
-  background: #f7f7f7; }
-  .main.readme pre code {
-    color: #841f25; }

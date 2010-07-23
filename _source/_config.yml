@@ -34,6 +34,8 @@ metadata:
   country: "United States"
   classification: Techonology and Innovation
   keywords: "Javascript Compression, CSS Compression, YUI Compressor, Online YUI Compressor, Compress, Optimize, gzip, gzip headers"
+  google_analytics: "UA-15601175-12"
+  
 authors:
   -
     name: Lance Pollard

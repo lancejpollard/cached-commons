@@ -34,16 +34,17 @@
         .details
           :textile
             #{site.find_post_by_path("/cached-commons").read}
-      .how-to
-        %figure.step
-          %p
-            %span Click titles for direct link to code (and minified version)
-        %figure.step
-          %p
-            %span Click rows to generate copy/pastable script tags
-        %figure.step
-          %p
-            %span Click links for Home, Docs, Source, and Demos
+      -#
+        .how-to
+          %figure.step
+            %p
+              %span Click titles for direct link to code (and minified version)
+          %figure.step
+            %p
+              %span Click rows to generate copy/pastable script tags
+          %figure.step
+            %p
+              %span Click links for Home, Docs, Source, and Demos
       .code
         %pre
           %code
