@@ -9,4 +9,7 @@ _source/**/*
 _posts
 _posts/*
 _posts/**/*
+public
+public/*
+public/**/*
 *.html
