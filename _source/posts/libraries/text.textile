@@ -14,6 +14,7 @@ title: Text, Text Editors, and Markup
 ** "Homepage":http://documentcloud.github.com/underscore/
 ** "Repository":http://github.com/documentcloud/underscore/
 * "Prettify":/javascripts/text/prettify.js
+** "Docs":http://google-code-prettify.googlecode.com/svn/trunk/README.html
 ** "Repository":http://code.google.com/p/google-code-prettify/
 * "SyntaxHighlighter":/
 ** "Home":http://alexgorbatchev.com/SyntaxHighlighter/

@@ -217,3 +217,6 @@ title: JQuery and Plugins
 * "FullScreenr (image, autosize, full screen)":/
 ** "Home":http://nanotux.com/blog/fullscreen/
 ** "Demos":http://nanotux.com/plugins/fullscreenr/index.html
+* "Superfish (menu, animation)":/
+** "Home":http://users.tpg.com.au/j_birch/plugins/superfish/
+** "Demos":http://users.tpg.com.au/j_birch/plugins/superfish/#examples

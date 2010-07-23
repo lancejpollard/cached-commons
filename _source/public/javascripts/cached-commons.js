@@ -73,6 +73,7 @@
 
         $("> li", list).each(function(j_index, j_element) {
           var item = $(j_element);
+          
           var link = $("> a", item);
           var tags = link.attr("title");
           if (tags && tags != "") {
@@ -80,7 +81,7 @@
           }
           link.after("<a href='" + link.attr("href").replace(/\.js$/, "-min.js") + "'>(min)</a>");
           var title = link.text();
-          var id = title.toLowerCase().replace(/[\s|\-|\_]+/g, "-");
+          var id = title.toLowerCase().replace(/[\s|\-|\_\.\,]+/g, "-") + "-post";
           item.attr("id", id);
           item.prepend("<div class='selector' id='" + id + "_selector'>selected</div>");
           item.addClass("post_item");
@@ -128,6 +129,10 @@
       // 2. adds to scripts array
       // 3. adds class to list item
       select: function(target) {
+        $(".post_item").removeClass("focused");
+        target.addClass("focused");
+        var code_view = $("#code-view");
+	      code_view.css("display", "none");
         if (target.hasClass("selected"))
           return;
           

@@ -1,40 +1,3 @@
-.main {
-  * {
-    color: #7a7a7a;
-  }
-  &.readme {
-    ul, ol {
-      margin: 5px 0px 5px 20px;
-      padding: 0px;
-    }
-    p {
-      margin: 10px;
-    }
-    h1, h2, h3, h4 {
-      margin: 20px 0px;
-    }
-    h1 {
-      font-size: 48px;
-      border-bottom: 1px solid $border-color;
-    }
-    h2 {
-      font-size: 30px;
-    }
-    a {
-      text-decoration: underline;
-    }
-    blockquote * {
-      font-style: italic;
-    }
-    pre {
-      padding: 5px;
-      code {
-        color: $accent-color;
-      }
-      background: #f7f7f7;
-    }
-  }
-}
 .main.index {
   .post {
     border-bottom: 10px solid $border-color;
@@ -91,6 +54,15 @@
       &.selected {
         background: #f7f7f7;
       }
+      &.focused {
+        background: $extra-color;
+        li {
+          background: inherit;
+          a:hover, a:visited {
+            color: $main-color;
+          }
+        }
+      }
       @include clearfix;
       ul {
         text-align: right;
@@ -106,7 +78,7 @@
             font-size: 14px;
           }
           a:hover, a:visited {
-            color: $extra-color;
+            color: #a7a7a7;
           }
           &:last-child {
             border: none;
@@ -140,4 +112,14 @@
   text-transform: uppercase;
   padding: 5px;
   @include rotate(90deg);
+}
+
+#readme-body, #tips-body {
+  .downloadable {
+    display: none;
+  }
+}
+
+textarea {
+  border: 1px solid $border-color;
 }
