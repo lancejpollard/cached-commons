@@ -58,6 +58,8 @@ The source of the [Cached Commons](http://cachedcommons.org) is [here](http://gi
 - http://yuiblog.com/blog/2007/06/12/module-pattern/
 - [Spritely](http://www.spritely.net/)
 - [Range Input](http://flowplayer.org/tools/demos/rangeinput/)
+- [JSBeautifier](http://jsbeautifier.org/)
+- [jQuery Globalization](http://github.com/nje/jquery-glob)
 
 ## Tests
 

@@ -2,7 +2,7 @@
 title: Text, Text Editors, and Markup
 ---
 
-* "Cufon":/
+* "Cufon":/javascripts/text/cufon-yui-1.0.9.js
 ** "Homepage":http://cufon.shoqolate.com/generate/
 ** "Repository":http://github.com/sorccu/cufon
 * "Showdown":/javascripts/text/showdown.js
@@ -10,16 +10,14 @@ title: Text, Text Editors, and Markup
 * "WMD Editor":/javascripts/text/wmd/wmd.js
 ** "Homepage":http://wmd-editor.com/
 ** "Demo":http://wmd-editor.com/demo
-* "Underscore":/
+* "Underscore":/javascripts/text/underscore-1.0.4.js
 ** "Homepage":http://documentcloud.github.com/underscore/
 ** "Repository":http://github.com/documentcloud/underscore/
 * "Prettify":/javascripts/text/prettify.js
 ** "Docs":http://google-code-prettify.googlecode.com/svn/trunk/README.html
 ** "Repository":http://code.google.com/p/google-code-prettify/
-* "SyntaxHighlighter":/
+* "SyntaxHighlighter":/javascripts/text/syntax-highlighter/shCore.js
 ** "Home":http://alexgorbatchev.com/SyntaxHighlighter/
 ** "Demos":http://alexgorbatchev.com/SyntaxHighlighter/manual/demo
+** "Docs":http://www.undermyhat.org/blog/2009/09/list-of-brushes-syntaxhighligher/
 ** "Repository":http://code.google.com/p/syntaxhighlighter/
-* "GeSHi":/
-** "Home":http://qbnz.com/highlighter/index.php
-** "Demos":http://qbnz.com/highlighter/demo.php

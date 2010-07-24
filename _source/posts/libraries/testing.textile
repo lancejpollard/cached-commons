@@ -2,7 +2,7 @@
 title: Testing Libraries
 ---
 
-* "Jasmine":/javascripts/testing/jasmine.js
+* "Jasmine"://javascripts/testing/jasmine.js
 ** "Home":http://pivotal.github.com/jasmine/
 ** "Repository":http://github.com/pivotal/jasmine
 * "ScrewUnit":/javascripts/testing/screwunit.js
@@ -11,3 +11,8 @@ title: Testing Libraries
 ** "Home":http://www.envjs.com/
 ** "Docs":http://groups.google.com/group/envjs
 ** "Repository":http://github.com/jeresig/env-js
+* "JSLitmus":/javascripts/testing/jslitmus.js
+** "Home":http://www.broofa.com/Tools/JSLitmus/
+* "QUnit":/javascripts/testing/qunit.js
+** "Home":http://docs.jquery.com/QUnit
+** "Repository":http://github.com/jquery/qunit

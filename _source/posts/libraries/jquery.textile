@@ -80,7 +80,7 @@ title: JQuery and Plugins
 * "JQuery Validate (validation, form)":/javascripts/jquery/jquery.validate-1.7.js
 ** "Home":http://bassistance.de/jquery-plugins/jquery-plugin-validation/
 ** "Demos":http://jquery.bassistance.de/validate/demo/
-* "jQuery HTML5 Dataset (data)":http://www.orangesoda.net/jquery.dataset.html
+* "jQuery HTML5 Dataset (data)":/javascripts/jquery/jquery.dataset-0.1.0.js
 **  "Home":http://www.orangesoda.net/jquery.dataset.html
 * "jQuery Class (OOP, classes)":/javascripts/jquery/jquery.class.js
 ** "Home":http://ejohn.org/blog/simple-javascript-inheritance/
@@ -106,8 +106,11 @@ title: JQuery and Plugins
 **  "Demos":http://dev.jonraasch.com/scrolling-parallax/examples/scrolling-parallax
 * "jQuery String methods (string, utils)":/javascripts/jquery/jquery.string.js
 **  "Home":http://stilldesigning.com/dotstring/
-* "Uniform (form, design)":/
+* "Uniform (form, design)":/javascripts/jquery/jquery.uniform-1.7.3.js
 **  "Home":http://pixelmatrixdesign.com/uniform/
+** "Demos":http://pixelmatrixdesign.com/uniform/#example
+** "Docs":http://pixelmatrixdesign.com/uniform/#docs
+** "Repository":http://github.com/pixelmatrix/uniform
 * "Nivo Slider (slider, slideshow, design, animation)":/javascripts/jquery/jquery.nivo-slider-2.0.js
 **  "Home":http://nivo.dev7studios.com/
 **  "Demos":http://nivo.dev7studios.com/demos/
@@ -116,15 +119,17 @@ title: JQuery and Plugins
 ** "Home":http://http://jqtouch.com/
 ** "Demos":http://jqtouch.com/preview/demos/main/
 ** "Screencast":http://peepcode.com/products/jqtouch
-* "Quicksand (layout, animation, sorting)":http://razorjack.net/quicksand/
+* "Quicksand (layout, animation, sorting)":/javascripts/jquery/jquery.quicksand-1.2.1.js
 ** "Home":http://razorjack.net/quicksand/
 ** "Docs":http://razorjack.net/quicksand/docs-and-demos.html
 ** "Repository":http://github.com/razorjack/quicksand/
 * "Google Analytics (google analytics)":/javascripts/jquery/jquery.google-analytics-1.1.3.js
-** "Home":/
+** "Home":http://aktagon.com/projects/jquery/google-analytics
+** "Demos":http://github.com/christianhellsten/jquery-google-analytics/blob/master/index.html
+** "Repository":http://github.com/christianhellsten/jquery-google-analytics
 * "jQuery Labelify (form, label)":/javascripts/jquery/jquery.labelify.js
 ** "Home":http://www.kryogenix.org/code/browser/labelify/
-* "jQuery Fieldtag (form, label)":/javascripts/jquery/jquery.fieldtag.js
+* "jQuery Fieldtag (form, label)":/javascripts/jquery/jquery.fieldtag-1.1.js
 ** "Home":http://ajaxcssblog.com/jquery/fieldtag-watermark-inputfields/
 ** "Demos":http://sandbox.ajaxcssblog.com/jquery/jquery.fieldtag/fieldtag-demo.htm
 * "Starfield Tag Cloud (3d, tag cloud)":/javascripts/jquery/jquery.starfield-tag-cloud.js
@@ -132,79 +137,69 @@ title: JQuery and Plugins
 * "jQuery In-Field Label (form, label)":/javascripts/jquery/jquery.in-field-label-0.1.2.js
 ** "Home":http://fuelyourcoding.com/scripts/infield/
 ** "Repository":http://github.com/dcneiner/In-Field-Labels-jQuery-Plugin/
-* "jLabel (form, label)":/javascripts/jquery/jquery.jlabel.js
+* "jLabel (form, label)":/javascripts/jquery/jquery.jlabel-1.1.js
 ** "Home":http://www.wduffy.co.uk/jlabel/
-* "Elastic TextArea (textarea, autosize)":/javascripts/jquery/jquery.elastic.js
+* "Elastic TextArea (textarea, autosize)":/javascripts/jquery/jquery.elastic-1.6.4.js
 ** "Home":http://www.unwrongest.com/projects/elastic/
 ** "Demos":http://www.unwrongest.com/projects/elastic/#demo
 ** "Repository":http://code.google.com/p/jquery-elastic
-* "Facebox (lightbox, popup)":/
+* "Facebox (lightbox, popup)":/javascripts/jquery/jquery.facebox-1.2.js
 ** "Home":http://defunkt.github.com/facebox/
 ** "Repository":http://github.com/defunkt/facebox
-* "Primer (flash, graphics)":/
-** "Repository":http://github.com/mojombo/primer
-* "jQuery Timeago (timer, counter)":/
+* "jQuery Timeago (timer, counter)":/javascripts/jquery/jquery.timeago-0.9.js
 ** "Home":http://timeago.yarp.com/
 ** "Repository":http://github.com/rmm5t/jquery-timeago
-* "jQuery Page Slide (slider, slideshow)":/
+* "jQuery Page Slide (slider, slideshow)":/javascripts/jquery/jquery.pageslide.js
 ** "Demos":http://derekperez.com/jquery-pageslide/demo/
 ** "Repository":http://github.com/srobbin/jquery-pageslide
-* "jQuery Glow (animation, effects)":/
+* "jQuery Glow (animation, effects)":/javascripts/jquery/jquery.glow.js
 ** "Demos":http://nakajima.github.com/jquery-glow/
 ** "Repository":http://github.com/nakajima/jquery-glow
-* "jQuery MouseWheel (mouse, scroll)":/
+* "jQuery MouseWheel (mouse, scroll)":/javascripts/jquery/jquery.mousewheel-3.0.3.js
 ** "Home":http://plugins.jquery.com/project/mousewheel
 ** "Demos":http://brandonaaron.net/code/mousewheel/demos
 ** "Repository":http://github.com/brandonaaron/jquery-mousewheel
-* "TinyTips (tooltips)":/
+* "TinyTips (tooltips)":/javascripts/jquery/jquery.tinytips-1.1.js
 ** "Home":http://www.mikemerritt.me/blog/jquery-plugin-tinytips-1-1/
 ** "Demos":http://www.mikemerritt.me/demos/tt-1-1/index.html
-* "TipTip (tooltip)":/
-** "Home":http://code.drewwilson.com/entry/tiptip-jquery-plugin
-* "jQuery LiveFilter (sorting, animation)":/
+* "jQuery LiveFilter (sorting, animation)":/javascripts/jquery/jquery.livefilter-1.2.js
 ** "Home":http://www.mikemerritt.me/blog/jquery-plugin-livefilter-1-2/
 ** "Demos":http://www.mikemerritt.me/demos/lf-1-2/list.html
-* "jQuery LiveUpdate (sorting)":/
+* "jQuery LiveUpdate (sorting)":/javascripts/jquery/jquery.liveupdate.js
 ** "Home":http://orderedlist.com/our-writing/blog/articles/live-search-with-quicksilver-style-for-jquery/
 ** "Demos":http://orderedlist.com/demos/quicksilverjs/jquery.html
-* "jQuery Autosuggest (autosuggest)":/
+* "jQuery Autosuggest (autosuggest)":/javascripts/jquery/jquery.autosuggest-1.4.js
 ** "Home":http://code.drewwilson.com/entry/autosuggest-jquery-plugin
-* "jQuery Table Sorter (sorting)":/
+* "jQuery Table Sorter (sorting)":/javascripts/jquery/jquery.tablesorter-2.0.js
 ** "Home":http://www.compulsivoco.com/2008/08/tablesorter-filter-results-based-on-search-string/
 ** "Docs":http://tablesorter.com/docs/
 ** "Repository":http://github.com/jbritten/jquery-tablesorter-filter
-* "jQuery Spellcheck (spellcheck)":/
-** "Home":http://plugins.jquery.com/project/spellcheck
-** "Demos":http://brandonaaron.net/code/spellcheck/demos
-* "JSTree (file, tree)":/
+* "JSTree (file, tree)":/javascripts/jquery/jquery.jstree-1.0.js
 ** "Home":http://www.jstree.com/
 ** "Docs":http://www.jstree.com/documentation
 ** "Demos":http://www.jstree.com/demo
-** "Repository":http://github.com/brandonaaron/jquery-spellcheck
-* "URLInternal (url, parsing)":/
+* "URLInternal (url, parsing)":/javascripts/jquery/jquery.urlinternal-1.0.js
 ** "Home":http://benalman.com/projects/jquery-urlinternal-plugin/
 ** "Docs":http://benalman.com/code/projects/jquery-urlinternal/docs/files/jquery-ba-urlinternal-js.html
 ** "Repository":http://github.com/cowboy/jquery-urlinternal/
-* "jQuery BBQ (url, browser history)":/
+* "jQuery BBQ (url, browser history)":/javascripts/jquery/jquery.bbq-1.2.1.js
 ** "Home":http://benalman.com/projects/jquery-bbq-plugin/
-* "HighlightRegex (regular expressions, text highlighting)":/
+** "Repository":http://github.com/cowboy/jquery-bbq
+* "HighlightRegex (regular expressions, text highlighting)":/javascripts/jquery/jquery.highlight-regex.js
 ** "Home":http://plugins.jquery.com/project/highlightRegex
 ** "Demos":http://jacobrothstein.com/highlightRegex/demonstration.html
 ** "Repository":http://github.com/jbr/jQuery.highlightRegex
-* "jQuery Simply Countable (counter)":/
+* "jQuery Simply Countable (counter)":/javascripts/jquery/jquery.simply-countable-0.4.js
 ** "Repository":http://github.com/aaronrussell/jquery-simply-countable/
-* "Overscroll (iphone, throwing, drag and drop, animation, physics)":/
+* "Overscroll (iphone, throwing, drag and drop, animation, physics)":/javascripts/jquery/jquery.overscroll-1.3.0.js
 ** "Home":http://www.azoffdesign.com/plugins/js/overscroll
 ** "Repository":http://github.com/azoff/Overscroll
 * "jQuery SimpleTooltip (tooltip)":/javascripts/jquery/jquery.simple-tooltip.js
 ** "Home":http://dev.mariusilie.net/content/simple-tooltip-jquery-plugin
-* "jQuery PostMessage (ajax, cross domain, security)":/
+* "jQuery PostMessage (ajax, cross domain, security)":/javascripts/jquery/jquery.postmessage-0.5.js
 ** "Home":http://benalman.com/projects/jquery-postmessage-plugin/
 ** "Repository":http://github.com/cowboy/jquery-postmessage
-* "TagIt (autocomplete)":/
-** "Demos":http://levycarneiro.com/projects/tag-it/example.html
-** "Repository":http://github.com/levycarneiro/tag-it
-* "jQuery Approach (physics, mouse, animation)":/
+* "jQuery Approach (physics, mouse, animation)":/javascripts/jquery/jquery.approach-1.0.js
 ** "Home":http://srobbin.com/jquery-plugins/jquery-approach/
 ** "Demo":http://srobbin.com/jquery-plugins/jquery-approach/#demo
 ** "Repository":http://github.com/srobbin/jquery-approach/
@@ -217,6 +212,9 @@ title: JQuery and Plugins
 * "FullScreenr (image, autosize, full screen)":/
 ** "Home":http://nanotux.com/blog/fullscreen/
 ** "Demos":http://nanotux.com/plugins/fullscreenr/index.html
-* "Superfish (menu, animation)":/
+* "Superfish (menu, animation)":/javascripts/jquery/jquery.superfish-1.4.8.js
 ** "Home":http://users.tpg.com.au/j_birch/plugins/superfish/
 ** "Demos":http://users.tpg.com.au/j_birch/plugins/superfish/#examples
+* "jQuery Metadata":/javascripts/jquery/jquery.metadata.js
+** "Home":http://plugins.jquery.com/project/metadata
+** "Repository":http://github.com/jquery/jquery-metadata

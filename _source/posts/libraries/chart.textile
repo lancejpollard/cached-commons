@@ -6,7 +6,7 @@ title: Visualization
 ** "Home":http://www.highcharts.com/
 ** "Demos":http://www.highcharts.com/demo/
 ** "Docs":http://www.highcharts.com/documentation/how-to-use
-* "jqPlot":/javascripts/visualization/jqplot-0.9.7.js
+* "jqPlot":/javascripts/jquery/jquery.jqplot-0.9.7.js
 ** "Home":http://www.jqplot.com/
 ** "Demos":http://www.jqplot.com/tests/
 ** "Docs":http://www.jqplot.com/docs/files/usage-txt.html
@@ -17,6 +17,6 @@ title: Visualization
 ** "Demos":http://raphaeljs.com/
 * "gRaphael":/javascripts/visualization/highcharts-2.0.1.js
 ** "Home":http://g.raphaeljs.com/
-* "Google Charts":/
+* "jQuery GCharts":/javascripts/visualization/jquery.gChart.js
 ** "Home":http://plugins.jquery.com/project/gchart
 ** "Demos":http://keith-wood.name/gChart.html
