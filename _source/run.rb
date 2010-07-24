@@ -23,7 +23,7 @@ begin
       write_to = File.expand_path(File.join(site.setting(:destination), path).squeeze("/"))
       # if the file doesn't exist or is not rendered correctly
       next if error?(response, path, false)
-      FileUtils.mkdir_p(write_to)
+      #FileUtils.mkdir_p(write_to)
       name = "#{write_to}.html"# File.join(write_to, "index.html")
       File.open(name, "w") { |f| f.write(response.body) }
     end

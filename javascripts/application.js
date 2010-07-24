@@ -49,7 +49,18 @@ $(document).ready(function() {
       focused.removeClass("closed");
     } else {
       focused.removeClass("focused");
-      focused = focused[direction + "All"]("li.post_item").eq(0);
+      var index = selectables.indexOf(focused.attr("id"));
+      if (direction == "next") {
+        index = index + 1;
+        if (index >= selectables.length)
+          index = 0;
+      } else {
+        index = index - 1;
+        if (index <= -1)
+          index = selectables.length - 1;
+      }
+      var id = selectables[index];
+      focused = $("#" + id);
     }
     if (focused) {
       focused.addClass("focused");
@@ -85,7 +96,7 @@ $(document).ready(function() {
         var code_view = $("<pre id='" + code_id + "' class='code-view'><code class='prettyprint'></code></pre>");
         $("code", code_view).text(data);
         focused.after(code_view);
-        prettyPrint();
+        //prettyPrint();
         already_processed.addClass("prettyPrint");
         var top = ($(window).height()/2) - focused.height() - code_view.height()/2;
         var offset = focused.offset().top - top;
