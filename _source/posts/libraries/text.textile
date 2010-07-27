@@ -21,3 +21,5 @@ title: Text, Text Editors, and Markup
 ** "Demos":http://alexgorbatchev.com/SyntaxHighlighter/manual/demo
 ** "Docs":http://www.undermyhat.org/blog/2009/09/list-of-brushes-syntaxhighligher/
 ** "Repository":http://code.google.com/p/syntaxhighlighter/
+* "MarkItUp":/
+** "Home":http://markitup.jaysalvat.com/home/

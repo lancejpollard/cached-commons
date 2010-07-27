@@ -60,6 +60,7 @@ The source of the [Cached Commons](http://cachedcommons.org) is [here](http://gi
 - [Range Input](http://flowplayer.org/tools/demos/rangeinput/)
 - [JSBeautifier](http://jsbeautifier.org/)
 - [jQuery Globalization](http://github.com/nje/jquery-glob)
+- [Sencha](http://www.sencha.com/)
 
 ## Tests
 
@@ -71,3 +72,5 @@ The source of the [Cached Commons](http://cachedcommons.org) is [here](http://gi
 
 - Add image and description to each one
 - http://www.distilled.co.uk/blog/conversion-rate-optimisation/using-jquery-and-google-analytics-events-to-track-form-abandonment/
+- blueprint, 960 and css frameworks
+- jquery ui

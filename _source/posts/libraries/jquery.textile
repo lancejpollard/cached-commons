@@ -218,3 +218,13 @@ title: JQuery and Plugins
 * "jQuery Metadata":/javascripts/jquery/jquery.metadata.js
 ** "Home":http://plugins.jquery.com/project/metadata
 ** "Repository":http://github.com/jquery/jquery-metadata
+* "jQuery DropShadow":/javascripts/jquery/jquery.dropshadow.js
+* "jQuery LazyLoad":/javascripts/jquery/jquery.lazyload-1.5.js
+** "Home":http://www.appelsiini.net/projects/lazyload
+** "Demos":http://www.appelsiini.net/projects/lazyload/enabled.html
+* "jQuery LocalScroll":/javascripts/jquery/jquery.localscroll-1.2.7.js
+** "Home":http://jquery.com/plugins/project/LocalScroll
+** "Demos":http://demos.flesler.com/jquery/localScroll/
+* "jQuery RightClick":/javascripts/jquery/jquery.rightclick.js
+** "Home":http://abeautifulsite.net/blog/2008/05/jquery-right-click-plugin/
+** "Demos":http://labs.abeautifulsite.net/projects/js/jquery/rightClick/demo/
