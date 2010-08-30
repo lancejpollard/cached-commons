@@ -2,7 +2,7 @@ require 'rubygems'
 require 'open-uri'
 require 'broadway'
 
-site = Broadway.build(:source => "posts", :settings => "_config.yml", :destination => "..")
+site = Broadway.build(:source => "_source/posts", :settings => "_source/_config.yml", :destination => ".")
 
 def error?(response, path, whiny = true)
   if !response.is_a?(Net::HTTPSuccess)
@@ -25,6 +25,7 @@ begin
       next if error?(response, path, false)
       #FileUtils.mkdir_p(write_to)
       name = "#{write_to}.html"# File.join(write_to, "index.html")
+      puts "NAME #{name}"
       File.open(name, "w") { |f| f.write(response.body) }
     end
   end
