@@ -189,6 +189,6 @@ $(document).ready(function() {
   if (hash && hash != "") {
     hash = hash.match(/-post$/) ? hash : (hash + "-post");
     alert(hash);
-    window.location.hash = hash;
+    window.location.hash = hash + "-post";
   }
 });

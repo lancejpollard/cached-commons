@@ -17,6 +17,10 @@ title: JQuery and Plugins
 * "JQuery Autoscroll (scrolling, animation, mouse wheel)":/javascripts/jquery/jquery.autoScroll.js
 ** "Home":http://jdsharp.us/jQuery/plugins/AutoScroll/
 ** "Demos":http://jdsharp.us/jQuery/plugins/AutoScroll/demo.php
+* "JQuery Disqus (comments, disqus)":/javascripts/jquery/jquery.disqus.js
+** "Home":http://viatropos.com/blog/jquery-disqus-plugin
+* "JQuery Picasa (picasa, images)":/javascripts/jquery/jquery.picasa.js
+** "Home":http://viatropos.com/blog/picasa-jquery-plugin
 * "JQuery BlockUI (modal, popup, ui, alert)":/javascripts/jquery/jquery.blockUI-2.33.js
 ** "Home":http://jquery.malsup.com/block/
 ** "Demos":http://jquery.malsup.com/block/#demos

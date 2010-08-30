@@ -61,6 +61,8 @@ The source of the [Cached Commons](http://cachedcommons.org) is [here](http://gi
 - [JSBeautifier](http://jsbeautifier.org/)
 - [jQuery Globalization](http://github.com/nje/jquery-glob)
 - [Sencha](http://www.sencha.com/)
+- http://www.w3avenue.com/2010/07/26/jqueryrotate-cross-browser-image-rotation/
+- http://github.com/technoweenie/jquery.doubletap
 
 ## Tests
 
