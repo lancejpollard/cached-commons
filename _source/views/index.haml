@@ -9,5 +9,10 @@
             %form.search{:action => "/search", :method => :post, :id => "#{post.slug.value}-form"}
               %input.tags{:type => :text, :size => 30, :title => "search #{post.slug.value} scripts by title or tags", :data => {:for => post.slug.value}}
           .content{:id => "#{post.slug.value}-content"}
-            :textile
-              #{post.read}
+            - case post.extension
+              - when "markdown"
+                :markdown
+                  #{post.read}
+              - else
+                :textile
+                  #{post.read}

@@ -1,6 +1,7 @@
 // http://stackoverflow.com/questions/1134976/jquery-sort-list-items-alphabetically
 var hash = window.location.hash;
-window.location.hash = null;
+if (hash)
+  window.location.hash = null;
 var google_analytics = $('meta[name=google-analytics]').attr('content');
 $.trackPage(google_analytics);
 
@@ -188,7 +189,6 @@ $(document).ready(function() {
   
   if (hash && hash != "") {
     hash = hash.match(/-post$/) ? hash : (hash + "-post");
-    alert(hash);
     window.location.hash = hash + "-post";
   }
 });
