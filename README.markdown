@@ -2,6 +2,10 @@
 
 This is the Cached Commons Gem.  This is all the code for pushing and pulling from Cached Commons (minus the web interface and app).
 
+## Install
+
+    sudo gem install commons
+
 ## Usage
 
     spec = CachedCommons::Spec.new do
@@ -14,3 +18,11 @@ This is the Cached Commons Gem.  This is all the code for pushing and pulling fr
       demos         "http://demos!.com"
     end
 
+## Commands
+
+    commons # open your local commons
+    commons -h # list commands
+    commons push # push the current project
+    commons spec
+    commons pull
+    commons install # install assets to local project
