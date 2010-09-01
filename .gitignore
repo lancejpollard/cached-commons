@@ -1,8 +1,5 @@
 .DS_Store
 config/**/*
-_source
-_source/*
-_source/**/*
 _source/.sass-cache
 _source/.sass-cache/*
 _source/.sass-cache/**/*
