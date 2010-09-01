@@ -58,6 +58,11 @@ The source of the [Cached Commons](http://cachedcommons.org) is [here](http://gi
 - http://yuiblog.com/blog/2007/06/12/module-pattern/
 - [Spritely](http://www.spritely.net/)
 - [Range Input](http://flowplayer.org/tools/demos/rangeinput/)
+- [JSBeautifier](http://jsbeautifier.org/)
+- [jQuery Globalization](http://github.com/nje/jquery-glob)
+- [Sencha](http://www.sencha.com/)
+- http://www.w3avenue.com/2010/07/26/jqueryrotate-cross-browser-image-rotation/
+- http://github.com/technoweenie/jquery.doubletap
 
 ## Tests
 
@@ -69,3 +74,10 @@ The source of the [Cached Commons](http://cachedcommons.org) is [here](http://gi
 
 - Add image and description to each one
 - http://www.distilled.co.uk/blog/conversion-rate-optimisation/using-jquery-and-google-analytics-events-to-track-form-abandonment/
+- blueprint, 960 and css frameworks
+- jquery ui
+http://digitalbush.com/projects/masked-input-plugin/
+http://www.dummwiam.com/jTypeWriter
+http://www.web-delicious.com/jquery-plugins-demo/wdCalendar/sample.php
+http://plugins.jquery.com/project/typing
+http://www.jtalkplugin.com/
