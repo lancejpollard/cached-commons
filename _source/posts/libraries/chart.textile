@@ -6,6 +6,8 @@ title: Visualization
 ** "Home":http://www.highcharts.com/
 ** "Demos":http://www.highcharts.com/demo/
 ** "Docs":http://www.highcharts.com/documentation/how-to-use
+* "Provotis":/javascripts/visualization/provotis.js
+** "Home":http://vis.stanford.edu/protovis/
 * "jqPlot":/javascripts/jquery/jquery.jqplot-0.9.7.js
 ** "Home":http://www.jqplot.com/
 ** "Demos":http://www.jqplot.com/tests/

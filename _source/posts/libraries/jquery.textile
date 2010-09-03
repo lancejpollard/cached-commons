@@ -10,6 +10,13 @@ title: JQuery and Plugins
 ** "Home":http://plugins.jquery.com/project/Easing
 ** "Demos":http://jqueryui.com/demos/effect/easing.html
 ** "Docs":http://gsgd.co.uk/sandbox/jquery/easing/
+* "JQuery Sexy (ajax)":/javascripts/jquery/jquery.sexy.js
+** "Home":http://programmingdrunk.com/current-projects/dropdownReplacement/#getting-started
+** "Demos":http://programmingdrunk.com/current-projects/dropdownReplacement/#select
+* "JQuery Sexy (ajax)":/javascripts/jquery/jquery.sexy.js
+** "Home":http://sexyjs.com/
+** "Demos":http://sexyjs.com/demos/comments/
+** "Docs":http://sexyjs.com/api.php
 * "JQuery Autocomplete (autocomplete)":/javascripts/jquery/jquery.autocomplete-1.1.js
 ** "Home":http://bassistance.de/jquery-plugins/jquery-plugin-autocomplete/
 ** "Demos":http://jquery.bassistance.de/autocomplete/demo/

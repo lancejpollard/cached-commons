@@ -63,6 +63,9 @@ The source of the [Cached Commons](http://cachedcommons.org) is [here](http://gi
 - [Sencha](http://www.sencha.com/)
 - http://www.w3avenue.com/2010/07/26/jqueryrotate-cross-browser-image-rotation/
 - http://github.com/technoweenie/jquery.doubletap
+- http://coder.io/tag/javascript
+- http://webdesignledger.com/tools/10-fresh-and-useful-jquery-plugins
+- http://flexigrid.info/
 
 ## Tests
 
