@@ -6,85 +6,47 @@ require 'fileutils'
 require 'broadway'
 require 'nokogiri'
 require 'maruku'
+require 'active_support/core_ext'
 
-namespace :broadway do
-  task :generate do
-    site = Broadway.generate(
-      :source => "_source/posts",
-      :settings => "_source/_config.yml",
-      :destination => "_source/dest"
-    )
-    
+namespace :commons do
+  task :minify do
+    require 'compressible'
+    src = ENV["src"]
+    raise "What's the src?" unless src
+    Compressible.js(src, :to => src.gsub(/\.js$/, "-min.js"))
   end
-end
-
-directories = []
-Dir.glob("libraries/**/*").each do |file|
-  html = Nokogiri::HTML(Maruku.new(IO.read(file)).to_html)
-  html = Nokogiri::HTML(html.to_html)
-  files = []
-#  puts html.to_html
-#  puts "DONE"
-  html.xpath("/html/body/ul/li").each do |list|
-    title = list.xpath("p/a").text.gsub("min", "")
-    links = []
-    list.xpath("ul/li/a").each do |link|
-      #puts "LINK: #{link['href']}"
-      links << {:title => link.text, :href => link["href"]}
-    end
-    files << {:title => title, :links => links}
-  end
-  directories << {:path => File.basename(file).split(".").first, :files => files}
-end
-
-def to_broadway(files)
   
-end
+  task :cache do
+    name = ENV["name"].downcase.gsub(/[^a-z0-9]/, '-').squeeze("-")
+    raise "What's the name?" unless name
+    category = ENV["category"].downcase
+    raise "Need a valid category" unless category# && category =~ /(html5|jquery|sound|video|)
+    version = ENV["version"] || "1.0"
+    FileUtils.mkdir_p("cache/#{name}/#{version}/javascripts")
+    FileUtils.mkdir_p("cache/#{name}/#{version}/stylesheets")
+    result =<<-EOF
+---
+title:        #{name.titleize}
+src:          /cache/#{name}/#{version}/javascripts/#{name}.js
+docs:         ""
+repo:         ""
+demo:         ""
+home:         ""
+version:      #{version}
+tags:         []
+description:  ""
+dependencies: ""
+---
 
-def to_markdown(directories)
-  directories.each do |directory|
-    files = directory[:files]
-    next if files.blank?
-    files.each do |file|
-      result = "---\n"
-      result << to_metadata(file)
-      result << "---\n"
-      FileUtils.mkdir_p("result/#{directory[:path]}") unless File.exists?("result/#{directory[:path]}")
-      path = "result/#{directory[:path]}/#{file[:title].downcase.gsub(/\s+/, "-")}.markdown"
-      File.open(path, "w+") do |place|
-        place.puts result
+EOF
+      path = "_app/posts/cache/#{category}"
+      FileUtils.mkdir_p(path) unless File.exists?(path)
+      path << "/#{name}.markdown"
+      File.open(path, "w+") do |file|
+        file.puts result
       end
-    end
+      system("open", path)
   end
-end
-
-def to_yaml(directories)
-  result = ""
-  directories.each do |directory|
-    files = directory[:files]
-    next if files.blank?
-    result << "#{directory[:path]}:\n"
-    files.each do |file|
-      result << "\t-\n"
-      result << to_metadata(file)
-      File.open("result/cached-commons.yml", "w+") do |place|
-        place.puts result
-      end
-    end
-  end
-end
-
-def to_metadata(file)
-  result = ""
-  result << "\t\ttitle: #{file[:title]}\n"
-  result << "\t\tsummary: \"\"\n"
-  result << "\t\tlinks:\n"
-  file[:links].each do |link|
-    result << "\t\t\t-\n"
-    result << "\t\t\t\ttitle: #{link[:title]}\n"
-    result << "\t\t\t\turl: \"#{link[:href]}\"\n"
-  end
-  result
 end
 
 task :scrape_jquery do

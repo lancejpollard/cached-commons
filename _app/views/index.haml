@@ -1,0 +1,27 @@
+%section#main.main.index{:role => :main}
+  .body
+    .frame
+      - site.find_posts_by_category("libraries").each do |post|
+        - next if post.slug.value == "index"
+        %article.post{:id => post.slug.value}
+          %header.kind
+            %h3= post.title
+            %form.search{:action => "/search", :method => :post, :id => "#{post.slug.value}-form"}
+              %input.tags{:type => :text, :size => 30, :title => "search #{post.slug.value} scripts by title or tags", :data => {:for => post.slug.value}}
+          .content{:id => "#{post.slug.value}-content"}
+            %ul
+              - site.find_posts_by_category(post.slug.value).each do |child|
+                - next if child.slug.value == "index"
+                %li
+                  %a{:href => child.data["src"]}= child.title
+                  %ul
+                    %li
+                      %a{:href => child.data["home"]} Home
+                    %li
+                      %a{:href => child.data["demo"]} Demo
+                    %li
+                      %a{:href => child.data["docs"]} Docs
+                    %li
+                      %a{:href => child.data["repo"]} Repo
+                  
+                

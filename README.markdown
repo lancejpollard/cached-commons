@@ -84,3 +84,8 @@ http://www.dummwiam.com/jTypeWriter
 http://www.web-delicious.com/jquery-plugins-demo/wdCalendar/sample.php
 http://plugins.jquery.com/project/typing
 http://www.jtalkplugin.com/
+http://repopular.com/languages/javascript
+http://github.com/cloudhead/less.js
+http://github.com/notmasteryet/audiodata/blob/master/audiodata.js
+
+Create wiki page on github for descriptions of each gem

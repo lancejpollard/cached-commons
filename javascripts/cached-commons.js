@@ -79,7 +79,12 @@
           if (tags && tags != "") {
             link.after("<small class='tags'>" + tags + "</small>");
           }
-          link.after("<a href='" + link.attr("href").replace(/\.js$/, "-min.js") + "'>(min)</a>");
+          try {
+            link.after("<a href='" + link.attr("href").replace(/\.js$/, "-min.js") + "'>(min)</a>");            
+          } catch (error) {
+            console.log(link.attr("href"));
+            console.log("the above link didn't have properly formatted js path!");
+          }
           var title = link.text();
           var id = title.toLowerCase().replace(/[\s|\-|\_\.\,]+/g, "-") + "-post";
           item.attr("id", id);
