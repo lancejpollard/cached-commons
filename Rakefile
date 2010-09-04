@@ -7,6 +7,24 @@ require 'broadway'
 require 'nokogiri'
 require 'maruku'
 require 'active_support/core_ext'
+require 'broadway/tasks'
+
+desc "Generate your site"
+task :generate do
+  site.settings[:url] = "http://localhost:4567"
+  Rake::Task["broadway:generate"].execute
+end
+
+desc "Deploy to Github Pages"
+task :debloy => :generate do
+  message = ENV["msg"] || "published programmatically at #{Time.now.strftime("%a, %b %d @ %I:%M%p")}"
+  system("git add . && git commit -a -m '#{message}'")
+  system("git push origin gh-pages")
+  system("git checkout master")
+  system("git merge gh-pages")
+  system("git push origin master")
+  system("git checkout gh-pages")
+end
 
 namespace :commons do
   task :minify do

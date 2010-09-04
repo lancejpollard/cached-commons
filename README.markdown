@@ -88,4 +88,5 @@ http://repopular.com/languages/javascript
 http://github.com/cloudhead/less.js
 http://github.com/notmasteryet/audiodata/blob/master/audiodata.js
 
-Create wiki page on github for descriptions of each gem
+- Create wiki page on github for descriptions of each gem
+- ability to combine scripts into 1 min script
