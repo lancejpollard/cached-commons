@@ -1,0 +1,14 @@
+/ vcard
+%ul{:title => "Contact Information", :style => "display:none"}
+  - c("authors").each do |author|
+    %li
+      .vcard{:id => "hcard-#{author[:name].gsub(/\s+/, '-')}"}
+        %a{:class => "url fn n", :href => "#{author[:website]}"}
+          %span{:class => "given-name"}= author[:name].split(" ").first
+          %span{:class => "family-name"}= author[:name].split(" ").last
+        .org= author[:company]
+        .adr
+          %span{:class => "locality"}= author[:city]
+          %span{:class => "region"}= author[:state]
+          %span{:class => "postal-code"}= author[:zip].to_s
+          %span{:class => "country-name"}= author[:country]

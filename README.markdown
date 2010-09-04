@@ -48,6 +48,7 @@ If you find a library that you think is great, create a [Github Issue](http://gi
 
 The source of the [Cached Commons](http://cachedcommons.org) is [here](http://github.com/viatropos/cached-commons/tree/gh-pages).
 
+<<<<<<< HEAD:README.markdown
 ## Structure
 
 Cached assets are generically categorized into folders.
@@ -64,6 +65,26 @@ Cached assets are generically categorized into folders.
     /javascripts/jquery-prettyPhoto/1.3.2/jquery-prettyPhoto.js
     /jquery-prettyPhoto/1.3.2/javascripts/jquery-prettyPhoto.js
     
+=======
+## Interesting things
+
+- [Sandpaper](http://www.useragentman.com/blog/2010/03/09/cross-browser-css-transforms-even-in-ie/)
+- [Live Text Counter](http://youhack.me/2010/04/22/live-character-count-with-progress-bar-using-jquery/comment-page-1/)
+- [Boxy](http://onehackoranother.com/projects/jquery/boxy/)
+- [SimpleModal](http://www.ericmmartin.com/projects/simplemodal/)
+- http://bradleysepos.com/projects/jquery/clipboard/
+- http://yuiblog.com/blog/2007/06/12/module-pattern/
+- [Spritely](http://www.spritely.net/)
+- [Range Input](http://flowplayer.org/tools/demos/rangeinput/)
+- [JSBeautifier](http://jsbeautifier.org/)
+- [jQuery Globalization](http://github.com/nje/jquery-glob)
+- [Sencha](http://www.sencha.com/)
+- http://www.w3avenue.com/2010/07/26/jqueryrotate-cross-browser-image-rotation/
+- http://github.com/technoweenie/jquery.doubletap
+- http://coder.io/tag/javascript
+- http://webdesignledger.com/tools/10-fresh-and-useful-jquery-plugins
+- http://flexigrid.info/
+>>>>>>> gh-pages:README.markdown
 
 ## Tests
 
@@ -84,9 +105,18 @@ http://www.dummwiam.com/jTypeWriter
 http://www.web-delicious.com/jquery-plugins-demo/wdCalendar/sample.php
 http://plugins.jquery.com/project/typing
 http://www.jtalkplugin.com/
+<<<<<<< HEAD:README.markdown
 http://bxcarousel.com/
 http://www.elsterama.com/36-latest-and-fresh-jquery-plugins-write-less-do-more-episode-–-3
 - make sure cached commons is cross browser
 Requirements: HTML5 compliant browser
 Website: http://cachedcommons.org/
 License: MIT
+=======
+http://repopular.com/languages/javascript
+http://github.com/cloudhead/less.js
+http://github.com/notmasteryet/audiodata/blob/master/audiodata.js
+
+- Create wiki page on github for descriptions of each gem
+- ability to combine scripts into 1 min script
+>>>>>>> gh-pages:README.markdown

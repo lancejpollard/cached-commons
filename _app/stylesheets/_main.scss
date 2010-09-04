@@ -1,0 +1,129 @@
+.main.index {
+  .post {
+    border-bottom: 10px solid $border-color;
+    .kind {
+      padding: 60px 0px 10px 5px;
+      h3 {
+        color: $accent-color;
+        font-size: 32px;
+        font-weight: bold;
+        float: left;
+      }
+      .search {
+        float: right;
+        input {
+          padding: 10px 0px -15px 0px;
+          text-align: right;
+        }
+      }
+      @include clearfix;
+    }
+    &:first-child .kind {
+      padding-top: 10px;
+    }
+    .content {
+    }
+    .tags {
+      color: $border-color;
+      font-size: 14px;
+      font-style: italic;
+      position: relative;
+    }
+  }
+  ul {
+    list-style: none;
+    @include clearfix;
+    position: relative;
+    z-index: 1;
+    > * {
+      padding: 0;
+      margin: 0;
+    }
+    li {
+      padding: 10px 0px;
+      border-top: 1px solid $border-color;
+      background: white;
+      &:last-child {
+        border-bottom: 1px solid $border-color;
+      }
+      a, a * {
+        color: $accent-color;
+        font-size: 20px;
+        text-decoration: none;
+        padding: 0px 5px;
+      }
+      &:hover {
+        background: #fcfcfc;
+      }
+      &.selected {
+        background: #f7f7f7;
+      }
+      &.focused {
+        background: $extra-color;
+        li {
+          background: inherit;
+          a:hover, a:visited {
+            color: $main-color;
+          }
+        }
+      }
+      ul {
+        text-align: right;
+        float: right;
+        display: inline;
+        li {
+          display: inline-block;
+          border: none;
+          padding: 0px 10px;
+          background: none;
+          a {
+            text-align: center;
+            color: $main-color;
+            font-size: 14px;
+          }
+          a:hover, a:visited {
+            color: #a7a7a7;
+          }
+          &:last-child {
+            border: none;
+          }
+        }
+        @include clearfix;
+      }
+    }
+  }
+}
+
+.selector {
+  background: $main-color;
+  color: $main-color;
+  position: absolute;
+  left: -10px;
+  right: -10px;
+  font-size: 20px;
+  z-index: -10;
+  visibility: hidden;
+}
+
+.view-code {
+  position: absolute;
+  right: -42px;
+  width: 100px;
+  background: $main-color;
+  z-index: 100;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5px;
+  @include rotate(90deg);
+}
+
+#readme-body, #tips-body {
+  .downloadable {
+    display: none;
+  }
+}
+
+textarea {
+  border: 1px solid $border-color;
+}

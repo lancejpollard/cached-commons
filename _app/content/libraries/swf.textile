@@ -1,0 +1,19 @@
+---
+title: Swfs, Flash, Flex
+---
+
+* "SWFObject":/javascripts/swf/swfobject-2.2.js
+** "Homepage":http://code.google.com/p/swfobject/
+** "Documentation":http://code.google.com/p/swfobject/wiki/documentation
+** "Group":http://groups.google.com/group/swfobject
+* "SWFAddress":/javascripts/swf/swfaddress-2.4.js
+** "Homepage":http://www.asual.com/swfaddress/
+** "Demos":http://www.asual.com/swfaddress/samples/
+* "SWFAddress Optimizer":/javascripts/swf/swfaddress-optimizer-2.4.js
+** "Homepage":http://attacklab.net/showdown/
+** "Help":http://www.asual.com/blog/swfaddress/swfaddress-2-pt3-ajax-and-seo.html
+* "SWFUpload":http://code.google.com/p/swfupload/source/browse/swfupload/#swfupload/trunk/core%3Fstate%3Dclosed
+** "Homepage":http://swfupload.org/
+** "Demos":http://demo.swfupload.org/v220/index.htm
+** "S3 SWFUpload Rails Plugin":http://github.com/elcgit/s3-swf-upload-plugin
+** "Repository":http://code.google.com/p/swfupload/
