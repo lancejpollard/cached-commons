@@ -39,25 +39,24 @@ namespace :commons do
     raise "What's the name?" unless name
     category = ENV["category"].downcase
     raise "Need a valid category" unless category# && category =~ /(html5|jquery|sound|video|)
-    version = ENV["version"] || "1.0"
+    version = ENV["version"] || "1.0.0"
     FileUtils.mkdir_p("cache/#{name}/#{version}/javascripts")
     FileUtils.mkdir_p("cache/#{name}/#{version}/stylesheets")
     result =<<-EOF
 ---
 title:        #{name.titleize}
 src:          /cache/#{name}/#{version}/javascripts/#{name}.js
+home:         ""
+demo:         ""
 docs:         ""
 repo:         ""
-demo:         ""
-home:         ""
-version:      #{version}
 tags:         []
 description:  ""
 dependencies: ""
 ---
 
 EOF
-      path = "_app/posts/cache/#{category}"
+      path = "_app/content/cache/#{category}"
       FileUtils.mkdir_p(path) unless File.exists?(path)
       path << "/#{name}.markdown"
       File.open(path, "w+") do |file|
