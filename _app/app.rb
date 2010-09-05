@@ -8,8 +8,12 @@ get "/" do
   haml :index, :locals => {:cache_root => CACHE_ROOT}
 end
 
-get "/add" do
-  haml :add, :locals => {:cache_root => CACHE_ROOT}
+get "/submit" do
+  haml :submit, :locals => {:cache_root => CACHE_ROOT}
+end
+
+post "/submit" do
+  ""
 end
 
 get "/tips" do
