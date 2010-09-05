@@ -1,11 +1,11 @@
 .DS_Store
 config/**/*
-_source/.sass-cache
-_source/.sass-cache/*
-_source/.sass-cache/**/*
-_source
-_source/*
-_source/**/*
+_app/.sass-cache
+_app/.sass-cache/*
+_app/.sass-cache/**/*
+_app
+_app/*
+_app/**/*
 _posts
 _posts/*
 _posts/**/*

@@ -1,8 +1,0 @@
----
-title: Internet Explorer
----
-
-* "ExplorerCanvas":/javascripts/ie/excanvas.js
-** "Home":http://excanvas.sourceforge.net/
-** "Docs":https://developer.mozilla.org/en/Canvas_tutorial
-** "Repository":http://code.google.com/p/explorercanvas/

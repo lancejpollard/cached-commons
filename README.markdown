@@ -10,6 +10,8 @@ Github uses Nginx and gzips their content automatically.  Github Pages can be us
 2. Select the Javascript libraries you want and need for your latest project.
 3. Copy/paste the script tags into your project.
 
+If we're missing something you need, submit a [Github issue](http://github.com/viatropos/cached-commons/issues) and we'll added immediately.
+
 ## Why
 
 When I was first starting out with javascript, finding the good libraries was hard enough.  Add on top of that...
@@ -48,6 +50,7 @@ If you find a library that you think is great, create a [Github Issue](http://gi
 
 The source of the [Cached Commons](http://cachedcommons.org) is [here](http://github.com/viatropos/cached-commons/tree/gh-pages).
 
+<<<<<<< HEAD:README.markdown
 <<<<<<< HEAD:README.markdown
 ## Structure
 
@@ -119,4 +122,7 @@ http://github.com/notmasteryet/audiodata/blob/master/audiodata.js
 
 - Create wiki page on github for descriptions of each gem
 - ability to combine scripts into 1 min script
+>>>>>>> gh-pages:README.markdown
+=======
+copyright [@viatropos](http://viatropos.com) under the [MIT License](/license).
 >>>>>>> gh-pages:README.markdown

@@ -1,0 +1,1 @@
+(function(a){a.extend({jGFeed:function(e,b,d,f){if(e==null){return false}var c="http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&callback=?&q="+e;if(d!=null){c+="&num="+d}if(f!=null){c+="&key="+f}a.getJSON(c,function(g){if(typeof b=="function"){b.call(this,g.responseData.feed)}else{return false}})}})})(jQuery);
