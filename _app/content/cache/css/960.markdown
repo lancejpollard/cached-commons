@@ -1,5 +1,6 @@
 ---
 title:        960
+src:          /cache/960/:version/stylesheets/960.css
 home:         http://960.gs/
 demo:         http://960.gs/demo.html
 docs:         ""

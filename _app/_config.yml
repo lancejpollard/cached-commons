@@ -12,6 +12,11 @@ api: true
 url: 'http://localhost:4567'
 language: en-US
 source: posts
+destination: _posts
+index_path: "."
+views_path: _app/views
+public_path: "."
+production_url: http://cachedcommons.org
 
 keys:
   google_analytics: ""

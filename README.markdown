@@ -10,6 +10,8 @@ Github uses Nginx and gzips their content automatically.  Github Pages can be us
 2. Select the Javascript libraries you want and need for your latest project.
 3. Copy/paste the script tags into your project.
 
+If we're missing something you need, submit a [Github issue](http://github.com/viatropos/cached-commons/issues) and we'll added immediately.
+
 ## Why
 
 When I was first starting out with javascript, finding the good libraries was hard enough.  Add on top of that...
@@ -48,45 +50,4 @@ If you find a library that you think is great, create a [Github Issue](http://gi
 
 The source of the [Cached Commons](http://cachedcommons.org) is [here](http://github.com/viatropos/cached-commons/tree/gh-pages).
 
-## Interesting things
-
-- [Sandpaper](http://www.useragentman.com/blog/2010/03/09/cross-browser-css-transforms-even-in-ie/)
-- [Live Text Counter](http://youhack.me/2010/04/22/live-character-count-with-progress-bar-using-jquery/comment-page-1/)
-- [Boxy](http://onehackoranother.com/projects/jquery/boxy/)
-- [SimpleModal](http://www.ericmmartin.com/projects/simplemodal/)
-- http://bradleysepos.com/projects/jquery/clipboard/
-- http://yuiblog.com/blog/2007/06/12/module-pattern/
-- [Spritely](http://www.spritely.net/)
-- [Range Input](http://flowplayer.org/tools/demos/rangeinput/)
-- [JSBeautifier](http://jsbeautifier.org/)
-- [jQuery Globalization](http://github.com/nje/jquery-glob)
-- [Sencha](http://www.sencha.com/)
-- http://www.w3avenue.com/2010/07/26/jqueryrotate-cross-browser-image-rotation/
-- http://github.com/technoweenie/jquery.doubletap
-- http://coder.io/tag/javascript
-- http://webdesignledger.com/tools/10-fresh-and-useful-jquery-plugins
-- http://flexigrid.info/
-
-## Tests
-
-    gem install rubyzip
-    gem install jasmine
-    rake jasmine
-
-## Todo
-
-- Add image and description to each one
-- http://www.distilled.co.uk/blog/conversion-rate-optimisation/using-jquery-and-google-analytics-events-to-track-form-abandonment/
-- blueprint, 960 and css frameworks
-- jquery ui
-http://digitalbush.com/projects/masked-input-plugin/
-http://www.dummwiam.com/jTypeWriter
-http://www.web-delicious.com/jquery-plugins-demo/wdCalendar/sample.php
-http://plugins.jquery.com/project/typing
-http://www.jtalkplugin.com/
-http://repopular.com/languages/javascript
-http://github.com/cloudhead/less.js
-http://github.com/notmasteryet/audiodata/blob/master/audiodata.js
-
-- Create wiki page on github for descriptions of each gem
-- ability to combine scripts into 1 min script
+copyright [@viatropos](http://viatropos.com) under the [MIT License](/license).

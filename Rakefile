@@ -3,27 +3,37 @@ require 'rake'
 require 'nokogiri'
 require 'open-uri'
 require 'fileutils'
-require 'broadway'
 require 'nokogiri'
 require 'maruku'
 require 'active_support/core_ext'
+require './_app/app'
 require 'broadway/tasks'
 
 desc "Generate your site"
 task :generate do
-  site.settings[:url] = "http://localhost:4567"
+  SITE.settings[:url] = "http://localhost:4567"
   Rake::Task["broadway:generate"].execute
 end
 
 desc "Deploy to Github Pages"
-task :debloy => :generate do
+task :deploy => :generate do
   message = ENV["msg"] || "published programmatically at #{Time.now.strftime("%a, %b %d @ %I:%M%p")}"
-  system("git add . && git commit -a -m '#{message}'")
-  system("git push origin gh-pages")
-  system("git checkout master")
-  system("git merge gh-pages")
-  system("git push origin master")
-  system("git checkout gh-pages")
+  manifest = ""
+  site.find_posts_by_category("cache").each do |post|
+    next if post.slug.value == "index"
+    manifest << "[./#{post.src}](./#{post.src})" if File.exists?(post.src_min)
+    manifest << "[./#{post.src_min}](./#{post.src_min})" if File.exists?(post.src_min)
+  end
+  File.open("Manifest.markdown", "w+") do |file|
+    file.puts manifest
+  end
+  
+#  system("git add . && git commit -a -m '#{message}'")
+#  system("git push origin gh-pages")
+#  system("git checkout master")
+#  system("git merge gh-pages")
+#  system("git push origin master")
+#  system("git checkout gh-pages")
 end
 
 namespace :commons do

@@ -1,6 +1,6 @@
 ---
 title:        JQTouch
-home:         http://http://jqtouch.com/
+home:         http://jqtouch.com/
 demo:         http://jqtouch.com/preview/demos/main/
 docs:         ""
 repo:         ""

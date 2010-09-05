@@ -1,6 +1,8 @@
-The MIT License
+All libraries linked to from [cachedcommons.org](http://cachedcommons.org) have their own licenses.  CachedCommons itself is licensed with the MIT License.
 
-Copyright (c) 2010 Lance Pollard (lancejpollard@gmail.com)
+# The MIT License
+
+Copyright (c) 2010 [Lance Pollard](http://viatropos.com) (lancejpollard@gmail.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

@@ -80,7 +80,7 @@
             link.after("<small class='tags'>" + tags + "</small>");
           }
           try {
-            link.after("<a href='" + link.attr("href").replace(/\.js$/, "-min.js") + "'>(min)</a>");            
+            link.after("<a href='" + link.attr("href").replace(/\.(js|css)$/, "-min.$1") + "'>(min)</a>");            
           } catch (error) {
             console.log(link.attr("href"));
             console.log("the above link didn't have properly formatted js path!");

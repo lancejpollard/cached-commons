@@ -3,5 +3,5 @@
     .frame
       - post = site.find_post_by_path("/tips")
       %article.post
-        :textile
+        :maruku
           #{post.read}

@@ -1,4 +1,8 @@
-h1. Optimization Tips
+---
+title: Optimization Tips
+---
+
+## Optimization Tips
 
 - [Parallel Downloading](http://www.websiteoptimization.com/speed/tweak/parallel/)
 - [Designing OpenSocial Apps for Speed and Scale](http://www.slideshare.net/chanezon/gdd-japan-2009-designing-opensocial-apps-for-speed-and-scale)

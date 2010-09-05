@@ -16,7 +16,7 @@ $(document).ready(function() {
   $.cachedCommons.trackable();
   $.cachedCommons.scriptable();
   $.cachedCommons.selectable();
-  $.cachedCommons.searchable();
+//  $.cachedCommons.searchable();
   $.cachedCommons.watchWindow();
   $.cachedCommons.home();
   
@@ -39,8 +39,8 @@ $(document).ready(function() {
     adjustFooter();
   }
   
-  $("code").addClass("prettyprint");
-  prettyPrint();
+//  $("code").addClass("prettyprint");
+//  prettyPrint();
   
   function focus(direction) {
     var focused = $(".post_item.focused");

@@ -29,6 +29,11 @@ get "/readme" do
     :content => IO.read("README.markdown")}
 end
 
+get "/license" do
+  haml :readme, :locals => {:cache_root => CACHE_ROOT,
+    :content => IO.read("LICENSE.markdown")}
+end
+
 get "/*" do
   if File.extname(params["splat"].join("/")).to_s.downcase =~ /\.js/
     file = "#{params["splat"].join("/")}".squeeze("/")
