@@ -21,15 +21,15 @@ task :deploy => :generate do
   manifest = ""
   site.find_posts_by_category("cache").each do |post|
     next if post.slug.value == "index"
-    manifest << "[./#{post.src}](./#{post.src})" if File.exists?(post.src_min)
-    manifest << "[./#{post.src_min}](./#{post.src_min})" if File.exists?(post.src_min)
+    manifest << ".#{post.src}\n" if File.exists?(".#{post.src}")
+    manifest << ".#{post.src_min}\n" if File.exists?(".#{post.src_min}")
   end
-  File.open("Manifest.markdown", "w+") do |file|
+  File.open("Manifest", "w+") do |file|
     file.puts manifest
   end
   
-#  system("git add . && git commit -a -m '#{message}'")
-#  system("git push origin gh-pages")
+  system("git add . && git commit -a -m '#{message}'")
+  system("git push origin gh-pages")
 #  system("git checkout master")
 #  system("git merge gh-pages")
 #  system("git push origin master")

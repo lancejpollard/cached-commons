@@ -118,14 +118,24 @@
   	    var id = target.attr("id");
   	    var selector_id = "#" + id + "_selector";
         var url = "http://cachedcommons.org" + $("> a", target).attr("href");
-        var script_tag = '<script src="' + url + '" type="text/javascript"></script>';
-        return {id:id, selector_id:selector_id, url:url, script_tag:script_tag};
+        var tag = null;
+        if (url.match(/\.css$/)) {
+          tag = '<link href="' + url + '" rel="stylesheet" type="text/css"/>';
+        } else {
+          tag = '<script src="' + url + '" type="text/javascript"></script>';
+        }
+        return {id:id, selector_id:selector_id, url:url, script_tag:tag};
       },
       script_for: function(target) {
   	    var id = target.attr("id");
         var url = "http://cachedcommons.org" + $("> a", target).attr("href");
-        var script_tag = '<script src="' + url + '" type="text/javascript"></script>';
-        return script_tag;
+        var tag = null;
+        if (url.match(/\.css$/)) {
+          tag = '<link href="' + url + '" rel="stylesheet" type="text/css"/>';
+        } else {
+          tag = '<script src="' + url + '" type="text/javascript"></script>';
+        }
+        return tag;
       },
       items: function() {
         
@@ -199,7 +209,7 @@
         
 	      var code = $("code", $.cachedCommons.settings.code);
   	    code.addClass("with-code");
-	      code.text($.cachedCommons.scripts.join("\n"));
+	      code.text($.cachedCommons.scripts.sort().join("\n"));
       },
       clear: function() {
         $.cachedCommons.scripts = [];
