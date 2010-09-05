@@ -1,12 +1,12 @@
 ---
-title:        JQuery Sexy
-src:          /cache/jquery-sexy/1.0/javascripts/jquery-sexy.js
+title:        jQuery Sexy Js
+src:          /cache/sexy-js/1.0/javascripts/sexy-js.js
 docs:         ""
-repo:         ""
+repo:         http://github.com/furf/Sexy
 demo:         http://sexyjs.com/demos/comments/
 home:         http://sexyjs.com/
 version:      ""
-tags:         [ajax]
+tags:         []
 description:  ""
 dependencies: ""
 ---

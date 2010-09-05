@@ -1,9 +1,9 @@
 ---
 title:        MarkItUp
 src:          /cache/markitup/1.0/javascripts/markitup.js
-docs:         ""
+docs:         http://markitup.jaysalvat.com/documentation/
 repo:         ""
-demo:         ""
+demo:         http://markitup.jaysalvat.com/examples/markdown/
 home:         http://markitup.jaysalvat.com/home/
 version:      ""
 tags:         []
