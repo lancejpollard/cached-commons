@@ -117,7 +117,7 @@
       attributes: function(target) {
   	    var id = target.attr("id");
   	    var selector_id = "#" + id + "_selector";
-        var url = "http://cachedcommons.org" + $("> a", target).attr("href");
+        var url = $("> a", target).attr("href");//"http://cachedcommons.org" + 
         var tag = null;
         if (url.match(/\.css$/)) {
           tag = '<link href="' + url + '" rel="stylesheet" type="text/css"/>';
@@ -128,7 +128,7 @@
       },
       script_for: function(target) {
   	    var id = target.attr("id");
-        var url = "http://cachedcommons.org" + $("> a", target).attr("href");
+        var url = $("> a", target).attr("href");//"http://cachedcommons.org" + 
         var tag = null;
         if (url.match(/\.css$/)) {
           tag = '<link href="' + url + '" rel="stylesheet" type="text/css"/>';
