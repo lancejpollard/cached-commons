@@ -1,13 +1,10 @@
 ---
 title:        QUnit
-src:          /cache/qunit/1.0/javascripts/qunit.js
+home:         http://docs.jquery.com/QUnit
+demo:         ""
 docs:         ""
 repo:         ""
-demo:         ""
-home:         http://docs.jquery.com/QUnit
-version:      ""
 tags:         []
 description:  ""
-dependencies: ""
 ---
 

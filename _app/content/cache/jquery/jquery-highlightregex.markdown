@@ -1,13 +1,10 @@
 ---
 title:        HighlightRegex
-src:          /cache/highlightregex/1.0/javascripts/highlightregex.js
+home:         http://plugins.jquery.com/project/highlightRegex
+demo:         http://jacobrothstein.com/highlightRegex/demonstration.html
 docs:         ""
 repo:         ""
-demo:         http://jacobrothstein.com/highlightRegex/demonstration.html
-home:         http://plugins.jquery.com/project/highlightRegex
-version:      ""
 tags:         [regular expressions, text highlighting]
 description:  ""
-dependencies: ""
 ---
 

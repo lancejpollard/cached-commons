@@ -10,7 +10,7 @@ def reset_me
   end
 end
 
-Dir["_app/content/new_cache/**/*"].each do |file|
+Dir["_app/content/cache/**/*"].each do |file|
   next if File.directory?(file)
   begin
     puts file

@@ -1,13 +1,10 @@
 ---
 title:        JSLitmus
-src:          /cache/jslitmus/1.0/javascripts/jslitmus.js
+home:         http://www.broofa.com/Tools/JSLitmus/
+demo:         ""
 docs:         ""
 repo:         ""
-demo:         ""
-home:         http://www.broofa.com/Tools/JSLitmus/
-version:      ""
 tags:         []
 description:  ""
-dependencies: ""
 ---
 

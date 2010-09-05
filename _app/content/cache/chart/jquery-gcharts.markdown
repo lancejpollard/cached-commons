@@ -1,13 +1,10 @@
 ---
 title:        jQuery GCharts
-src:          /cache/jquery-gcharts/1.0/javascripts/jquery-gcharts.js
+home:         http://plugins.jquery.com/project/gchart
+demo:         http://keith-wood.name/gChart.html
 docs:         ""
 repo:         ""
-demo:         http://keith-wood.name/gChart.html
-home:         http://plugins.jquery.com/project/gchart
-version:      ""
 tags:         []
 description:  ""
-dependencies: ""
 ---
 

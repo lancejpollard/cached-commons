@@ -1,13 +1,10 @@
 ---
 title:        jQuery Autosuggest
-src:          /cache/jquery-autosuggest/1.0/javascripts/jquery-autosuggest.js
+home:         http://code.drewwilson.com/entry/autosuggest-jquery-plugin
+demo:         ""
 docs:         ""
 repo:         ""
-demo:         ""
-home:         http://code.drewwilson.com/entry/autosuggest-jquery-plugin
-version:      ""
 tags:         [autosuggest]
 description:  ""
-dependencies: ""
 ---
 

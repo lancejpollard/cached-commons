@@ -1,13 +1,10 @@
 ---
 title:        Processing JS
-src:          /cache/processing-js/1.0/javascripts/processing-js.js
+home:         ""
+demo:         http://processingjs.org/exhibition
 docs:         ""
 repo:         ""
-demo:         http://processingjs.org/exhibition
-home:         ""
-version:      ""
 tags:         []
 description:  ""
-dependencies: ""
 ---
 

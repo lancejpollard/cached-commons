@@ -1,13 +1,10 @@
 ---
 title:        Cufon
-src:          /cache/cufon/1.0/javascripts/cufon.js
+home:         ""
+demo:         ""
 docs:         ""
 repo:         ""
-demo:         ""
-home:         ""
-version:      ""
 tags:         []
 description:  ""
-dependencies: ""
 ---
 

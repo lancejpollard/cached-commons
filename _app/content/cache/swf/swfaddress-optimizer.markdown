@@ -1,13 +1,10 @@
 ---
 title:        SWFAddress Optimizer
-src:          /cache/swfaddress-optimizer/1.0/javascripts/swfaddress-optimizer.js
+home:         ""
+demo:         ""
 docs:         ""
 repo:         ""
-demo:         ""
-home:         ""
-version:      ""
 tags:         []
 description:  ""
-dependencies: ""
 ---
 

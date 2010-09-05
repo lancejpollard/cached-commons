@@ -1,13 +1,10 @@
 ---
 title:        SWFObject
-src:          /cache/swfobject/1.0/javascripts/swfobject.js
+home:         ""
+demo:         ""
 docs:         ""
 repo:         ""
-demo:         ""
-home:         ""
-version:      ""
 tags:         []
 description:  ""
-dependencies: ""
 ---
 

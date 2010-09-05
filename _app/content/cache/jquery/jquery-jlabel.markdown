@@ -1,13 +1,10 @@
 ---
 title:        jLabel
-src:          /cache/jlabel/1.0/javascripts/jlabel.js
+home:         http://www.wduffy.co.uk/jlabel/
+demo:         ""
 docs:         ""
 repo:         ""
-demo:         ""
-home:         http://www.wduffy.co.uk/jlabel/
-version:      ""
 tags:         [form, label]
 description:  ""
-dependencies: ""
 ---
 

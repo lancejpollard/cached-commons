@@ -1,13 +1,10 @@
 ---
 title:        SWFAddress
-src:          /cache/swfaddress/1.0/javascripts/swfaddress.js
+home:         ""
+demo:         http://www.asual.com/swfaddress/samples/
 docs:         ""
 repo:         ""
-demo:         http://www.asual.com/swfaddress/samples/
-home:         ""
-version:      ""
 tags:         []
 description:  ""
-dependencies: ""
 ---
 

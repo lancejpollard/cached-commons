@@ -1,13 +1,10 @@
 ---
 title:        Showdown
-src:          /cache/showdown/1.0/javascripts/showdown.js
+home:         ""
+demo:         ""
 docs:         ""
 repo:         ""
-demo:         ""
-home:         ""
-version:      ""
 tags:         []
 description:  ""
-dependencies: ""
 ---
 

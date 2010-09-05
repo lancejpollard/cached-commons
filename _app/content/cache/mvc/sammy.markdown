@@ -1,13 +1,10 @@
 ---
 title:        Sammy
-src:          /cache/sammy/1.0/javascripts/sammy.js
+home:         ""
+demo:         ""
 docs:         ""
 repo:         ""
-demo:         ""
-home:         ""
-version:      ""
 tags:         []
 description:  ""
-dependencies: ""
 ---
 

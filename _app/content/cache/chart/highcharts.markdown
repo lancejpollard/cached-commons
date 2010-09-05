@@ -1,13 +1,10 @@
 ---
 title:        Highcharts
-src:          /cache/highcharts/1.0/javascripts/highcharts.js
+home:         http://www.highcharts.com/
+demo:         http://www.highcharts.com/demo/
 docs:         ""
 repo:         ""
-demo:         http://www.highcharts.com/demo/
-home:         http://www.highcharts.com/
-version:      ""
 tags:         []
 description:  ""
-dependencies: ""
 ---
 

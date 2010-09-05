@@ -1,13 +1,10 @@
 ---
 title:        jQuery DropShadow
-src:          /cache/jquery-dropshadow/1.0/javascripts/jquery-dropshadow.js
+home:         ""
+demo:         ""
 docs:         ""
 repo:         ""
-demo:         ""
-home:         ""
-version:      ""
 tags:         []
 description:  ""
-dependencies: ""
 ---
 

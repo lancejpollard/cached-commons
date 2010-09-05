@@ -1,13 +1,10 @@
 ---
 title:        jQuery Approach
-src:          /cache/jquery-approach/1.0/javascripts/jquery-approach.js
+home:         http://srobbin.com/jquery-plugins/jquery-approach/
+demo:         http://srobbin.com/jquery-plugins/jquery-approach/#demo
 docs:         ""
 repo:         ""
-demo:         http://srobbin.com/jquery-plugins/jquery-approach/#demo
-home:         http://srobbin.com/jquery-plugins/jquery-approach/
-version:      ""
 tags:         [physics, mouse, animation]
 description:  ""
-dependencies: ""
 ---
 

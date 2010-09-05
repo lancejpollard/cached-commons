@@ -1,13 +1,10 @@
 ---
 title:        jQuery Simply Countable
-src:          /cache/jquery-simply-countable/1.0/javascripts/jquery-simply-countable.js
+home:         ""
+demo:         ""
 docs:         ""
 repo:         ""
-demo:         ""
-home:         ""
-version:      ""
 tags:         [counter]
 description:  ""
-dependencies: ""
 ---
 

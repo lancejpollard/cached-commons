@@ -1,13 +1,10 @@
 ---
 title:        Prettify
-src:          /cache/prettify/1.0/javascripts/prettify.js
+home:         ""
+demo:         ""
 docs:         ""
 repo:         ""
-demo:         ""
-home:         ""
-version:      ""
 tags:         []
 description:  ""
-dependencies: ""
 ---
 

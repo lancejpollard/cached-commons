@@ -1,13 +1,10 @@
 ---
 title:        JQuery Disqus
-src:          /cache/jquery-disqus/1.0/javascripts/jquery-disqus.js
+home:         http://viatropos.com/blog/jquery-disqus-plugin
+demo:         ""
 docs:         ""
 repo:         ""
-demo:         ""
-home:         http://viatropos.com/blog/jquery-disqus-plugin
-version:      ""
 tags:         [comments, disqus]
 description:  ""
-dependencies: ""
 ---
 

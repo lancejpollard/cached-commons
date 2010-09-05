@@ -1,13 +1,10 @@
 ---
 title:        jQuery Labelify
-src:          /cache/jquery-labelify/1.0/javascripts/jquery-labelify.js
+home:         http://www.kryogenix.org/code/browser/labelify/
+demo:         ""
 docs:         ""
 repo:         ""
-demo:         ""
-home:         http://www.kryogenix.org/code/browser/labelify/
-version:      ""
 tags:         [form, label]
 description:  ""
-dependencies: ""
 ---
 

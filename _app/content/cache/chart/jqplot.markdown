@@ -1,13 +1,10 @@
 ---
 title:        jqPlot
-src:          /cache/jqplot/1.0/javascripts/jqplot.js
+home:         http://www.jqplot.com/
+demo:         http://www.jqplot.com/tests/
 docs:         ""
 repo:         ""
-demo:         http://www.jqplot.com/tests/
-home:         http://www.jqplot.com/
-version:      ""
 tags:         []
 description:  ""
-dependencies: ""
 ---
 

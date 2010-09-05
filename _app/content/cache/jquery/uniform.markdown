@@ -1,13 +1,10 @@
 ---
 title:        Uniform
-src:          /cache/uniform/1.0/javascripts/uniform.js
+home:         http://pixelmatrixdesign.com/uniform/
+demo:         http://pixelmatrixdesign.com/uniform/#example
 docs:         ""
 repo:         ""
-demo:         http://pixelmatrixdesign.com/uniform/#example
-home:         http://pixelmatrixdesign.com/uniform/
-version:      ""
 tags:         [form, design]
 description:  ""
-dependencies: ""
 ---
 

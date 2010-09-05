@@ -1,13 +1,10 @@
 ---
 title:        WMD Editor
-src:          /cache/wmd-editor/1.0/javascripts/wmd-editor.js
+home:         ""
+demo:         http://wmd-editor.com/demo
 docs:         ""
 repo:         ""
-demo:         http://wmd-editor.com/demo
-home:         ""
-version:      ""
 tags:         []
 description:  ""
-dependencies: ""
 ---
 

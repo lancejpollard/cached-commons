@@ -1,13 +1,10 @@
 ---
 title:        jQuery Page Slide
-src:          /cache/jquery-page-slide/1.0/javascripts/jquery-page-slide.js
+home:         ""
+demo:         http://derekperez.com/jquery-pageslide/demo/
 docs:         ""
 repo:         ""
-demo:         http://derekperez.com/jquery-pageslide/demo/
-home:         ""
-version:      ""
 tags:         [slider, slideshow]
 description:  ""
-dependencies: ""
 ---
 
