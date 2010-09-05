@@ -15,3 +15,6 @@ public/**/*
 *.html
 Rakefile
 javascripts/*.js
+lib
+lib/*
+lib/**/*
