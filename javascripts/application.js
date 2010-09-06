@@ -6,6 +6,8 @@ var google_analytics = $('meta[name=google-analytics]').attr('content');
 $.trackPage(google_analytics);
 
 $(document).ready(function() {
+  
+	
   $.cachedCommons.setup({
     box: $("textarea.code"),
     code: $("div.code"),
@@ -191,4 +193,5 @@ $(document).ready(function() {
     hash = hash.match(/-post$/) ? hash : (hash + "-post");
     window.location.hash = hash + "-post";
   }
+  
 });

@@ -41,7 +41,11 @@ namespace :commons do
     require 'compressible'
     src = ENV["src"]
     raise "What's the src?" unless src
-    Compressible.js(src, :to => src.gsub(/\.js$/, "-min.js"))
+    if src =~ /\.js$/
+      Compressible.js(src, :to => src.gsub(/\.js$/, "-min.js"))
+    else
+      Compressible.css(src, :to => src.gsub(/\.css$/, "-min.js"))
+    end
   end
   
   task :cache do

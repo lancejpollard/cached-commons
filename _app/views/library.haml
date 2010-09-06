@@ -1,0 +1,23 @@
+%section#main.main.index.hentry{:role => :main}
+  .frame.outer.body
+    .frame.inner
+      %article.post
+        %header.entry-title.kind
+          %h3= @post.title  
+          %select.version
+            %option{:value => @post.version}= @post.version
+        %summary
+          = @post.description
+        -#
+          %output#copy-to-clipboard
+            :escaped
+              #{@post.main_tag}
+        .content
+          %ul.links
+            - @post.links.each do |link|
+              %li.link
+                %a.src{:href => link.href}= link.title
+          %ul.related-assets
+            - @post.related_assets.each do |link|
+              %li.link
+                %a.src{:href => link.href}= link.title

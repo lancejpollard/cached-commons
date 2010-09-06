@@ -1,0 +1,206 @@
+/*
+ * jTweetsAnywhere V1.1.0
+ * http://thomasbillenstein.com/jTweetsAnywhere/
+ *
+ * Copyright 2010, Thomas Billenstein
+ * Licensed under the MIT license.
+ * http://thomasbillenstein.com/jTweetsAnywhere/license.txt
+ */
+
+.jta-tweet-list
+{
+    padding: 0;
+}
+
+.jta-tweet-list-item
+{
+    background: #fafafa;
+    border-bottom: 1px solid #e4e4e4;
+    list-style: none;
+    padding: 8px 0px 8px 0px;
+	overflow: hidden;
+}
+
+.jta-tweet-list-item:first-child
+{
+    border-top: 1px solid #e4e4e4;
+}
+
+.jta-tweet-profile-image
+{
+	width: 48px;
+	display: inline;
+	float: left;
+}
+
+.jta-tweet-profile-image-link
+{
+}
+
+.jta-tweet-profile-image img
+{
+	width: 48px;
+	height: 48px;
+}
+
+.jta-tweet-body
+{
+}
+
+.jta-tweet-body-list-profile-image-present
+{
+	margin-left: 58px;
+}
+
+.jta-tweet-a
+{
+    color: #900;
+    text-decoration: none;
+}
+
+.jta-tweet-a:hover
+{
+    color: #900;
+    text-decoration: underline;
+}
+
+.jta-tweet-link
+{
+}
+
+.jta-tweet-link:hover
+{
+}
+
+.twitter-anywhere-user
+{
+    color: #900;
+    text-decoration: none;
+}
+
+.twitter-anywhere-user:hover
+{
+    color: #900;
+    text-decoration: underline;
+}
+
+.jta-tweet-hashtag
+{
+}
+
+.jta-tweet-hashtag:hover
+{
+}
+
+.jta-tweet-attributes
+{
+	display: block;
+    color: #999;
+    font-size: 11px;
+    margin-top: 3px;
+}
+
+.jta-tweet-timestamp
+{
+}
+
+.jta-tweet-timestamp-link
+{
+    color: #999;
+	text-decoration: none;
+}
+
+.jta-tweet-timestamp-link:hover
+{
+    color: #999;
+	text-decoration: underline;
+}
+
+.jta-tweet-source
+{
+}
+
+.jta-tweet-source-link a
+{
+    color: #999;
+	text-decoration: none;
+}
+
+.jta-tweet-source-link a:hover
+{
+    color: #999;
+	text-decoration: underline;
+}
+
+.jta-follow-button
+{
+}
+
+.jta-tweet-box
+{
+}
+
+.jta-connect-button
+{
+}
+
+.jta-login-info
+{
+}
+
+.jta-login-info-profile-image
+{
+	width: 48px;
+	display: inline;
+	float: left;
+}
+
+.jta-login-info-profile-image img
+{
+	width: 48px;
+	height: 48px;
+}
+
+.jta-login-info-block
+{
+	margin-left: 58px;
+}
+
+.jta-login-info-screen-name
+{
+}
+
+.jta-login-info-sign-out
+{
+	width: 97px;
+	margin-top: 2px;
+	padding: 1px;
+	text-align: center;
+    border: 1px solid #999;
+}
+
+.jta-login-info-sign-out:hover
+{
+	color: black;
+	background-color: #999;
+	cursor: pointer;
+}
+
+.jta-loading
+{
+}
+
+.jta-error
+{
+    color: #f00;
+}
+
+.jta-clear
+{
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}

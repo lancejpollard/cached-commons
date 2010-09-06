@@ -12,7 +12,7 @@
     searchable: function() {
       $(".post").each(function(index, element) {
         $('input.tags', element).liveUpdate($('.posts', element), function() {
-          return $("> a", this).text().toLowerCase() + $("> small", this).text().toLowerCase();
+          return $("a.src", this).text().toLowerCase() + $("> small", this).text().toLowerCase();
         })
       });
     	$("form").ajaxForm();
@@ -55,12 +55,27 @@
     setup: function(options) {
       $.cachedCommons.settings = options;
       
-      var button = $.cachedCommons.settings.code_button = $("<figure class='view-code'>Copy Tags</figure>");
-      button.css("opacity", 0)
+      var button = $.cachedCommons.settings.code_button = $("#view-code");
+      button.text("Copy Tags");
+      button.css("opacity", 0);
       button.css("display", "none");
       $(".document").append(button);
       
-      $.cachedCommons.classify();
+      if (window.location.pathname == "/")
+        $.cachedCommons.classify();
+    },
+    createClipboard: function(id) {
+      ZeroClipboard.setMoviePath('http://' + window.location.host + '/cache/zero-clipboard/1.0.7/swfs/zero-clipboard.swf');
+      var clipboard = new ZeroClipboard.Client();
+    	clipboard.setHandCursor(true);
+    	clipboard.glue(id, id);
+    	clipboard.addEventListener("complete", function(client, text) {
+    	  $("#view-code").trigger("click");
+    	})
+    	clipboard.addEventListener("mouseOver", function() {
+    	  clipboard.setText($.cachedCommons.getTags().join("\n"));
+    	});
+    	return clipboard;
     },
     classify: function() {
       $(".content > ul").each(function(index, element) {
@@ -74,7 +89,7 @@
         $("> li", list).each(function(j_index, j_element) {
           var item = $(j_element);
           
-          var link = $("> a", item);
+          var link = $("a.src", item);
           var tags = link.attr("title");
           if (tags && tags != "") {
             link.after("<small class='tags'>" + tags + "</small>");
@@ -93,12 +108,26 @@
         });
 
         $("a", list).each(function(j_index, j_element) {
-          $(j_element).attr("target", "_blank");
+          var link = $(j_element);
+          if (!link.hasClass("drilldown"))
+            link.attr("target", "_blank");
         });
 
       });
     },
     scripts: [],
+    setScripts: function() {
+      $.cachedCommons.list.selected().each(function(index, element) {
+        var script_tag = $.cachedCommons.list.script_for($(element));
+	      if ($.cachedCommons.scripts.indexOf(script_tag) == -1) {
+          $.cachedCommons.scripts.push(script_tag);
+        }
+      });
+    },
+    getTags: function() {
+      $.cachedCommons.setScripts();
+      return $.cachedCommons.scripts;
+    },
     select_count: 0,
     code_button: {
       show: function() {
@@ -106,7 +135,11 @@
 	      if (button.css("display") == "none") {
 	        button.css("display", "block");
 	      }
-	      button.stop().animate({opacity:1}, 300);
+	      button.stop().animate({opacity:1}, 300, function() {
+          var clipboard = $.cachedCommons.createClipboard('view-code');
+          var embed = $("embed");
+          var clipboardParent = embed.parent();
+	      });
       },
       hide: function() {
         var button = $.cachedCommons.settings.code_button;
@@ -117,7 +150,7 @@
       attributes: function(target) {
   	    var id = target.attr("id");
   	    var selector_id = "#" + id + "_selector";
-        var url = $("> a", target).attr("href");//"http://cachedcommons.org" + 
+        var url = $("a.src", target).attr("href");//"http://cachedcommons.org" + 
         var tag = null;
         if (url.match(/\.css$/)) {
           tag = '<link href="' + url + '" rel="stylesheet" type="text/css"/>';
@@ -128,7 +161,7 @@
       },
       script_for: function(target) {
   	    var id = target.attr("id");
-        var url = $("> a", target).attr("href");//"http://cachedcommons.org" + 
+        var url = $("a.src", target).attr("href");//"http://cachedcommons.org" + 
         var tag = null;
         if (url.match(/\.css$/)) {
           tag = '<link href="' + url + '" rel="stylesheet" type="text/css"/>';
@@ -153,12 +186,12 @@
           
         // 0. calculate attributes
         var attributes = $.cachedCommons.list.attributes(target);
-        
+
         // 1. set class
         target.addClass("selected");
         
         // 2. show selector
-	      $(attributes.selector_id).css("visibility", "visible");
+	      $(attributes.selector_id).css("visibility", "visible").css("top", target.position().top + 12);
 	      
 	      $.cachedCommons.select_count++;
 
@@ -200,12 +233,7 @@
     },
     box: {
       set: function() {
-        $.cachedCommons.list.selected().each(function(index, element) {
-          var script_tag = $.cachedCommons.list.script_for($(element));
-  	      if ($.cachedCommons.scripts.indexOf(script_tag) == -1) {
-            $.cachedCommons.scripts.push(script_tag);
-          }
-        });
+        $.cachedCommons.setScripts();
         
 	      var code = $("code", $.cachedCommons.settings.code);
   	    code.addClass("with-code");
@@ -238,6 +266,7 @@
         
         $('html, body').stop().animate({scrollTop:0}, 300, function() {
           box.select();
+          
         });
       },
       hide: function() {

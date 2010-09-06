@@ -13,9 +13,10 @@
             %ul
               - page.children.each do |child|
                 - next if child.slug.value == "index"
-                %li
-                  %a{:href => child.src, :title => child.tags.join(", ")}= child.title
-                  %ul
+                %li.library
+                  .sources
+                    %a.src{:href => child.src, :title => child.tags.join(", ")}= child.title
+                  %ul.links
                     - unless child.data["home"].blank?
                       %li
                         %a{:href => child.data["home"]} Home
@@ -28,5 +29,11 @@
                     - unless child.data["repo"].blank?
                       %li
                         %a{:href => child.data["repo"]} Repo
-                  
-                
+                  -#
+                    %li.arrow
+                      %a.drilldown{:href => "/commons/#{child.slug.value}"} &#10145;
+                  -#
+                    %ul.library
+                      - child.lib_paths.each do |file|
+                        %li
+                          %a{:href => "http://cachedcommons.org#{file}"}= file

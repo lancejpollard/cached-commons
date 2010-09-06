@@ -20,6 +20,13 @@ get "/tips" do
   haml :tips, :locals => {:cache_root => CACHE_ROOT}
 end
 
+get "/commons/:name" do
+  @post = site.posts.detect do |post|
+    post.path.split("/").last == params["name"].downcase
+  end
+  haml :library, :locals => {:cache_root => CACHE_ROOT}
+end
+
 get "/resources" do
   haml :resources, :locals => {:cache_root => CACHE_ROOT}
 end

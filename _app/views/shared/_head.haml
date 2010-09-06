@@ -17,12 +17,17 @@
 %link{:href => "/stylesheets/prettify.css", :rel => "stylesheet", :type => "text/css"}/
 %link{:href => "/stylesheets/application.css", :rel => "stylesheet", :type => "text/css"}/
 
+/ ie normalization
+/[if IE]
+  %script{ :type => "text/javascript", :src => "/cache/html5-enabled/1.0.0/javascripts/html5-enabled-min.js" }
+
 / javascripts
 %script{ :type => "text/javascript", :src => "/cache/jquery/1.4.2/javascripts/jquery-min.js" }
 %script{ :type => "text/javascript", :src => "/cache/jquery-form/2.4.3/javascripts/jquery-form-min.js" }
 %script{ :type => "text/javascript", :src => "/cache/jquery-hotkeys/0.0.0/javascripts/jquery-hotkeys-min.js" }
 %script{ :type => "text/javascript", :src => "/cache/jquery-google-analytics/1.1.3/javascripts/jquery-google-analytics-min.js" }
 %script{ :type => "text/javascript", :src => "/cache/jquery-liveupdate/0.0.0/javascripts/jquery-liveupdate.js" }
+%script{ :type => "text/javascript", :src => "/cache/zero-clipboard/1.0.7/javascripts/zero-clipboard.js" }
 %script{ :type => "text/javascript", :src => "/javascripts/cached-commons.js" }
 %script{ :type => "text/javascript", :src => "/javascripts/application.js" }
 

@@ -19,12 +19,17 @@
     <link href='http://cachedcommons.org/stylesheets/reset.css' rel='stylesheet' type='text/css' />
     <link href='http://cachedcommons.org/stylesheets/prettify.css' rel='stylesheet' type='text/css' />
     <link href='http://cachedcommons.org/stylesheets/application.css' rel='stylesheet' type='text/css' />
+    <!-- ie normalization -->
+    <!--[if IE]>
+      <script src='http://cachedcommons.org/cache/html5-enabled/1.0.0/javascripts/html5-enabled-min.js' type='text/javascript'></script>
+    <![endif]-->
     <!-- javascripts -->
     <script src='http://cachedcommons.org/cache/jquery/1.4.2/javascripts/jquery-min.js' type='text/javascript'></script>
     <script src='http://cachedcommons.org/cache/jquery-form/2.4.3/javascripts/jquery-form-min.js' type='text/javascript'></script>
     <script src='http://cachedcommons.org/cache/jquery-hotkeys/0.0.0/javascripts/jquery-hotkeys-min.js' type='text/javascript'></script>
     <script src='http://cachedcommons.org/cache/jquery-google-analytics/1.1.3/javascripts/jquery-google-analytics-min.js' type='text/javascript'></script>
     <script src='http://cachedcommons.org/cache/jquery-liveupdate/0.0.0/javascripts/jquery-liveupdate.js' type='text/javascript'></script>
+    <script src='http://cachedcommons.org/cache/zero-clipboard/1.0.7/javascripts/zero-clipboard.js' type='text/javascript'></script>
     <script src='http://cachedcommons.org/javascripts/cached-commons.js' type='text/javascript'></script>
     <script src='http://cachedcommons.org/javascripts/application.js' type='text/javascript'></script>
     <!-- local business card: http://microformats.org/code/hcard/creator -->
@@ -108,17 +113,21 @@
               </header>
               <div class='content' id='index-content'>
                 <ul>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/g-raphael/0.4.1/javascripts/g-raphael.js' title=''>gRaphael</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/g-raphael/0.4.1/javascripts/g-raphael.js' title=''>gRaphael</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://g.raphaeljs.com/'>Home</a>
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/highcharts/2.0.1/javascripts/highcharts.js' title=''>Highcharts</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/highcharts/2.0.1/javascripts/highcharts.js' title=''>Highcharts</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://www.highcharts.com/'>Home</a>
                       </li>
@@ -127,9 +136,11 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jqplot/0.9.7/javascripts/jqplot.js' title=''>jqPlot</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jqplot/0.9.7/javascripts/jqplot.js' title=''>jqPlot</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://www.jqplot.com/'>Home</a>
                       </li>
@@ -138,9 +149,11 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-gcharts/1.0/javascripts/jquery-gcharts.js' title=''>jQuery GCharts</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-gcharts/0.0.0/javascripts/jquery-gcharts.js' title=''>jQuery GCharts</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://plugins.jquery.com/project/gchart'>Home</a>
                       </li>
@@ -149,9 +162,11 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/protovis/3.2.0/javascripts/protovis.js' title=''>Protovis</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/protovis/3.2.0/javascripts/protovis.js' title=''>Protovis</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://vis.stanford.edu/protovis/'>Home</a>
                       </li>
@@ -163,9 +178,11 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/raphael/1.4.7/javascripts/raphael.js' title=''>Raphael</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/raphael/1.4.7/javascripts/raphael.js' title=''>Raphael</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://raphaeljs.com/'>Home</a>
                       </li>
@@ -183,9 +200,11 @@
               </header>
               <div class='content' id='index-content'>
                 <ul>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/960/0.0.0/stylesheets/960.css' title=''>960</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/960/0.0.0/stylesheets/960.css' title=''>960</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://960.gs/'>Home</a>
                       </li>
@@ -197,9 +216,11 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/blueprint/0.9.1/stylesheets/screen.css' title=''>Blueprint</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/blueprint/0.9.1/stylesheets/screen.css' title=''>Blueprint</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://www.blueprintcss.org/'>Home</a>
                       </li>
@@ -223,9 +244,11 @@
               </header>
               <div class='content' id='index-content'>
                 <ul>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/dojo/1.5.0/javascripts/dojo.js' title=''>Dojo</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/dojo/1.5.0/javascripts/dojo.js' title=''>Dojo</a>
+                    </div>
+                    <ul class='links'>
                     </ul>
                   </li>
                 </ul>
@@ -237,9 +260,11 @@
               </header>
               <div class='content' id='index-content'>
                 <ul>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/ext-core/3.0.0/javascripts/ext-core.js' title=''>Ext Core</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/ext-core/3.0.0/javascripts/ext-core.js' title=''>Ext Core</a>
+                    </div>
+                    <ul class='links'>
                     </ul>
                   </li>
                 </ul>
@@ -251,17 +276,21 @@
               </header>
               <div class='content' id='index-content'>
                 <ul>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/html5-enabled/1.0.0/javascripts/html5-enabled.js' title=''>HTML5 Enabled</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/html5-enabled/1.0.0/javascripts/html5-enabled.js' title=''>HTML5 Enabled</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://html5doctor.com/how-to-get-html5-working-in-ie-and-firefox-2/'>Home</a>
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/modernizr/1.5.0/javascripts/modernizr.js' title=''>Modernizr</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/modernizr/1.5.0/javascripts/modernizr.js' title=''>Modernizr</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://www.modernizr.com/'>Home</a>
                       </li>
@@ -276,9 +305,11 @@
               </header>
               <div class='content' id='index-content'>
                 <ul>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/dd-belated-png/0.0.8/javascripts/dd-belated-png.js' title=''>DD_belatedPNG</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/dd-belated-png/0.0.8/javascripts/dd-belated-png.js' title=''>DD_belatedPNG</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://www.dillerdesign.com/experiment/DD_belatedPNG/'>Home</a>
                       </li>
@@ -290,9 +321,11 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/explorercanvas/0.0.0/javascripts/explorercanvas.js' title=''>ExplorerCanvas</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/explorercanvas/0.0.0/javascripts/explorercanvas.js' title=''>ExplorerCanvas</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://excanvas.sourceforge.net/'>Home</a>
                       </li>
@@ -307,9 +340,11 @@
               </header>
               <div class='content' id='index-content'>
                 <ul>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jqtouch/1.0.0/javascripts/jqtouch.js' title='iphone, framework'>JQTouch</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jqtouch/1.0.0/javascripts/jqtouch.js' title='iphone, framework'>JQTouch</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://jqtouch.com/'>Home</a>
                       </li>
@@ -318,17 +353,21 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-anytime/4.1.1/javascripts/jquery-anytime.js' title='time, date'>jQuery Anytime</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-anytime/4.1.1/javascripts/jquery-anytime.js' title='time, date'>jQuery Anytime</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://www.ama3.com/anytime/'>Home</a>
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-approach/1.0.1/javascripts/jquery-approach.js' title='physics, mouse, animation'>jQuery Approach</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-approach/1.0.1/javascripts/jquery-approach.js' title='physics, mouse, animation'>jQuery Approach</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://srobbin.com/jquery-plugins/jquery-approach/'>Home</a>
                       </li>
@@ -337,9 +376,11 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-autocomplete/1.1.0/javascripts/jquery-autocomplete.js' title='autocomplete'>JQuery Autocomplete</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-autocomplete/1.1.0/javascripts/jquery-autocomplete.js' title='autocomplete'>JQuery Autocomplete</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://bassistance.de/jquery-plugins/jquery-plugin-autocomplete/'>Home</a>
                       </li>
@@ -348,9 +389,11 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-autoscroll/0.0.1/javascripts/jquery-autoscroll.js' title='scrolling, animation, mouse wheel'>JQuery Autoscroll</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-autoscroll/0.0.1/javascripts/jquery-autoscroll.js' title='scrolling, animation, mouse wheel'>JQuery Autoscroll</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://jdsharp.us/jQuery/plugins/AutoScroll/'>Home</a>
                       </li>
@@ -359,25 +402,31 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-autosuggest/1.4.0/javascripts/jquery-autosuggest.js' title='autosuggest'>jQuery Autosuggest</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-autosuggest/1.4.0/javascripts/jquery-autosuggest.js' title='autosuggest'>jQuery Autosuggest</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://code.drewwilson.com/entry/autosuggest-jquery-plugin'>Home</a>
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-bbq/1.2.1/javascripts/jquery-bbq.js' title='url, browser history'>jQuery BBQ</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-bbq/1.2.1/javascripts/jquery-bbq.js' title='url, browser history'>jQuery BBQ</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://benalman.com/projects/jquery-bbq-plugin/'>Home</a>
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-blockui/2.3.3/javascripts/jquery-blockui.js' title='modal, popup, ui, alert'>JQuery BlockUI</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-blockui/2.3.3/javascripts/jquery-blockui.js' title='modal, popup, ui, alert'>JQuery BlockUI</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://jquery.malsup.com/block/'>Home</a>
                       </li>
@@ -386,25 +435,31 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-class/1.0/javascripts/jquery-class.js' title='OOP, classes'>jQuery Class</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-class/0.0.0/javascripts/jquery-class.js' title='OOP, classes'>jQuery Class</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://ejohn.org/blog/simple-javascript-inheritance/'>Home</a>
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-classy/1.0/javascripts/jquery-classy.js' title='OOP, classes'>jQuery Classy</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-classy/0.0.0/javascripts/jquery-classy.js' title='OOP, classes'>jQuery Classy</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://ejohn.org/blog/classy-query/'>Home</a>
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-color/1.0/javascripts/jquery-color.js' title='color, gradient, animation'>JQuery Color</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-color/0.0.0/javascripts/jquery-color.js' title='color, gradient, animation'>JQuery Color</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://plugins.jquery.com/project/color'>Home</a>
                       </li>
@@ -413,9 +468,11 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-colorbox/1.3.9/javascripts/jquery-colorbox.js' title=''>Jquery Colorbox</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-colorbox/1.3.9/javascripts/jquery-colorbox.js' title=''>Jquery Colorbox</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://colorpowered.com/colorbox/'>Home</a>
                       </li>
@@ -430,25 +487,31 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-cookie/1.0/javascripts/jquery-cookie.js' title='browser, session, cookies'>jQuery Cookie</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-cookie/0.0.0/javascripts/jquery-cookie.js' title='browser, session, cookies'>jQuery Cookie</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://plugins.jquery.com/project/Cookie'>Home</a>
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-corner/2.0.9/javascripts/jquery-corner.js' title='rounded corners, corners'>JQuery Corner</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-corner/2.0.9/javascripts/jquery-corner.js' title='rounded corners, corners'>JQuery Corner</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://jquery.malsup.com/corner/'>Home</a>
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-cycle/2.8.6/javascripts/jquery-cycle.js' title='animation, slideshow'>JQuery Cycle</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-cycle/2.8.6/javascripts/jquery-cycle.js' title='animation, slideshow'>JQuery Cycle</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://jquery.malsup.com/cycle/'>Home</a>
                       </li>
@@ -457,17 +520,21 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-disqus/1.0.0/javascripts/jquery-disqus.js' title='comments, disqus'>JQuery Disqus</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-disqus/1.0.0/javascripts/jquery-disqus.js' title='comments, disqus'>JQuery Disqus</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://viatropos.com/blog/jquery-disqus-plugin'>Home</a>
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-dropdown-replacement/0.5.0/javascripts/jquery-dropdown-replacement.js' title=''>Jquery Dropdown Replacement</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-dropdown-replacement/0.5.0/javascripts/jquery-dropdown-replacement.js' title=''>Jquery Dropdown Replacement</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://programmingdrunk.com/current-projects/dropdownReplacement/#getting-started'>Home</a>
                       </li>
@@ -479,14 +546,18 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-dropshadow/1.2.6/javascripts/jquery-dropshadow.js' title=''>jQuery DropShadow</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-dropshadow/1.2.6/javascripts/jquery-dropshadow.js' title=''>jQuery DropShadow</a>
+                    </div>
+                    <ul class='links'>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-easing/1.3.0/javascripts/jquery-easing.js' title='animation, easing'>JQuery Easing</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-easing/1.3.0/javascripts/jquery-easing.js' title='animation, easing'>JQuery Easing</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://plugins.jquery.com/project/Easing'>Home</a>
                       </li>
@@ -495,9 +566,11 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-easytooltip/1.0.0/javascripts/jquery-easytooltip.js' title='tooltip, popup'>JQuery EasyToolTip</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-easytooltip/1.0.0/javascripts/jquery-easytooltip.js' title='tooltip, popup'>JQuery EasyToolTip</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://cssglobe.com/post/4380/easy-tooltip--jquery-plugin'>Home</a>
                       </li>
@@ -506,9 +579,11 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-elastic-textarea/1.6.4/javascripts/jquery-elastic-textarea.js' title='textarea, autosize'>Elastic TextArea</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-elastic-textarea/1.6.4/javascripts/jquery-elastic-textarea.js' title='textarea, autosize'>Elastic TextArea</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://www.unwrongest.com/projects/elastic/'>Home</a>
                       </li>
@@ -517,17 +592,21 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-facebox/1.2.0/javascripts/jquery-facebox.js' title='lightbox, popup'>Facebox</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-facebox/1.2.0/javascripts/jquery-facebox.js' title='lightbox, popup'>Facebox</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://defunkt.github.com/facebox/'>Home</a>
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-fieldtag/1.1.0/javascripts/jquery-fieldtag.js' title='form, label'>jQuery Fieldtag</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-fieldtag/1.1.0/javascripts/jquery-fieldtag.js' title='form, label'>jQuery Fieldtag</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://ajaxcssblog.com/jquery/fieldtag-watermark-inputfields/'>Home</a>
                       </li>
@@ -536,9 +615,11 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-filetree/1.0.1/javascripts/jquery-filetree.js' title='file, tree, animation, ajax'>JQuery FileTree</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-filetree/1.0.1/javascripts/jquery-filetree.js' title='file, tree, animation, ajax'>JQuery FileTree</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://abeautifulsite.net/2008/03/jquery-file-tree/'>Home</a>
                       </li>
@@ -547,9 +628,11 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-form/2.4.3/javascripts/jquery-form.js' title='ajax, form'>JQuery Form</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-form/2.4.3/javascripts/jquery-form.js' title='ajax, form'>JQuery Form</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://jquery.malsup.com/form/'>Home</a>
                       </li>
@@ -558,9 +641,11 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-fullscreenr/1.0.0/javascripts/jquery-fullscreenr.js' title='image, autosize, full screen'>FullScreenr</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-fullscreenr/1.0.0/javascripts/jquery-fullscreenr.js' title='image, autosize, full screen'>FullScreenr</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://nanotux.com/blog/fullscreen/'>Home</a>
                       </li>
@@ -569,17 +654,21 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-glow/1.0.0/javascripts/jquery-glow.js' title='animation, effects'>jQuery Glow</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-glow/1.0.0/javascripts/jquery-glow.js' title='animation, effects'>jQuery Glow</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://nakajima.github.com/jquery-glow/'>Demo</a>
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-google-analytics/1.1.3/javascripts/jquery-google-analytics.js' title='google analytics'>Google Analytics</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-google-analytics/1.1.3/javascripts/jquery-google-analytics.js' title='google analytics'>Google Analytics</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://aktagon.com/projects/jquery/google-analytics'>Home</a>
                       </li>
@@ -588,17 +677,21 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-google-feed-api/1.0.0/javascripts/jquery-google-feed-api.js' title='feed, cross domain'>jQuery Google Feed API</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-google-feed-api/1.0.0/javascripts/jquery-google-feed-api.js' title='feed, cross domain'>jQuery Google Feed API</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://www.m2volt.com/blog/2009/12/jquery-feed-reader-–-jgfeed/'>Home</a>
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-highlightregex/3.0.0/javascripts/jquery-highlightregex.js' title='regular expressions, text highlighting'>HighlightRegex</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-highlightregex/3.0.0/javascripts/jquery-highlightregex.js' title='regular expressions, text highlighting'>HighlightRegex</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://plugins.jquery.com/project/highlightRegex'>Home</a>
                       </li>
@@ -607,9 +700,11 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-hotkeys/1.0/javascripts/jquery-hotkeys.js' title='keyboard, mouse'>JQuery HotKeys</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-hotkeys/0.0.0/javascripts/jquery-hotkeys.js' title='keyboard, mouse'>JQuery HotKeys</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://code.google.com/p/js-hotkeys/'>Home</a>
                       </li>
@@ -618,33 +713,41 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-hoverintent/1.0/javascripts/jquery-hoverintent.js' title='physics, mouse'>JQuery HoverIntent</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-hoverintent/0.0.0/javascripts/jquery-hoverintent.js' title='physics, mouse'>JQuery HoverIntent</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://cherne.net/brian/resources/jquery.hoverIntent.html'>Home</a>
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-html5-dataset/0.1.0/javascripts/jquery-html5-dataset.js' title='data'>jQuery HTML5 Dataset</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-html5-dataset/0.1.0/javascripts/jquery-html5-dataset.js' title='data'>jQuery HTML5 Dataset</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://www.orangesoda.net/jquery.dataset.html'>Home</a>
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-in-field-label/0.1.2/javascripts/jquery-in-field-label.js' title='form, label'>jQuery In-Field Label</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-in-field-label/0.1.2/javascripts/jquery-in-field-label.js' title='form, label'>jQuery In-Field Label</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://fuelyourcoding.com/scripts/infield/'>Home</a>
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-jcarousel/0.2.5/javascripts/jquery-jcarousel.js' title=''>Jquery Jcarousel</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-jcarousel/0.2.5/javascripts/jquery-jcarousel.js' title=''>Jquery Jcarousel</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://sorgalla.com/projects/jcarousel/'>Home</a>
                       </li>
@@ -659,9 +762,11 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-jcrop/0.9.8/javascripts/jquery-jcrop.js' title='images, crop'>jCrop</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-jcrop/0.9.8/javascripts/jquery-jcrop.js' title='images, crop'>jCrop</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://deepliquid.com/content/Jcrop_Manual.html'>Home</a>
                       </li>
@@ -670,9 +775,11 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-jeditable/1.4.2/javascripts/jquery-jeditable.js' title='in-place editing, edit, ajax'>JQuery JEditable</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-jeditable/1.4.2/javascripts/jquery-jeditable.js' title='in-place editing, edit, ajax'>JQuery JEditable</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://www.appelsiini.net/projects/jeditable'>Home</a>
                       </li>
@@ -681,25 +788,31 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-jlabel/1.1.0/javascripts/jquery-jlabel.js' title='form, label'>jLabel</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-jlabel/1.1.0/javascripts/jquery-jlabel.js' title='form, label'>jLabel</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://www.wduffy.co.uk/jlabel/'>Home</a>
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-jparallax/0.9.9/javascripts/jquery-jparallax.js' title='parallax, 2.5d'>jQuery jParallax</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-jparallax/0.9.9/javascripts/jquery-jparallax.js' title='parallax, 2.5d'>jQuery jParallax</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://webdev.stephband.info/parallax.html'>Home</a>
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-jstree/1.0.0/javascripts/jquery-jstree.js' title='file, tree'>JSTree</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-jstree/1.0.0/javascripts/jquery-jstree.js' title='file, tree'>JSTree</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://www.jstree.com/'>Home</a>
                       </li>
@@ -708,25 +821,44 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-labelify/1.3.0/javascripts/jquery-labelify.js' title='form, label'>jQuery Labelify</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-jtweets-anywhere/1.1.0/javascripts/jquery-jtweets-anywhere.js' title=''>jTweets Anywhere</a>
+                    </div>
+                    <ul class='links'>
+                      <li>
+                        <a href='http://thomasbillenstein.com/jTweetsAnywhere/index.php'>Home</a>
+                      </li>
+                      <li>
+                        <a href='http://thomasbillenstein.com/jTweetsAnywhere/demo/index.php'>Demo</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-labelify/1.3.0/javascripts/jquery-labelify.js' title='form, label'>jQuery Labelify</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://www.kryogenix.org/code/browser/labelify/'>Home</a>
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-lavalamp/1.3.4/javascripts/jquery-lavalamp.js' title='animation, menu'>JQuery Lavalamp</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-lavalamp/1.3.4/javascripts/jquery-lavalamp.js' title='animation, menu'>JQuery Lavalamp</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://nixboxdesigns.com/projects/jquery-lavalamp/'>Home</a>
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-lazyload/1.5.0/javascripts/jquery-lazyload.js' title=''>jQuery LazyLoad</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-lazyload/1.5.0/javascripts/jquery-lazyload.js' title=''>jQuery LazyLoad</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://www.appelsiini.net/projects/lazyload'>Home</a>
                       </li>
@@ -735,9 +867,11 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-livefilter/1.2.0/javascripts/jquery-livefilter.js' title='sorting, animation'>jQuery LiveFilter</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-livefilter/1.2.0/javascripts/jquery-livefilter.js' title='sorting, animation'>jQuery LiveFilter</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://www.mikemerritt.me/blog/jquery-plugin-livefilter-1-2/'>Home</a>
                       </li>
@@ -746,9 +880,11 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-liveupdate/1.0/javascripts/jquery-liveupdate.js' title='sorting'>jQuery LiveUpdate</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-liveupdate/0.0.0/javascripts/jquery-liveupdate.js' title='sorting'>jQuery LiveUpdate</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://orderedlist.com/our-writing/blog/articles/live-search-with-quicksilver-style-for-jquery/'>Home</a>
                       </li>
@@ -757,9 +893,11 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-localscroll/1.2.7/javascripts/jquery-localscroll.js' title=''>jQuery LocalScroll</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-localscroll/1.2.7/javascripts/jquery-localscroll.js' title=''>jQuery LocalScroll</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://jquery.com/plugins/project/LocalScroll'>Home</a>
                       </li>
@@ -768,9 +906,11 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-magic-labels/0.6.2/javascripts/jquery-magic-labels.js' title='form, labels, fields'>JQuery Magic Labels</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-magic-labels/0.6.2/javascripts/jquery-magic-labels.js' title='form, labels, fields'>JQuery Magic Labels</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://projects.joreteg.com/jquery-magic-labels/'>Home</a>
                       </li>
@@ -779,17 +919,21 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-metadata/1.0/javascripts/jquery-metadata.js' title=''>jQuery Metadata</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-metadata/0.0.0/javascripts/jquery-metadata.js' title=''>jQuery Metadata</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://plugins.jquery.com/project/metadata'>Home</a>
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-mousewheel/3.0.3/javascripts/jquery-mousewheel.js' title='mouse, scroll'>jQuery MouseWheel</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-mousewheel/3.0.3/javascripts/jquery-mousewheel.js' title='mouse, scroll'>jQuery MouseWheel</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://plugins.jquery.com/project/mousewheel'>Home</a>
                       </li>
@@ -798,9 +942,11 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-nivo-slider/2.0.0/javascripts/jquery-nivo-slider.js' title='slider, slideshow, design, animation'>Nivo Slider</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-nivo-slider/2.0.0/javascripts/jquery-nivo-slider.js' title='slider, slideshow, design, animation'>Nivo Slider</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://nivo.dev7studios.com/'>Home</a>
                       </li>
@@ -809,65 +955,97 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-overscroll/1.3.0/javascripts/jquery-overscroll.js' title='iphone, throwing, drag and drop, animation, physics'>Overscroll</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-overscroll/1.3.0/javascripts/jquery-overscroll.js' title='iphone, throwing, drag and drop, animation, physics'>Overscroll</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://www.azoffdesign.com/plugins/js/overscroll'>Home</a>
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-page-slide/1.0/javascripts/jquery-page-slide.js' title='slider, slideshow'>jQuery Page Slide</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-page-slide/0.0.0/javascripts/jquery-page-slide.js' title='slider, slideshow'>jQuery Page Slide</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://derekperez.com/jquery-pageslide/demo/'>Demo</a>
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-picasa/1.0.0/javascripts/jquery-picasa.js' title='picasa, images'>JQuery Picasa</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-path/0.0.1/javascripts/jquery-path.js' title=''>Jquery Path</a>
+                    </div>
+                    <ul class='links'>
+                      <li>
+                        <a href='http://blog.parkerfox.co.uk/2009/09/22/bezier-curves-and-arcs-in-jquery/'>Home</a>
+                      </li>
+                      <li>
+                        <a href='http://weepy.github.com/jquery.path/'>Demo</a>
+                      </li>
+                      <li>
+                        <a href='http://github.com/weepy/jquery.path'>Repo</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-picasa/1.0.0/javascripts/jquery-picasa.js' title='picasa, images'>JQuery Picasa</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://viatropos.com/blog/picasa-jquery-plugin'>Home</a>
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-postmessage/0.5.0/javascripts/jquery-postmessage.js' title='ajax, cross domain, security'>jQuery PostMessage</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-postmessage/0.5.0/javascripts/jquery-postmessage.js' title='ajax, cross domain, security'>jQuery PostMessage</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://benalman.com/projects/jquery-postmessage-plugin/'>Home</a>
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-pretty-checkboxes/1.1.0/javascripts/jquery-pretty-checkboxes.js' title='checkbox, input, design'>JQuery Pretty Checkboxes</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-pretty-checkboxes/1.1.0/javascripts/jquery-pretty-checkboxes.js' title='checkbox, input, design'>JQuery Pretty Checkboxes</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://www.no-margin-for-errors.com/projects/prettycheckboxes/'>Home</a>
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-pretty-photo/3.0.0/javascripts/jquery-pretty-photo.js' title='images, design'>JQuery Pretty Photo</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-pretty-photo/3.0.0/javascripts/jquery-pretty-photo.js' title='images, design'>JQuery Pretty Photo</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/'>Home</a>
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-quicksand/1.2.1/javascripts/jquery-quicksand.js' title='layout, animation, sorting'>Quicksand</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-quicksand/1.2.1/javascripts/jquery-quicksand.js' title='layout, animation, sorting'>Quicksand</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://razorjack.net/quicksand/'>Home</a>
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-rightclick/1.0.1/javascripts/jquery-rightclick.js' title=''>jQuery RightClick</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-rightclick/1.0.1/javascripts/jquery-rightclick.js' title=''>jQuery RightClick</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://abeautifulsite.net/blog/2008/05/jquery-right-click-plugin/'>Home</a>
                       </li>
@@ -876,9 +1054,11 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-scale-9-grid/0.9.3/javascripts/jquery-scale-9-grid.js' title='grid, layout'>jQuery Scale 9 Grid</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-scale-9-grid/0.9.3/javascripts/jquery-scale-9-grid.js' title='grid, layout'>jQuery Scale 9 Grid</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://www.hempton.com/2008/11/9-grid-scaling-support-in-javascriptcss/'>Home</a>
                       </li>
@@ -887,9 +1067,11 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-scrolling-parallax/0.1.0/javascripts/jquery-scrolling-parallax.js' title='parallax, 2.5d, scroll'>jQuery Scrolling Parallax</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-scrolling-parallax/0.1.0/javascripts/jquery-scrolling-parallax.js' title='parallax, 2.5d, scroll'>jQuery Scrolling Parallax</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://jonraasch.com/blog/scrolling-parallax-jquery-plugin'>Home</a>
                       </li>
@@ -898,9 +1080,11 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-scrollto/1.4.2/javascripts/jquery-scrollto.js' title='animation, scroll'>JQuery ScrollTo</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-scrollto/1.4.2/javascripts/jquery-scrollto.js' title='animation, scroll'>JQuery ScrollTo</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://flesler.blogspot.com/2007/10/jqueryscrollto.html'>Home</a>
                       </li>
@@ -909,9 +1093,11 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-sexy/0.8.0/javascripts/jquery-sexy.js' title=''>jQuery Sexy Js</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-sexy/0.8.0/javascripts/jquery-sexy.js' title=''>jQuery Sexy Js</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://sexyjs.com/'>Home</a>
                       </li>
@@ -923,35 +1109,45 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-simpletooltip/1.0/javascripts/jquery-simpletooltip.js' title='tooltip'>jQuery SimpleTooltip</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-simpletooltip/1.0/javascripts/jquery-simpletooltip.js' title='tooltip'>jQuery SimpleTooltip</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://dev.mariusilie.net/content/simple-tooltip-jquery-plugin'>Home</a>
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-simply-countable/0.4.0/javascripts/jquery-simply-countable.js' title='counter'>jQuery Simply Countable</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-simply-countable/0.4.0/javascripts/jquery-simply-countable.js' title='counter'>jQuery Simply Countable</a>
+                    </div>
+                    <ul class='links'>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-string/1.0.0/javascripts/jquery-string.js' title='string, utils'>jQuery String methods</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-string/1.0.0/javascripts/jquery-string.js' title='string, utils'>jQuery String methods</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://stilldesigning.com/dotstring/'>Home</a>
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-superfish/1.4.8/javascripts/jquery-superfish.js' title=''>Superfish</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-superfish/1.4.8/javascripts/jquery-superfish.js' title=''>Superfish</a>
+                    </div>
+                    <ul class='links'>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-supersized/2.0.0/javascripts/jquery-supersized.js' title='image, full screen, autosize'>JQuery Supersized</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-supersized/2.0.0/javascripts/jquery-supersized.js' title='image, full screen, autosize'>JQuery Supersized</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://buildinternet.com/2009/02/supersized-full-screen-backgroundslideshow-jquery-plugin/'>Home</a>
                       </li>
@@ -960,33 +1156,41 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-swfupload/1.0.0/javascripts/jquery-swfupload.js' title=''>Jquery Swfupload</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-swfupload/1.0.0/javascripts/jquery-swfupload.js' title=''>Jquery Swfupload</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://github.com/ifunk/swfupload-jquery-plugin'>Repo</a>
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-table-sorter/2.0.3/javascripts/jquery-table-sorter.js' title='sorting'>jQuery Table Sorter</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-table-sorter/2.0.3/javascripts/jquery-table-sorter.js' title='sorting'>jQuery Table Sorter</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://www.compulsivoco.com/2008/08/tablesorter-filter-results-based-on-search-string/'>Home</a>
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-timeago/0.9.0/javascripts/jquery-timeago.js' title='timer, counter'>jQuery Timeago</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-timeago/0.9.0/javascripts/jquery-timeago.js' title='timer, counter'>jQuery Timeago</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://timeago.yarp.com/'>Home</a>
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-tinytips/1.1.0/javascripts/jquery-tinytips.js' title='tooltips'>TinyTips</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-tinytips/1.1.0/javascripts/jquery-tinytips.js' title='tooltips'>TinyTips</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://www.mikemerritt.me/blog/jquery-plugin-tinytips-1-1/'>Home</a>
                       </li>
@@ -995,22 +1199,28 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-transform/1.0/javascripts/jquery-transform.js' title='3d, animation'>JQuery Transform</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-transform/0.0.0/javascripts/jquery-transform.js' title='3d, animation'>JQuery Transform</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://www.zachstronaut.com/posts/2009/08/07/jquery-animate-css-rotate-scale.html'>Home</a>
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-ui/1.8.4/javascripts/jquery-ui.js' title=''>Jquery Ui</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-ui/1.8.4/javascripts/jquery-ui.js' title=''>Jquery Ui</a>
+                    </div>
+                    <ul class='links'>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-uniform/1.7.3/javascripts/jquery-uniform.js' title='form, design'>Uniform</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-uniform/1.7.3/javascripts/jquery-uniform.js' title='form, design'>Uniform</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://pixelmatrixdesign.com/uniform/'>Home</a>
                       </li>
@@ -1019,9 +1229,11 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-upload-progress/1.0/javascripts/jquery-upload-progress.js' title='file upload'>JQuery Upload Progress</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-upload-progress/0.0.0/javascripts/jquery-upload-progress.js' title='file upload'>JQuery Upload Progress</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://drogomir.com/blog/2008/6/30/upload-progress-script-with-safari-support'>Home</a>
                       </li>
@@ -1033,17 +1245,21 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-url-internal/1.0.0/javascripts/jquery-url-internal.js' title='url, parsing'>URLInternal</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-url-internal/1.0.0/javascripts/jquery-url-internal.js' title='url, parsing'>URLInternal</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://benalman.com/projects/jquery-urlinternal-plugin/'>Home</a>
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery-validate/1.7.0/javascripts/jquery-validate.js' title='validation, form'>JQuery Validate</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery-validate/1.7.0/javascripts/jquery-validate.js' title='validation, form'>JQuery Validate</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://bassistance.de/jquery-plugins/jquery-plugin-validation/'>Home</a>
                       </li>
@@ -1052,9 +1268,11 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jquery/1.4.2/javascripts/jquery.js' title=''>JQuery</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jquery/1.4.2/javascripts/jquery.js' title=''>JQuery</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://jquery.com/'>Home</a>
                       </li>
@@ -1069,9 +1287,11 @@
               </header>
               <div class='content' id='index-content'>
                 <ul>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/mootools/1.2.4/javascripts/mootools.js' title=''>Mootools</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/mootools/1.2.4/javascripts/mootools.js' title=''>Mootools</a>
+                    </div>
+                    <ul class='links'>
                     </ul>
                   </li>
                 </ul>
@@ -1083,25 +1303,31 @@
               </header>
               <div class='content' id='index-content'>
                 <ul>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/box2d/1.0.0/javascripts/box2d.js' title=''>Box2D JS</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/box2d/1.0.0/javascripts/box2d.js' title=''>Box2D JS</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://www.chromeexperiments.com/detail/ball-pool/'>Demo</a>
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/processing/0.8.0/javascripts/processing.js' title=''>Processing JS</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/processing/0.8.0/javascripts/processing.js' title=''>Processing JS</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://processingjs.org/exhibition'>Demo</a>
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/three/0.0.0/javascripts/three.js' title=''>Three.js</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/three/0.0.0/javascripts/three.js' title=''>Three.js</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://mrdoob.com/blog/post/693'>Home</a>
                       </li>
@@ -1119,9 +1345,11 @@
               </header>
               <div class='content' id='index-content'>
                 <ul>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/activejs/0.0.0/javascripts/active.js' title=''>ActiveJS</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/activejs/0.0.0/javascripts/active.js' title=''>ActiveJS</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://activejs.org/'>Home</a>
                       </li>
@@ -1136,9 +1364,11 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jazz-record/0.7.0/javascripts/jazz-record.js' title=''>JazzRecord</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jazz-record/0.7.0/javascripts/jazz-record.js' title=''>JazzRecord</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://www.jazzrecord.org/'>Home</a>
                       </li>
@@ -1153,14 +1383,18 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/js-model/0.8.4/javascripts/js-model.js' title=''>JSModel</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/js-model/0.8.4/javascripts/js-model.js' title=''>JSModel</a>
+                    </div>
+                    <ul class='links'>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/sammy/0.5.4/javascripts/sammy.js' title=''>Sammy</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/sammy/0.5.4/javascripts/sammy.js' title=''>Sammy</a>
+                    </div>
+                    <ul class='links'>
                     </ul>
                   </li>
                 </ul>
@@ -1172,9 +1406,11 @@
               </header>
               <div class='content' id='index-content'>
                 <ul>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/prototype/1.6.1/javascripts/prototype.js' title=''>Prototype</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/prototype/1.6.1/javascripts/prototype.js' title=''>Prototype</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://www.prototypejs.org/'>Home</a>
                       </li>
@@ -1195,9 +1431,11 @@
               </header>
               <div class='content' id='index-content'>
                 <ul>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/scriptaculous/1.8.3/javascripts/scriptaculous.js' title=''>Scriptaculous</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/scriptaculous/1.8.3/javascripts/scriptaculous.js' title=''>Scriptaculous</a>
+                    </div>
+                    <ul class='links'>
                     </ul>
                   </li>
                 </ul>
@@ -1209,9 +1447,11 @@
               </header>
               <div class='content' id='index-content'>
                 <ul>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/sound-manager-2/2.0.0/javascripts/sound-manager-2.js' title=''>SoundManager2</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/sound-manager-2/2.0.0/javascripts/sound-manager-2.js' title=''>SoundManager2</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://www.schillmania.com/projects/soundmanager2/'>Home</a>
                       </li>
@@ -1229,32 +1469,42 @@
               </header>
               <div class='content' id='index-content'>
                 <ul>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/flash-player/10.0.0/swfs/playerProductInstall.swf' title=''>Flash Player</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/flash-player/10.0.0/swfs/playerProductInstall.swf' title=''>Flash Player</a>
+                    </div>
+                    <ul class='links'>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/swfaddress-optimizer/2.4.0/javascripts/swfaddress-optimizer.js' title=''>SWFAddress Optimizer</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/swfaddress-optimizer/2.4.0/javascripts/swfaddress-optimizer.js' title=''>SWFAddress Optimizer</a>
+                    </div>
+                    <ul class='links'>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/swfaddress/2.4.0/javascripts/swfaddress.js' title=''>SWFAddress</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/swfaddress/2.4.0/javascripts/swfaddress.js' title=''>SWFAddress</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://www.asual.com/swfaddress/samples/'>Demo</a>
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/swfobject/2.2.0/javascripts/swfobject.js' title=''>SWFObject</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/swfobject/2.2.0/javascripts/swfobject.js' title=''>SWFObject</a>
+                    </div>
+                    <ul class='links'>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/swfupload/2.0.2/javascripts/swfupload.js' title=''>SWFUpload</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/swfupload/2.0.2/javascripts/swfupload.js' title=''>SWFUpload</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://www.swfupload.org/'>Home</a>
                       </li>
@@ -1275,25 +1525,31 @@
               </header>
               <div class='content' id='index-content'>
                 <ul>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jasmine/1.0.0/javascripts/jasmine.js' title=''>Jasmine</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jasmine/1.0.0/javascripts/jasmine.js' title=''>Jasmine</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://pivotal.github.com/jasmine/'>Home</a>
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/jslitmus/0.0.0/javascripts/jslitmus.js' title=''>JSLitmus</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/jslitmus/0.0.0/javascripts/jslitmus.js' title=''>JSLitmus</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://www.broofa.com/Tools/JSLitmus/'>Home</a>
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/qunit/1.0.0/javascripts/qunit.js' title=''>QUnit</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/qunit/1.0.0/javascripts/qunit.js' title=''>QUnit</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://docs.jquery.com/QUnit'>Home</a>
                       </li>
@@ -1308,14 +1564,18 @@
               </header>
               <div class='content' id='index-content'>
                 <ul>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/cufon/1.0.9/javascripts/cufon.js' title=''>Cufon</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/cufon/1.0.9/javascripts/cufon.js' title=''>Cufon</a>
+                    </div>
+                    <ul class='links'>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/markitup/1.1.8/javascripts/markitup.js' title=''>MarkItUp</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/markitup/1.1.8/javascripts/markitup.js' title=''>MarkItUp</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://markitup.jaysalvat.com/home/'>Home</a>
                       </li>
@@ -1327,19 +1587,25 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/prettify/1.0.0/javascripts/prettify.js' title=''>Prettify</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/prettify/1.0.0/javascripts/prettify.js' title=''>Prettify</a>
+                    </div>
+                    <ul class='links'>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/showdown/1.0.0/javascripts/showdown.js' title=''>Showdown</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/showdown/1.0.0/javascripts/showdown.js' title=''>Showdown</a>
+                    </div>
+                    <ul class='links'>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/syntax-highlighter/3.0.8/javascripts/syntax-highlighter.js' title=''>Syntax Highlighter</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/syntax-highlighter/3.0.8/javascripts/syntax-highlighter.js' title=''>Syntax Highlighter</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://alexgorbatchev.com/SyntaxHighlighter/'>Home</a>
                       </li>
@@ -1348,14 +1614,18 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/webfont/1.0.6/javascripts/webfont.js' title=''>Webfont</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/webfont/1.0.6/javascripts/webfont.js' title=''>Webfont</a>
+                    </div>
+                    <ul class='links'>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/wmd-editor/1.0/javascripts/wmd-editor.js' title=''>WMD Editor</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/wmd-editor/0.0.0/javascripts/wmd-editor.js' title=''>WMD Editor</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://wmd-editor.com/demo'>Demo</a>
                       </li>
@@ -1370,9 +1640,11 @@
               </header>
               <div class='content' id='index-content'>
                 <ul>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/datejs/1.0.0/javascripts/date.js' title=''>Datejs</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/datejs/1.0.0/javascripts/date.js' title=''>Datejs</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://www.datejs.com/'>Home</a>
                       </li>
@@ -1384,9 +1656,20 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/underscore/1.0/javascripts/underscore.js' title=''>Underscore</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/zero-clipboard/1.0.7/javascripts/zero-clipboard.js' title=''>Zero Clipboard</a>
+                    </div>
+                    <ul class='links'>
+                      <li>
+                        <a href='http://bit.ly/'>Demo</a>
+                      </li>
+                      <li>
+                        <a href='http://code.google.com/p/zeroclipboard/wiki/Instructions'>Docs</a>
+                      </li>
+                      <li>
+                        <a href='http://code.google.com/p/zeroclipboard/'>Repo</a>
+                      </li>
                     </ul>
                   </li>
                 </ul>
@@ -1398,9 +1681,11 @@
               </header>
               <div class='content' id='index-content'>
                 <ul>
-                  <li>
-                    <a href='http://cachedcommons.org/cache/yui/3.1.2/javascripts/yui.js' title=''>Yui</a>
-                    <ul>
+                  <li class='library'>
+                    <div class='sources'>
+                      <a class='src' href='http://cachedcommons.org/cache/yui/3.1.2/javascripts/yui.js' title=''>Yui</a>
+                    </div>
+                    <ul class='links'>
                       <li>
                         <a href='http://developer.yahoo.com/yui/3'>Home</a>
                       </li>
@@ -1425,6 +1710,8 @@
           </div>
         </div>
       </section>
+      <figure class='view-code' id='view-code'></figure>
+      <div id='copied-tags'></div>
     </div>
   </body>
 </html>

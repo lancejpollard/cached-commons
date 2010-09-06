@@ -1,6 +1,12 @@
 .main.index {
   .post {
     border-bottom: 10px solid $border-color;
+    .link {
+      padding: 10px 5px;
+    }
+    .version {
+      float: right;
+    }
     .kind {
       padding: 60px 0px 10px 5px;
       h3 {
@@ -35,12 +41,20 @@
     @include clearfix;
     position: relative;
     z-index: 1;
+    padding: 0;
+    margin: 0;
     > * {
       padding: 0;
       margin: 0;
     }
     li {
-      padding: 10px 0px;
+      
+      .links, .sources {
+        display: block;
+      }
+      &.library {
+        height: 40px;
+      }
       border-top: 1px solid $border-color;
       background: white;
       &:last-child {
@@ -70,11 +84,12 @@
       ul {
         text-align: right;
         float: right;
-        display: inline;
         li {
-          display: inline-block;
+          display: block;
+          float: left;
+          height: 100%;
           border: none;
-          padding: 0px 10px;
+          padding: 0px 12px;
           background: none;
           a {
             text-align: center;
@@ -88,7 +103,42 @@
             border: none;
           }
         }
-        @include clearfix;
+      }
+      @include clearfix;
+      
+      .links, .sources {
+      }
+      .links {
+        height: 40px;
+      }
+      .sources {
+        float: left;
+      }
+      .sources a {
+        display: inline-block;
+        padding: 10px 0px 10px 0px;
+        margin: 0px 10px 0px 10px;
+      }
+      .links li {
+        padding: 0px;
+        margin: 0px 0px 0px 10px;
+        height: 40px;
+        width: 60px;
+        &.arrow {
+          width: 40px;
+          a {
+            width: 20px;
+          }
+        }
+        a {
+          text-align: center;
+          padding: 12px 10px 0px 10px;
+          margin: 0;
+          height: 28px;
+          display: block;
+          width: 40px;
+          float: left;
+        }
       }
     }
   }
@@ -110,7 +160,7 @@
   right: -42px;
   width: 100px;
   background: $main-color;
-  z-index: 100;
+  z-index: 50;
   cursor: pointer;
   text-align: center;
   text-transform: uppercase;
