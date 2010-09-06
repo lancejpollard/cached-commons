@@ -238,6 +238,10 @@
 ./cache/wmd-editor/0.0.0/javascripts/wmd-editor-min.js
 ./cache/datejs/1.0.0/javascripts/date.js
 ./cache/datejs/1.0.0/javascripts/date-min.js
+./cache/sexy-js/0.8.0/javascripts/sexy.js
+./cache/sexy-js/0.8.0/javascripts/sexy-min.js
+./cache/underscore/1.1.0/javascripts/underscore.js
+./cache/underscore/1.1.0/javascripts/underscore-min.js
 ./cache/zero-clipboard/1.0.7/javascripts/zero-clipboard.js
 ./cache/zero-clipboard/1.0.7/javascripts/zero-clipboard-min.js
 ./cache/yui/3.1.2/javascripts/yui.js
