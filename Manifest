@@ -218,6 +218,8 @@
 ./cache/swfobject/2.2.0/javascripts/swfobject-min.js
 ./cache/swfupload/2.0.2/javascripts/swfupload.js
 ./cache/swfupload/2.0.2/javascripts/swfupload-min.js
+./cache/mustache/0.3.0/javascripts/mustache.js
+./cache/mustache/0.3.0/javascripts/mustache-min.js
 ./cache/jslitmus/0.0.0/javascripts/jslitmus.js
 ./cache/jslitmus/0.0.0/javascripts/jslitmus-min.js
 ./cache/qunit/1.0.0/javascripts/qunit.js
@@ -238,6 +240,8 @@
 ./cache/wmd-editor/0.0.0/javascripts/wmd-editor-min.js
 ./cache/datejs/1.0.0/javascripts/date.js
 ./cache/datejs/1.0.0/javascripts/date-min.js
+./cache/json2/0.0.0/javascripts/json2.js
+./cache/json2/0.0.0/javascripts/json2-min.js
 ./cache/sexy-js/0.8.0/javascripts/sexy.js
 ./cache/sexy-js/0.8.0/javascripts/sexy-min.js
 ./cache/underscore/1.1.0/javascripts/underscore.js

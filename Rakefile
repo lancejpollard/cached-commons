@@ -17,7 +17,7 @@ end
 
 desc "Deploy to Github Pages"
 task :deploy => :generate do
-  message = ENV["msg"] || "published programmatically at #{Time.now.strftime("%a, %b %d @ %I:%M%p")}"
+  message = ENV["msg"] || "published programmatically on #{Time.now.strftime("%a, %b %d @ %I:%M%p")}"
   manifest = ""
   site.find_posts_by_category("cache").each do |post|
     next if post.slug.value == "index"
