@@ -48,12 +48,17 @@
       margin: 0;
     }
     li {
-      
+      details {
+        @include clearfix;
+      }
+      .summary {
+        @include clearfix;
+      }
       .links, .sources {
         display: block;
       }
       &.library {
-        height: 40px;
+        
       }
       border-top: 1px solid $border-color;
       background: white;
@@ -68,6 +73,12 @@
       }
       &:hover {
         background: #fcfcfc;
+      }
+      &.open {
+        background: #fcfcfc;
+        .summary {
+          border-bottom: 1px solid #ececec;
+        }
       }
       &.selected {
         background: #f7f7f7;
@@ -139,6 +150,22 @@
           width: 40px;
           float: left;
         }
+      }
+      
+      @include clearfix;
+      .details {
+        display: none;
+        @include clearfix;
+        .link {
+          display: block;
+          clear: both;
+          text-align: right !important;
+          float: right;
+          a {
+            color: grey;
+          }
+        }
+        background: #fcfcfc;
       }
     }
   }

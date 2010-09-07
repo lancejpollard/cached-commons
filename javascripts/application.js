@@ -194,4 +194,26 @@ $(document).ready(function() {
     window.location.hash = hash + "-post";
   }
   
+  var collapsibles = $(".details");
+  var libraries = $("li.library");
+  
+  $("a.drilldown").click(function() {
+    var link = $(this);
+    var open = link.hasClass("open");
+    collapsibles.css("display", "none");
+    libraries.removeClass("open");
+    $(".drilldown.open").each(function() {
+      $(this).removeClass("open").html("&darr;");
+    });
+    
+    if (!open) {
+      link.addClass("open");
+      link.parents("details").find(".details").css("display", "block");
+      link.parents("li.library").addClass("open");
+      link.html("&uarr;");
+    }
+    
+    return false;
+  });
+  
 });

@@ -14,26 +14,27 @@
               - page.children.each do |child|
                 - next if child.slug.value == "index"
                 %li.library
-                  .sources
-                    %a.src{:href => child.src, :title => child.tags.join(", ")}= child.title
-                  %ul.links
-                    - unless child.data["home"].blank?
-                      %li
-                        %a{:href => child.data["home"]} Home
-                    - unless child.data["demo"].blank?
-                      %li
-                        %a{:href => child.data["demo"]} Demo
-                    - unless child.data["docs"].blank?
-                      %li
-                        %a{:href => child.data["docs"]} Docs
-                    - unless child.data["repo"].blank?
-                      %li
-                        %a{:href => child.data["repo"]} Repo
-                  -#
-                    %li.arrow
-                      %a.drilldown{:href => "/commons/#{child.slug.value}"} &#10145;
-                  -#
-                    %ul.library
-                      - child.lib_paths.each do |file|
-                        %li
-                          %a{:href => "http://cachedcommons.org#{file}"}= file
+                  %details
+                    %summary.summary
+                      .sources
+                        %a.src{:href => child.src, :title => child.tags.join(", ")}= child.title
+                      %ul.links
+                        - unless child.data["home"].blank?
+                          %li
+                            %a{:href => child.data["home"]} Home
+                        - unless child.data["demo"].blank?
+                          %li
+                            %a{:href => child.data["demo"]} Demo
+                        - unless child.data["docs"].blank?
+                          %li
+                            %a{:href => child.data["docs"]} Docs
+                        - unless child.data["repo"].blank?
+                          %li
+                            %a{:href => child.data["repo"]} Repo
+                        %li.arrow
+                          %a.drilldown{:href => "/commons/#{child.slug.value}"} &darr;
+                    .details
+                      %ul.related-assets
+                        - child.related_assets.each do |link|
+                          %li.link
+                            %a.src{:href => link.href}= link.title

@@ -299,10 +299,20 @@ html, body, .document {
   .main.index ul li {
     border-top: 1px solid #cfcfcf;
     background: white; }
+    .main.index ul li details:after {
+      content: ".";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden; }
+    .main.index ul li .summary:after {
+      content: ".";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden; }
     .main.index ul li .links, .main.index ul li .sources {
       display: block; }
-    .main.index ul li.library {
-      height: 40px; }
     .main.index ul li:last-child {
       border-bottom: 1px solid #cfcfcf; }
     .main.index ul li a, .main.index ul li a * {
@@ -312,6 +322,10 @@ html, body, .document {
       padding: 0px 5px; }
     .main.index ul li:hover {
       background: #fcfcfc; }
+    .main.index ul li.open {
+      background: #fcfcfc; }
+      .main.index ul li.open .summary {
+        border-bottom: 1px solid #ececec; }
     .main.index ul li.selected {
       background: #f7f7f7; }
     .main.index ul li.focused {
@@ -369,6 +383,28 @@ html, body, .document {
         display: block;
         width: 40px;
         float: left; }
+    .main.index ul li:after {
+      content: ".";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden; }
+    .main.index ul li .details {
+      display: none;
+      background: #fcfcfc; }
+      .main.index ul li .details:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden; }
+      .main.index ul li .details .link {
+        display: block;
+        clear: both;
+        text-align: right !important;
+        float: right; }
+        .main.index ul li .details .link a {
+          color: grey; }
 
 .selector {
   background: #272727;

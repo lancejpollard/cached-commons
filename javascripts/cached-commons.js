@@ -34,6 +34,8 @@
     selectable: function() {
     	$(".post_item").click(function(event) {
     	  var target = $(event.target);
+    	  if (target.is("summary"))
+    	    target = target.parents("li.post_item");
     	  if (target.is("li")) {
     	    if (target.hasClass("selected")) {
     	      $.cachedCommons.list.deselect(target);
@@ -89,7 +91,7 @@
         $("> li", list).each(function(j_index, j_element) {
           var item = $(j_element);
           
-          var link = $("a.src", item);
+          var link = $(".sources a.src", item);
           var tags = link.attr("title");
           if (tags && tags != "") {
             link.after("<small class='tags'>" + tags + "</small>");
