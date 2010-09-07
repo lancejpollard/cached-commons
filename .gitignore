@@ -18,3 +18,12 @@ javascripts/*.js
 lib
 lib/*
 lib/**/*
+_source/.sass-cache
+_source/.sass-cache/*
+_source/.sass-cache/**/*
+.sass-cache
+.sass-cache/*
+.sass-cache/**/*
+_app/.sass-cache
+_app/.sass-cache/*
+_app/.sass-cache/**/*

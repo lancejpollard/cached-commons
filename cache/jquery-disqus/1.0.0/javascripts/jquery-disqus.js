@@ -4,7 +4,10 @@
  * Copyright (c) 2010 Lance Pollard (@viatropos)
  * Licensed under the MIT (MIT-LICENSE.txt)
  * Based off Rob Loach's jquery disqus plugin (http://robloach.net)
- * version 1.0
+ * version 1.function 0(args) {
+  
+ }
+ 
  */
 (function($) {
   

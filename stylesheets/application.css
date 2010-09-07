@@ -49,7 +49,7 @@ textarea {
   text-decoration: underline; }
 
 .code-view {
-  width: 954px;
+  width: 960px;
   height: 400px;
   overflow: scroll; }
 
@@ -252,6 +252,10 @@ html, body, .document {
 
 .main.index .post {
   border-bottom: 10px solid #cfcfcf; }
+  .main.index .post .link {
+    padding: 10px 5px; }
+  .main.index .post .version {
+    float: right; }
   .main.index .post .kind {
     padding: 60px 0px 10px 5px; }
     .main.index .post .kind h3 {
@@ -280,7 +284,9 @@ html, body, .document {
 .main.index ul {
   list-style: none;
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  padding: 0;
+  margin: 0; }
   .main.index ul:after {
     content: ".";
     display: block;
@@ -291,9 +297,22 @@ html, body, .document {
     padding: 0;
     margin: 0; }
   .main.index ul li {
-    padding: 10px 0px;
     border-top: 1px solid #cfcfcf;
     background: white; }
+    .main.index ul li details:after {
+      content: ".";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden; }
+    .main.index ul li .summary:after {
+      content: ".";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden; }
+    .main.index ul li .links, .main.index ul li .sources {
+      display: block; }
     .main.index ul li:last-child {
       border-bottom: 1px solid #cfcfcf; }
     .main.index ul li a, .main.index ul li a * {
@@ -303,6 +322,10 @@ html, body, .document {
       padding: 0px 5px; }
     .main.index ul li:hover {
       background: #fcfcfc; }
+    .main.index ul li.open {
+      background: #fcfcfc; }
+      .main.index ul li.open .summary {
+        border-bottom: 1px solid #ececec; }
     .main.index ul li.selected {
       background: #f7f7f7; }
     .main.index ul li.focused {
@@ -313,12 +336,13 @@ html, body, .document {
           color: #272727; }
     .main.index ul li ul {
       text-align: right;
-      float: right;
-      display: inline; }
+      float: right; }
       .main.index ul li ul li {
-        display: inline-block;
+        display: block;
+        float: left;
+        height: 100%;
         border: none;
-        padding: 0px 10px;
+        padding: 0px 12px;
         background: none; }
         .main.index ul li ul li a {
           text-align: center;
@@ -328,12 +352,59 @@ html, body, .document {
           color: #a7a7a7; }
         .main.index ul li ul li:last-child {
           border: none; }
-      .main.index ul li ul:after {
+    .main.index ul li:after {
+      content: ".";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden; }
+    .main.index ul li .links {
+      height: 40px; }
+    .main.index ul li .sources {
+      float: left; }
+    .main.index ul li .sources a {
+      display: inline-block;
+      padding: 10px 0px 10px 0px;
+      margin: 0px 10px 0px 10px; }
+    .main.index ul li .links li {
+      padding: 0px;
+      margin: 0px 0px 0px 10px;
+      height: 40px;
+      width: 60px; }
+      .main.index ul li .links li.arrow {
+        width: 40px; }
+        .main.index ul li .links li.arrow a {
+          width: 20px; }
+      .main.index ul li .links li a {
+        text-align: center;
+        padding: 12px 10px 0px 10px;
+        margin: 0;
+        height: 28px;
+        display: block;
+        width: 40px;
+        float: left; }
+    .main.index ul li:after {
+      content: ".";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden; }
+    .main.index ul li .details {
+      display: none;
+      background: #fcfcfc; }
+      .main.index ul li .details:after {
         content: ".";
         display: block;
         height: 0;
         clear: both;
         visibility: hidden; }
+      .main.index ul li .details .link {
+        display: block;
+        clear: both;
+        text-align: right !important;
+        float: right; }
+        .main.index ul li .details .link a {
+          color: grey; }
 
 .selector {
   background: #272727;
@@ -350,7 +421,7 @@ html, body, .document {
   right: -42px;
   width: 100px;
   background: #272727;
-  z-index: 100;
+  z-index: 50;
   cursor: pointer;
   text-align: center;
   text-transform: uppercase;

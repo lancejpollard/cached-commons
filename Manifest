@@ -106,6 +106,8 @@
 ./cache/jquery-jparallax/0.9.9/javascripts/jquery-jparallax-min.js
 ./cache/jquery-jstree/1.0.0/javascripts/jquery-jstree.js
 ./cache/jquery-jstree/1.0.0/javascripts/jquery-jstree-min.js
+./cache/jquery-jtweets-anywhere/1.1.0/javascripts/jquery-jtweets-anywhere.js
+./cache/jquery-jtweets-anywhere/1.1.0/javascripts/jquery-jtweets-anywhere-min.js
 ./cache/jquery-labelify/1.3.0/javascripts/jquery-labelify.js
 ./cache/jquery-labelify/1.3.0/javascripts/jquery-labelify-min.js
 ./cache/jquery-lavalamp/1.3.4/javascripts/jquery-lavalamp.js
@@ -130,6 +132,8 @@
 ./cache/jquery-overscroll/1.3.0/javascripts/jquery-overscroll-min.js
 ./cache/jquery-page-slide/0.0.0/javascripts/jquery-page-slide.js
 ./cache/jquery-page-slide/0.0.0/javascripts/jquery-page-slide-min.js
+./cache/jquery-path/0.0.1/javascripts/jquery-path.js
+./cache/jquery-path/0.0.1/javascripts/jquery-path-min.js
 ./cache/jquery-picasa/1.0.0/javascripts/jquery-picasa.js
 ./cache/jquery-picasa/1.0.0/javascripts/jquery-picasa-min.js
 ./cache/jquery-postmessage/0.5.0/javascripts/jquery-postmessage.js
@@ -214,6 +218,8 @@
 ./cache/swfobject/2.2.0/javascripts/swfobject-min.js
 ./cache/swfupload/2.0.2/javascripts/swfupload.js
 ./cache/swfupload/2.0.2/javascripts/swfupload-min.js
+./cache/mustache/0.3.0/javascripts/mustache.js
+./cache/mustache/0.3.0/javascripts/mustache-min.js
 ./cache/jslitmus/0.0.0/javascripts/jslitmus.js
 ./cache/jslitmus/0.0.0/javascripts/jslitmus-min.js
 ./cache/qunit/1.0.0/javascripts/qunit.js
@@ -234,7 +240,13 @@
 ./cache/wmd-editor/0.0.0/javascripts/wmd-editor-min.js
 ./cache/datejs/1.0.0/javascripts/date.js
 ./cache/datejs/1.0.0/javascripts/date-min.js
-./cache/underscore/0.0.0/javascripts/underscore.js
-./cache/underscore/0.0.0/javascripts/underscore-min.js
+./cache/json2/0.0.0/javascripts/json2.js
+./cache/json2/0.0.0/javascripts/json2-min.js
+./cache/sexy-js/0.8.0/javascripts/sexy.js
+./cache/sexy-js/0.8.0/javascripts/sexy-min.js
+./cache/underscore/1.1.0/javascripts/underscore.js
+./cache/underscore/1.1.0/javascripts/underscore-min.js
+./cache/zero-clipboard/1.0.7/javascripts/zero-clipboard.js
+./cache/zero-clipboard/1.0.7/javascripts/zero-clipboard-min.js
 ./cache/yui/3.1.2/javascripts/yui.js
 ./cache/yui/3.1.2/javascripts/yui-min.js
